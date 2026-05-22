@@ -1,0 +1,309 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: gemini (gemini-2.5-flash)
+[agent] logging to runs/76d23a93a0f2.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:44:22 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting Ante 1, Round 0. Must play the first blind.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  07:44:32 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing Two Pair as it's the highest scoring hand available and should contribute well towards the b
+  07:44:42 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 6, 7]
+    ↳ Discarding the Queen, 7, and the pair of 2s to keep the two pairs (5s and 3s) and draw new cards, ho
+  07:44:47 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3]
+    ↳ Discarding the high cards (Ace, King, Ten, Nine) to keep the two pairs (5s and 3s) and draw new card
+  07:44:59 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 3, 5, 6]
+    ↳ Playing the Flush as it's the highest scoring hand available and already complete. This will provide
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+[gemini] api error (fail-fast): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand 
+  07:45:09 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buffoon Packs offer a chance at new jokers, which are crucial for scaling in Balatro. Buying it leav
+[gemini] api error (fail-fast): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand 
+  07:45:17 A1R1 [SHOP] buy_card idx=0
+    ↳ Mercury levels up the Straight hand, providing a permanent boost to chips and mult. This is a good e
+  07:45:19 A1R1 [SHOP] finish_shop
+    ↳ Cannot afford anything in the shop. Cannot reroll. Proceed to the next blind.
+
+── BLIND_SELECT  Ante 1  Round 1  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:45:28 A1R2 [BLIND_SELECT] select_blind
+    ↳ It's early in the game (Ante 1), so earning more money and having more opportunities to find good jo
+
+── SELECTING_HAND  Ante 1  Round 2  $2 ──
+  07:45:41 A1R2 [SELECTING_HAND] play_hand cards=[2, 3, 5, 6, 7]
+    ↳ Playing the Straight as it is the highest scoring hand available and a completed hand. Discarding a 
+  07:45:56 A1R2 [SELECTING_HAND] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ Playing the Two Pair (7s and 5s) as it is the highest scoring hand available and will likely allow m
+  07:46:02 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 7]
+    ↳ Discarding non-diamond cards to attempt to draw for a Diamond Flush, as High Card is a very weak han
+  07:46:09 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1, 3, 5]
+    ↳ Discarding non-diamond cards to attempt to draw for a Flush, as I have 4 diamonds in hand and enough
+  07:46:18 A1R2 [ROUND_EVAL] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ Playing the Flush (Diamonds) as it is the highest scoring hand available. I have successfully drawn 
+
+── ROUND_EVAL  Ante 1  Round 2  $7 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $12 ──
+  07:46:28 A1R2 [SHOP] buy_card idx=0
+    ↳ Green Joker gives +1 Mult for each green card, which is a good early game multiplier. It's also a +M
+  07:46:33 A1R2 [SHOP] buy_card idx=0
+    ↳ Buying Neptune, a Planet card for Straight. I already have a Mercury (Straight planet), so buying th
+  07:46:40 A1R2 [SHOP] use_consumable idx=0
+    ↳ Using Mercury to level up the Straight hand, as I have two Planet cards for Straight.
+  07:46:44 A1R2 [SHOP] use_consumable idx=0
+    ↳ Using Neptune to level up the Straight hand again, as I have two Planet cards for Straight.
+  07:46:48 A1R2 [SHOP] finish_shop
+    ↳ I have $5, which will give me $1 interest next round if I don't spend it. The shop offers Standard P
+
+── BLIND_SELECT  Ante 1  Round 2  $5 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  07:46:51 A1R3 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select the current blind.
+
+── SELECTING_HAND  Ante 1  Round 3  $5 ──
+  07:46:59 A1R3 [SELECTING_HAND] discard_cards cards=[0, 3, 4, 5, 6]
+    ↳ Current Pair hand scores too low. Discarding non-pair cards to try and improve to a stronger hand li
+  07:47:06 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 6]
+    ↳ The current Pair hand is too low. Discarding 5 non-scoring cards to draw replacements and try to imp
+  07:47:12 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 6]
+    ↳ The current Pair hand's estimated score (294) is likely not enough for the Boss blind. Discarding th
+  07:47:24 A1R3 [SELECTING_HAND] play_hand cards=[1, 2, 3, 5, 6]
+    ↳ Playing the Full House (Tens over Sevens) as it's the highest scoring hand available (176 points). W
+  07:47:31 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ The current Pair of 2s scores too low (90 points) for the Boss blind. Using the last discard to keep
+  07:47:40 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 5, 6, 7]
+    ↳ Discards are exhausted, so playing the best available hand. Three of a Kind (Twos) is the highest sc
+  07:47:51 A2R3 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5, 6]
+    ↳ Discards are exhausted, so playing the best available hand. Full House (Jacks over Threes) is the hi
+
+── ROUND_EVAL  Ante 2  Round 3  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $11 ──
+  07:48:06 A2R3 [SHOP] buy_card idx=1
+    ↳ Buy Scholar to fill an empty joker slot and boost scoring potential, while retaining money for inter
+  07:48:13 A2R3 [SHOP] finish_shop
+    ↳ No strong joker or voucher to buy, and saving money ($7) allows for $1 interest next round. Gluttono
+
+── BLIND_SELECT  Ante 2  Round 3  $7 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  07:48:17 A2R4 [BLIND_SELECT] select_blind
+    ↳ Skipping the Boss blind is not an option, so I must select it to proceed.
+
+── SELECTING_HAND  Ante 2  Round 4  $7 ──
+  07:48:23 A2R4 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5]
+    ↳ Discarding non-Club cards to try and draw a Flush. Keeping the 4 Clubs: A, K, 3, 2.
+  07:48:34 A2R4 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 6]
+    ↳ Playing a Flush (AC, KC, 9C, 6C, 3C) as it is the highest scoring hand available after the previous 
+
+── ROUND_EVAL  Ante 2  Round 4  $12 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $19 ──
+  07:48:46 A2R4 [SHOP] buy_card idx=1
+    ↳ Strength offers xMult enhancements which are very powerful. Prioritizing this for a strong boost.
+  07:49:00 A2R4 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Buying Arcana Pack for $4. It leaves me with $12, maintaining good interest, and provides tarot card
+  07:49:04 A2R4 [SHOP] select_pack_card idx=0
+    ↳ The Hermit doubles current money, which will significantly improve my economy from $12 to $24, provi
+  07:49:10 A2R4 [SHOP] buy_voucher idx=0
+    ↳ Buying Paint Brush for $10 to get an additional joker slot. This is a permanent upgrade that will al
+  07:49:20 A2R4 [SHOP] sell_joker idx=2
+    ↳ Scholar is the weakest joker and selling it will improve my economy and allow me to buy a better jok
+  07:49:24 A2R4 [SHOP] buy_card idx=0
+    ↳ Buying Mr. Bones. It provides +3 Mult for each discarded card, which can be a significant boost to m
+  07:49:27 A2R4 [SHOP] reroll_shop
+    ↳ The Mega Standard Pack is not a high priority purchase. Rerolling for $5 leaves $6, still allowing f
+  07:49:37 A2R4 [SHOP] sell_joker idx=0
+    ↳ Mail-In Rebate is my weakest joker, providing minimal income. Selling it will free up a joker slot f
+  07:49:42 A2R4 [SHOP] buy_card idx=1
+    ↳ Buying The Chariot for $3. This leaves me with $5, maintaining good interest, and provides a useful 
+  07:49:48 A2R4 [SHOP] finish_shop
+    ↳ Cannot afford any items in the shop or a reroll. Saving $5 to earn $1 interest for the next round. W
+
+── BLIND_SELECT  Ante 2  Round 4  $5 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:49:51 A2R5 [BLIND_SELECT] select_blind
+    ↳ Cannot skip Boss blind. Must select it to proceed.
+
+── SELECTING_HAND  Ante 2  Round 5  $5 ──
+  07:50:07 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 8]
+    ↳ Discarding filler cards to draw into a Three of a Kind or Four of a Kind from the existing pairs (Ja
+  07:50:21 A2R5 [SELECTING_HAND] play_hand cards=[1, 2, 5, 6, 7]
+    ↳ Playing the Full House (Jacks and Fours) for a score of 288. This is the strongest hand available an
+  07:50:32 A2R5 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ Discarding 5 non-scoring cards to draw for a better hand, aiming for a Three of a Kind with the exis
+  07:50:44 A2R5 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ Discarding non-scoring cards and lower-value cards (K, Q, J, 9, 7) to draw for a Three of a Kind or 
+  07:50:52 A2R5 [SELECTING_HAND] discard_cards cards=[2, 5, 6, 7, 8]
+    ↳ Discarding 5 non-scoring and lower-value cards (6, 3, 3, 2, 2) to draw for a significantly better ha
+  07:51:00 A2R5 [SELECTING_HAND] play_hand cards=[0, 1, 6, 7, 8]
+    ↳ Discards are exhausted, so playing the highest scoring hand available, which is a Full House (Aces a
+  07:51:10 A2R5 [ROUND_EVAL] play_hand cards=[3, 4, 5, 7, 8]
+    ↳ Discards are exhausted, so playing the highest scoring hand available, which is a Full House (Threes
+
+── ROUND_EVAL  Ante 2  Round 5  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 5  $13 ──
+  07:51:21 A2R5 [SHOP] buy_card idx=1
+    ↳ Smiley Face provides a consistent +Mult bonus based on face cards, which is a good upgrade to scorin
+  07:51:30 A2R5 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buying Celestial Pack to get a Planet card for permanent hand type scaling. Maintaining $5 for inter
+  07:51:35 A2R5 [SHOP] select_pack_card idx=1
+    ↳ Venus levels up the Flush hand, which is a consistent and strong hand type to build around. Mars for
+  07:51:42 A2R5 [SHOP] finish_shop
+    ↳ Saving money for interest, $5 allows for +$1 interest. No compelling buys or rerolls with current fu
+
+── BLIND_SELECT  Ante 2  Round 5  $5 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  07:51:46 A2R6 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must accept the current blind.
+
+── SELECTING_HAND  Ante 2  Round 6  $5 ──
+  07:51:52 A2R6 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 4, 8]
+    ↳ Discarding 5 cards to try and improve hand, specifically looking for a Flush with the 4 Spades I cur
+  07:52:05 A2R6 [SELECTING_HAND] play_hand cards=[0, 2, 4, 5, 8]
+    ↳ Playing a Flush, which is the best hand available. With the Green Joker, it scores significantly bet
+  07:52:13 A2R6 [SELECTING_HAND] discard_cards cards=[1, 2, 8]
+    ↳ Discarding non-Club cards (T of D, 8 of D, 2 of H) to try and complete a Flush with the 4 Clubs curr
+  07:52:24 A2R6 [SELECTING_HAND] play_hand cards=[0, 2, 5, 6, 8]
+    ↳ Playing a Flush, which is the highest scoring hand available. This will maximize my score, especiall
+  07:52:36 A3R6 [ROUND_EVAL] play_hand cards=[0, 2, 4, 7, 8]
+    ↳ Playing the Flush as it is the highest scoring hand available, benefiting greatly from Green Joker a
+
+── ROUND_EVAL  Ante 3  Round 6  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 6  $11 ──
+  07:52:51 A3R6 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Jumbo Celestial Pack provides Planet cards which are permanent hand level-ups, a strong investment f
+  07:52:58 A3R6 [SHOP] select_pack_card idx=2
+    ↳ Picked Saturn to buff Flushes, which synergizes with the Smiley Face joker and can be a consistent s
+  07:53:05 A3R6 [SHOP] buy_card idx=1
+    ↳ Lusty Joker provides a +2 Mult bonus for each face card, synergizing with Smiley Face, which gives +
+  07:53:14 A3R6 [SHOP] finish_shop
+    ↳ Cannot buy or reroll due to $0 money. Consumables (Strength, The Chariot) require targeting specific
+
+── BLIND_SELECT  Ante 3  Round 6  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  07:53:18 A3R7 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select the current blind.
+
+── SELECTING_HAND  Ante 3  Round 7  $0 ──
+  07:53:34 A3R7 [SELECTING_HAND] discard_cards cards=[0, 1, 5, 6, 7]
+    ↳ Discarding non-Ten cards to draw for a potential Full House or Four of a Kind, while preserving the 
+  07:53:46 A3R7 [SELECTING_HAND] play_hand cards=[2, 3, 4, 7, 8]
+    ↳ Playing the Full House (Three Tens and a Pair of Threes) as it is the highest scoring hand available
+  07:53:57 A3R7 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5, 7]
+    ↳ Playing the Flush as it is the highest scoring hand available and will contribute a significant amou
+
+── ROUND_EVAL  Ante 3  Round 7  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 7  $7 ──
+  07:54:09 A3R7 [SHOP] use_consumable idx=1  ✗ BalatrobotError -32002: Consumable 'The Chariot' requires ca
+    ↳ Use The Chariot to double current money by getting sell value of all my jokers ($2 * 4 = $8), increa
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase consumable card, consumable slots are full. Current: 2, Limit: 2
+  07:54:23 A3R7 [SHOP] buy_card idx=0
+    ↳ Buy Neptune to permanently upgrade the Flush hand type with +15 chips and +1 mult. This is a good lo
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase consumable card, consumable slots are full. Current: 2, Limit: 2
+  07:54:29 A3R7 [SHOP] buy_card idx=0
+    ↳ Buy Neptune to level up Flush. This is a permanent upgrade that increases its chips and mult, making
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase consumable card, consumable slots are full. Current: 2, Limit: 2
+  07:54:38 A3R7 [SHOP] buy_card idx=0
+    ↳ Buy another Neptune to continue leveling up the Flush hand type. This is a permanent and valuable up
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase consumable card, consumable slots are full. Current: 2, Limit: 2
+  07:54:42 A3R7 [SHOP] buy_card idx=0
+    ↳ Buy another Neptune to continue leveling up the Flush hand type. This is a permanent and valuable up
+  07:54:56 A3R7 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Buy the Arcana Pack for $4. This gives a chance for valuable tarot cards, which could provide immedi
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_lovers' requires exactly 1 target card(s). Provided: 0
+  07:55:00 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ The Lovers allows duplicating a card, which can help create stronger hands like Three of a Kind or F
+  07:55:09 A3R7 [SHOP] select_pack_card idx=1
+    ↳ The Lovers allows duplicating a card. Duplicating an 8 will create a Three of a Kind, significantly 
+  07:55:12 A3R7 [SHOP] finish_shop
+    ↳ Cannot afford anything impactful in the shop, and consumables require a hand. Finish shop to proceed
+
+── BLIND_SELECT  Ante 3  Round 7  $3 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:55:16 A3R7 [BLIND_SELECT] skip_blind
+    ↳ Won the last blind comfortably (2760 score with 2 hands used), and have very low money ($3) so a sho
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  07:55:20 A3R8 [BLIND_SELECT] select_blind
+    ↳ Must select the Boss blind as skipping is not permitted.
+
+── SELECTING_HAND  Ante 3  Round 8  $3 ──
+  07:55:31 A3R8 [SELECTING_HAND] play_hand cards=[1, 2, 4, 5, 6]
+    ↳ Playing the Full House (J-J-8-8-8) as it's the strongest available hand and provides a good score. D
+  07:55:44 A3R8 [SELECTING_HAND] discard_cards cards=[1, 2, 5, 6]
+    ↳ Discarding the unconnected high cards (K, J, 6, 4) that are not part of the Two Pair, hoping to draw
+  07:55:55 A3R8 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Playing the Four of a Kind (9s) as it's the highest scoring hand available, providing a strong base 
+  07:56:04 A3R8 [SELECTING_HAND] play_hand cards=[0, 5, 6, 7, 8]
+    ↳ Playing the Four of a Kind (3s) with an Ace kicker. With the active jokers (Lusty Joker and Smiley F
+  07:56:16 A4R8 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Full House (Kings over Queens) as it's the strongest available hand from the provided li
+
+── ROUND_EVAL  Ante 4  Round 8  $3 ──
+  → cash_out (auto)
+
+── SHOP  Ante 4  Round 8  $8 ──
+  07:56:28 A4R8 [SHOP] buy_card idx=1
+    ↳ Buying Egg for $4 to improve economy. It provides +$3 at the end of each round, which will help accu
+  07:56:35 A4R8 [SHOP] buy_card idx=0
+    ↳ Shoot the Moon is a free joker that adds +13 Mult for Straight Flush/Royal Flush. Even if not freque
+  07:56:46 A4R8 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buying an Arcana Pack for $4 to get new tarot cards. These can provide powerful effects or additiona
+  07:56:51 A4R8 [SHOP] select_pack_card idx=2
+    ↳ Choosing Judgement to get a random joker. This could be a powerful scoring joker or an economy joker
+  07:56:58 A4R8 [SHOP] sell_joker idx=0
+    ↳ Selling Green Joker for $2. It provides +4 mult for Flushes, which I don't prioritize or play freque
+  07:57:04 A4R8 [SHOP] finish_shop
+    ↳ No strong buys available with only $2. It's better to save money for interest and better shop items 
+
+── BLIND_SELECT  Ante 4  Round 8  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:57:08 A4R9 [BLIND_SELECT] select_blind
+    ↳ Cannot skip, must select the blind to continue.
+
+── SELECTING_HAND  Ante 4  Round 9  $2 ──
+  07:57:18 A4R9 [SELECTING_HAND] discard_cards cards=[0, 3, 5, 6, 8]
+    ↳ Current best hand (Two Pair) is too weak for Ante 4. Discarding non-spades to try and complete a Flu
+  07:57:31 A4R9 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 8]
+    ↳ Playing Flush (Spades) as it's the highest scoring hand available, taking advantage of Lusty Joker, 
+  07:57:48 A4R9 [ROUND_EVAL] play_hand cards=[2, 3, 4, 5, 7]
+    ↳ Playing the available Straight as it's the highest scoring hand. According to the rules, I should no
+
+── ROUND_EVAL  Ante 4  Round 9  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 4  Round 9  $2 ──
+  07:58:14 A4R9 [SHOP] finish_shop
+    ↳ Cannot afford any useful items, and consumables that require target cards cannot be used in the shop
+
+── BLIND_SELECT  Ante 4  Round 9  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  07:58:18 A4R10 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select the current blind.
+
+── SELECTING_HAND  Ante 4  Round 10  $2 ──
+  07:58:38 A4R10 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 6]
+    ↳ Discarding to try and improve the pair of 9s into a Three of a Kind or better, as the current Straig
+  07:58:56 A4R10 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7, 8]
+    ↳ Discarding the lowest 5 cards to try and improve the current pair of 9s into a Three of a Kind or be
+  07:59:05 A4R10 [SELECTING_HAND] discard_cards cards=[2, 3, 6, 7, 8]
+    ↳ Discarding the 5 cards that are not part of the current Two Pair (Aces and Nines) to maximize the ch

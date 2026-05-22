@@ -1,0 +1,36 @@
+# MLX-LM LoRA fine-tuning config for Balatro agent
+# Model: Qwen3-8B-4bit  |  Task: tool-call prediction
+
+model: "models/Qwen3-8B-4bit"
+train: true
+data: "finetune_data"
+
+# LoRA settings
+fine_tune_type: lora
+num_layers: 16          # tune top 16 transformer layers
+lora_parameters:
+  rank: 8
+  alpha: 16
+  dropout: 0.05
+  scale: 10.0
+
+# Training
+batch_size: 1
+grad_accumulation_steps: 4   # effective batch = 4
+iters: 1000
+learning_rate: 1e-5
+
+# Sequence length — game state prompts are long
+max_seq_length: 2048
+
+# Eval / checkpointing
+steps_per_report: 25
+steps_per_eval: 100
+val_batches: 20
+save_every: 50
+adapter_path: "finetune_adapters"
+
+# Memory
+grad_checkpoint: true   # saves ~30% RAM on M4 Pro
+
+seed: 42

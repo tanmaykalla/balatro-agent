@@ -1,0 +1,38 @@
+{
+  "timestamp": "20260522_030703",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 3,
+  "results": [
+    {
+      "agent": "scripted-flush",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030703/runs/scripted-flush_01.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run01_3c79962a5c67.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030703/runs/scripted-flush_02.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run02_aef88b8298c4.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030703/runs/scripted-flush_03.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run03_ed39a375399b.json"
+    }
+  ]
+}

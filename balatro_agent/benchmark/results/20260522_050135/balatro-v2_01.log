@@ -1,0 +1,95 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3-v2 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/1f06629828ac.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.8s  → select_blind: {'description': 'Starting the first blind to build scoring momentum.', 'type': '
+  07:25:27 A1R1 [BLIND_SELECT] select_blind
+    ↳ {'description': 'Starting the first blind to build scoring momentum.', 'type': 'string'}
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 4.7s  → play_hand: Two Pair (Jacks) with high kicker cards (T, 5, 5). Base score 40 × 4 = 160. Addi
+  07:25:36 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair (Jacks) with high kicker cards (T, 5, 5). Base score 40 × 4 = 160. Additional chips from sc
+  [ollama] waiting... (think=False)  [ollama] 120.7s  → play_hand: Two Pair (Fives and Threes) with high kicker cards (Q, T, 5, 5, 3). Base score 2
+  07:27:41 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Two Pair (Fives and Threes) with high kicker cards (Q, T, 5, 5, 3). Base score 20 × 2 = 40. Addition
+  [ollama] waiting... (think=False)  [ollama] 5.8s  → play_hand: High Card (A, K, Q, T, 9) with high scoring potential. Base chips 5 + A(11) + K(
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: High Card (A, K, Q, T, 9) with high scoring potential. Base chips 5 + A(11) + K(10) + Q(10) + T(10) + 9(9) = 5 + 11+10+1
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of C)
+      [3] Base Card (T of C)
+      [4] Base Card (9 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AS, KD, QC, 2S, 2D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KD, QC, TC, 9H)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  07:27:50 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ High Card (A, K, Q, T, 9) with high scoring potential. Base chips 5 + A(11) + K(10) + Q(10) + T(10) 
+  [ollama] waiting... (think=False)  [ollama] 5.4s  → play_hand: Pair with two Aces (AC, KC, JS, 2S, 2D). Base score 10 × 2 = 20. Additional chip
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: Pair with two Aces (AC, KC, JS, 2S, 2D). Base score 10 × 2 = 20. Additional chips: A(11) + K(10) + J(10) + 2 + 2 = 35 ch
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 1 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (K of C)
+      [2] Base Card (J of S)
+      [3] Base Card (7 of C)
+      [4] Base Card (4 of C)
+      [5] Base Card (3 of H)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AC, KC, JS, 2S, 2D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AC, KC, JS, 7C, 4C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  07:27:58 A1R1 [GAME_OVER] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Pair with two Aces (AC, KC, JS, 2S, 2D). Base score 10 × 2 = 20. Additional chips: A(11) + K(10) + J
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 5 entries → runs/1f06629828ac.json
+  ~tokens: ollama (free) 9339/315  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

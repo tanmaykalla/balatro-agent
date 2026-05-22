@@ -1,0 +1,125 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/1a225074330f.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.5s  → select_blind: Starting with Small Blind to build foundation. $4 is low, but 4 hands left allow
+  14:59:59 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting with Small Blind to build foundation. $4 is low, but 4 hands left allow risk-taking. FullHo
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → play_hand: Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets t
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets to boost. Need to reach Small Blind targe
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (T of D)
+      [2] Base Card (9 of H)
+      [3] Base Card (8 of H)
+      [4] Base Card (8 of D)
+      [5] Base Card (6 of S)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AD, TD, 9H, 8H, 8D)
+      High Card: play indices [0, 1, 2, 3, 5]  (AD, TD, 9H, 8H, 6S)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  15:00:07 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets to boost. Need to rea
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → play_hand: Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets t
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets to boost. Need to reach Small Blind targe
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (Q of H)
+      [2] Base Card (J of S)
+      [3] Base Card (6 of S)
+      [4] Base Card (4 of D)
+      [5] Base Card (3 of D)
+      [6] Base Card (2 of H)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AC, QH, JS, 2H, 2C)
+      High Card: play indices [0, 1, 2, 3, 4]  (AC, QH, JS, 6S, 4D)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  15:00:14 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Pair with Ace, King, 9, 8, 8. Base score 20, mult 2 = 40. No jokers or planets to boost. Need to rea
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: Two Pair with A, 7s, 6s. Base score 40, mult 2 = 80. This covers the Small Blind
+  15:00:22 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Two Pair with A, 7s, 6s. Base score 40, mult 2 = 80. This covers the Small Blind target of 30 chips.
+  [ollama] waiting... (think=False)  [ollama] 106.4s  → play_hand: Pair with K, J, T, T, 7. Base score 20 × 2 mult = 40. Covers Small Blind target 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair with K, J, T, T, 7. Base score 20 × 2 mult = 40. Covers Small Blind target of 30 chips.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 1 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (K of S)
+      [1] Base Card (J of H)
+      [2] Base Card (T of S)
+      [3] Base Card (T of C)
+      [4] Base Card (7 of S)
+      [5] Base Card (5 of C)
+      [6] Base Card (4 of D)
+      [7] Base Card (3 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KS, JH, TS, TC, 7S)
+      High Card: play indices [0, 1, 2, 4, 5]  (KS, JH, TS, 7S, 5C)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  15:02:12 A1R1 [GAME_OVER] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair with K, J, T, T, 7. Base score 20 × 2 mult = 40. Covers Small Blind target of 30 chips.
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 5 entries → runs/1a225074330f.json
+  ~tokens: ollama (free) 10357/239  cost free
+Run 1/1 | Strategy: FullHouse_Discard | Result: LOST ante 1

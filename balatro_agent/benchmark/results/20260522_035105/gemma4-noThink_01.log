@@ -1,0 +1,505 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/868c79f18b34.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.5s  → select_blind: I need to start the run and build up my economy. Skipping the first blind gives 
+  04:37:37 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the run and build up my economy. Skipping the first blind gives away a tag, which is
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → discard_cards: I have a pair of Queens and a pair of 3s. I will discard the J, T, 6, and 5 to t
+  04:37:41 A1R1 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5]
+    ↳ I have a pair of Queens and a pair of 3s. I will discard the J, T, 6, and 5 to try and draw cards th
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → play_hand: I have 5 Clubs (Ace, Queen, 8, 3, 2) which forms a Flush. A Flush is my stronges
+  04:37:48 A1R1 [SELECTING_HAND] play_hand cards=[0, 3, 4, 6, 7]
+    ↳ I have 5 Clubs (Ace, Queen, 8, 3, 2) which forms a Flush. A Flush is my strongest possible hand and 
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → play_hand: I have a Broadway Straight (A, K, Q, J, 10). This is the highest scoring hand av
+  04:37:58 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Broadway Straight (A, K, Q, J, 10). This is the highest scoring hand available in my hand a
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → finish_shop: I have no Jokers yet and the shop contains no immediate beneficial Jokers or eco
+  04:38:02 A1R1 [SHOP] finish_shop
+    ↳ I have no Jokers yet and the shop contains no immediate beneficial Jokers or economy upgrades. The B
+
+── BLIND_SELECT  Ante 1  Round 1  $9 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → select_blind: I am starting the first round of Ante 1. I will select the Small Blind to begin 
+  04:38:06 A1R2 [BLIND_SELECT] select_blind
+    ↳ I am starting the first round of Ante 1. I will select the Small Blind to begin building my economy 
+
+── SELECTING_HAND  Ante 1  Round 2  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have 4 cards of Diamonds (A, K, 10, 6, 3). Playing a Flush is the highest scor
+  04:38:14 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 3, 6, 7]
+    ↳ I have 4 cards of Diamonds (A, K, 10, 6, 3). Playing a Flush is the highest scoring hand available a
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → play_hand: I have a Full House (6s, 6h, 6c, 2s, 2d). This is the highest scoring hand avail
+  04:38:22 A1R2 [ROUND_EVAL] play_hand cards=[2, 3, 4, 6, 7]
+    ↳ I have a Full House (6s, 6h, 6c, 2s, 2d). This is the highest scoring hand available and will help m
+
+── ROUND_EVAL  Ante 1  Round 2  $9 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $14 ──
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → use_consumable: The High Priestess is a tarot card that can upgrade cards (changing rank/suit). 
+[balatrobot] BAD_REQUEST on use({'consumable': 0, 'cards': [0]}): Consumable index out of range: 0
+  04:38:29 A1R2 [SHOP] use_consumable idx=0
+    ↳ The High Priestess is a tarot card that can upgrade cards (changing rank/suit). Since it's cheap ($3
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → buy_card: Green Joker provides +1 Mult for every played card. In the early game, this is a
+  04:38:32 A1R2 [SHOP] buy_card idx=1
+    ↳ Green Joker provides +1 Mult for every played card. In the early game, this is a solid, consistent M
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → buy_pack: I have $10, and I want to grow my scoring potential. Since I'm playing a variety
+  04:38:36 A1R2 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $10, and I want to grow my scoring potential. Since I'm playing a variety of hands, a Celesti
+  [ollama] waiting... (think=False)  [ollama] 5.0s  → select_pack_card: I am currently in the early game (Ante 1) and do not have a specific hand type I
+  04:38:43 A1R2 [SHOP] select_pack_card idx=0
+    ↳ I am currently in the early game (Ante 1) and do not have a specific hand type I am focusing on yet.
+  [ollama] waiting... (think=False)  [ollama] 4.8s  → finish_shop: I have $6. The only interesting thing in the shop is The High Priestess, but I a
+  04:38:48 A1R2 [SHOP] finish_shop
+    ↳ I have $6. The only interesting thing in the shop is The High Priestess, but I already used a High P
+
+── BLIND_SELECT  Ante 1  Round 2  $6 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.4s  → select_blind: I am in the second round of Ante 1. I need to select the Big Blind to progress t
+  04:38:52 A1R3 [BLIND_SELECT] select_blind
+    ↳ I am in the second round of Ante 1. I need to select the Big Blind to progress toward the Boss. I ca
+
+── SELECTING_HAND  Ante 1  Round 3  $6 ──
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I will play the Straight (9D, 8D, 7S, 6S, 5C) because it has the highest base sc
+  04:39:00 A1R3 [SELECTING_HAND] play_hand cards=[2, 3, 4, 6, 7]
+    ↳ I will play the Straight (9D, 8D, 7S, 6S, 5C) because it has the highest base score (120) and is muc
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have a Full House (Q, Q, 7, 7, 7) available. This is the highest scoring hand 
+  04:39:10 A2R3 [ROUND_EVAL] play_hand cards=[1, 2, 5, 6, 7]
+    ↳ I have a Full House (Q, Q, 7, 7, 7) available. This is the highest scoring hand possible with the cu
+
+── ROUND_EVAL  Ante 2  Round 3  $6 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $13 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_card: Scary Face provides a significant mult boost (+10 Mult) for a low price ($4). It
+  04:39:16 A2R3 [SHOP] buy_card idx=1
+    ↳ Scary Face provides a significant mult boost (+10 Mult) for a low price ($4). It is much stronger th
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → use_consumable: The Hierophant (Tarot) can upgrade a hand type. I'll save it for when I have a h
+[balatrobot] BAD_REQUEST on use({'consumable': 0}): Consumable index out of range: 0
+  04:39:20 A2R3 [SHOP] use_consumable idx=0
+    ↳ The Hierophant (Tarot) can upgrade a hand type. I'll save it for when I have a hand I want to focus 
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → buy_card: The Hierophant is a Tarot card that upgrades a hand type. Since I am playing a v
+  04:39:23 A2R3 [SHOP] buy_card idx=0
+    ↳ The Hierophant is a Tarot card that upgrades a hand type. Since I am playing a variety of hands and 
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → buy_pack: I have exactly $6. A Jumbo Celestial Pack offers a high chance for a Planet card
+  04:39:28 A2R3 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have exactly $6. A Jumbo Celestial Pack offers a high chance for a Planet card, which is essential
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The current goal is to scale scoring power. Pluto levels up Five of a Kind, whic
+  04:39:34 A2R3 [SHOP] select_pack_card idx=0
+    ↳ The current goal is to scale scoring power. Pluto levels up Five of a Kind, which is a very high-sco
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → finish_shop: I have $0 and cannot afford any items or rerolls in the shop. There are no usefu
+  04:39:38 A2R3 [SHOP] finish_shop
+    ↳ I have $0 and cannot afford any items or rerolls in the shop. There are no useful items for my curre
+
+── BLIND_SELECT  Ante 2  Round 3  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → select_blind: I have no choice but to select the blind as skipping is not permitted. I am head
+  04:39:42 A2R4 [BLIND_SELECT] select_blind
+    ↳ I have no choice but to select the blind as skipping is not permitted. I am heading into Ante 2, Rou
+
+── SELECTING_HAND  Ante 2  Round 4  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → discard_cards: I have a pair of 5s (indices 5 and 6). I will discard the non-matching cards (K,
+  04:39:48 A2R4 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have a pair of 5s (indices 5 and 6). I will discard the non-matching cards (K, J, T, 8, 7) to try 
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → play_hand: I have Two Pair (5s and 4s) available. Among the playable hands, Two Pair offers
+  04:39:57 A2R4 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ I have Two Pair (5s and 4s) available. Among the playable hands, Two Pair offers the highest base ch
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: I have Two Pair (Aces and 3s). This is the highest scoring hand available in my 
+  04:40:06 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ I have Two Pair (Aces and 3s). This is the highest scoring hand available in my playable hands list.
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → discard_cards: I have a Pair of 2s (indices 6 and 7). The other cards (K, Q, 9, 7, 6) are junk.
+  04:40:11 A2R4 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have a Pair of 2s (indices 6 and 7). The other cards (K, Q, 9, 7, 6) are junk. I will discard thes
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: I have a Flush (Jack, 8, 7, 5, 2 of Diamonds). A Flush is my highest scoring pla
+  04:40:21 A2R4 [ROUND_EVAL] play_hand cards=[1, 3, 4, 5, 7]
+    ↳ I have a Flush (Jack, 8, 7, 5, 2 of Diamonds). A Flush is my highest scoring playable hand (Base 35 
+
+── ROUND_EVAL  Ante 2  Round 4  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → use_consumable: The Hierophant is a Planet card. I don't have any specific hand types to level u
+  04:40:29 A2R4 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant is a Planet card. I don't have any specific hand types to level up right now, but sin
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: The Tower (Tarot) can be used to transform cards into better versions (e.g., add
+  04:40:33 A2R4 [SHOP] buy_card idx=0
+    ↳ The Tower (Tarot) can be used to transform cards into better versions (e.g., adding suits or enhance
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: Pluto levels up Five of a Kind. While I haven't played much Five of a Kind yet, 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase consumable card, consumable slots are full. Current: 2, Limit: 2
+  04:40:36 A2R4 [SHOP] buy_card idx=0
+    ↳ Pluto levels up Five of a Kind. While I haven't played much Five of a Kind yet, Planet cards are per
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → finish_shop: I have $2 left. I cannot afford a reroll, the Standard Packs, or the Telescope. 
+  04:40:40 A2R4 [SHOP] finish_shop
+    ↳ I have $2 left. I cannot afford a reroll, the Standard Packs, or the Telescope. I have already purch
+
+── BLIND_SELECT  Ante 2  Round 4  $5 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → select_blind: I have $5 and need to build my economy. I'll play the Small Blind to attempt to 
+  04:40:44 A2R5 [BLIND_SELECT] select_blind
+    ↳ I have $5 and need to build my economy. I'll play the Small Blind to attempt to win with minimal han
+
+── SELECTING_HAND  Ante 2  Round 5  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → discard_cards: I have a pair of Jacks (indices 1 and 2) and three Clubs (indices 0, 2, 3, 5). I
+  04:40:50 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 6, 7]
+    ↳ I have a pair of Jacks (indices 1 and 2) and three Clubs (indices 0, 2, 3, 5). I will discard the no
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have Two Pair (7s and 5s). This is the highest scoring playable hand available
+  04:40:57 A2R5 [SELECTING_HAND] play_hand cards=[0, 3, 4, 5, 6]
+    ↳ I have Two Pair (7s and 5s). This is the highest scoring playable hand available and provides a soli
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → discard_cards: I have Two Pair (Tens and Fours). I will discard the Queen, Jack, and 8 to try a
+  04:41:01 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 4]
+    ↳ I have Two Pair (Tens and Fours). I will discard the Queen, Jack, and 8 to try and draw cards that c
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have a Full House (Tens and Fours). This is my strongest playable hand and wil
+  04:41:09 A2R5 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 5]
+    ↳ I have a Full House (Tens and Fours). This is my strongest playable hand and will provide the highes
+  [ollama] waiting... (think=False)  [ollama] 5.2s  → discard_cards: I have a pair of 2s (indices 6 and 7) and three Clubs (0, 1, 2). I will discard 
+  04:41:16 A2R5 [SELECTING_HAND] discard_cards cards=[3, 4, 5, 6]
+    ↳ I have a pair of 2s (indices 6 and 7) and three Clubs (0, 1, 2). I will discard the non-club, non-pa
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: I have a Flush (AC, KC, 8C, 7C, 3C). A Flush is my strongest available hand and 
+  04:41:26 A2R5 [ROUND_EVAL] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have a Flush (AC, KC, 8C, 7C, 3C). A Flush is my strongest available hand and provides a much high
+
+── ROUND_EVAL  Ante 2  Round 5  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 5  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → buy_pack: I have $9 and a Buffoon Pack costs $4. Buffoon Packs are high priority because t
+  04:41:34 A2R5 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $9 and a Buffoon Pack costs $4. Buffoon Packs are high priority because they provide more Jok
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → select_pack_card: The pack contains 'Ceremonial Dagger' (Tarot) and 'Bootstraps' (Joker). Since I 
+  04:41:39 A2R5 [SHOP] select_pack_card idx=0
+    ↳ The pack contains 'Ceremonial Dagger' (Tarot) and 'Bootstraps' (Joker). Since I only have $5 and I a
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → use_consumable: The Hierophant is a Planet card. I should use it immediately to level up my most
+  04:41:44 A2R5 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant is a Planet card. I should use it immediately to level up my most played hand type (b
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: I have $5. The Joker (JOKER) costs $2 and provides a flat +Mult (implied by stan
+  04:41:47 A2R5 [SHOP] buy_card idx=0
+    ↳ I have $5. The Joker (JOKER) costs $2 and provides a flat +Mult (implied by standard Joker identity)
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_pack: I have $3. A Jumbo Arcana Pack costs $6, which I cannot afford. However, I am lo
+[balatrobot] BAD_REQUEST on buy({'pack': 0}): Card is not affordable. Cost: 6, Available money: 3
+  04:41:51 A2R5 [SHOP] buy_pack idx=0
+    ↳ I have $3. A Jumbo Arcana Pack costs $6, which I cannot afford. However, I am looking for Planet car
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → buy_card: Ceremonial Dagger costs $3, which is my entire balance. While it's risky to go t
+[balatrobot] BAD_REQUEST on buy({'card': 2}): Card index out of range. Index: 2, Available cards: 1
+  04:41:54 A2R5 [SHOP] buy_card idx=2
+    ↳ Ceremonial Dagger costs $3, which is my entire balance. While it's risky to go to $0, the Dagger pro
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → finish_shop: I currently have $0. I cannot afford any items in the shop (Smeared Joker is $7,
+  04:41:58 A2R5 [SHOP] finish_shop
+    ↳ I currently have $0. I cannot afford any items in the shop (Smeared Joker is $7, Telescope is $10, J
+
+── BLIND_SELECT  Ante 2  Round 5  $3 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → select_blind: I have $3 and no way to skip this blind for a meaningful tag without risking my 
+  04:42:03 A2R6 [BLIND_SELECT] select_blind
+    ↳ I have $3 and no way to skip this blind for a meaningful tag without risking my current economy. I n
+
+── SELECTING_HAND  Ante 2  Round 6  $3 ──
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → discard_cards: I have two pairs (Queens and Jacks). By discarding the 7 of Clubs and the low ca
+  04:42:09 A2R6 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have two pairs (Queens and Jacks). By discarding the 7 of Clubs and the low cards, I am attempting
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: I have two pairs (Queens and Jacks). The target for this round isn't explicitly 
+  04:42:18 A2R6 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4]
+    ↳ I have two pairs (Queens and Jacks). The target for this round isn't explicitly listed in the prompt
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → discard_cards: I have two pairs: Kings and Nines. I will discard the Ace of Clubs and the Ten o
+  04:42:23 A2R6 [SELECTING_HAND] discard_cards cards=[0, 3]
+    ↳ I have two pairs: Kings and Nines. I will discard the Ace of Clubs and the Ten of Clubs to try and f
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Full House (Three Kings and two Nines). This is the highest scoring han
+  04:42:33 A3R6 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Full House (Three Kings and two Nines). This is the highest scoring hand available and prov
+
+── ROUND_EVAL  Ante 3  Round 6  $3 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 6  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 5.7s  → use_consumable: I have $9. The Hierophant (Tarot) can upgrade a hand. I'll check if I can afford
+  04:42:43 A3R6 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ I have $9. The Hierophant (Tarot) can upgrade a hand. I'll check if I can afford anything else first
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_pack: I am currently at Ante 3 and looking to scale my scoring power. A Celestial Pack
+  04:42:47 A3R6 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I am currently at Ante 3 and looking to scale my scoring power. A Celestial Pack is a high priority 
+  [ollama] waiting... (think=False)  [ollama] 3.6s  [ollama] waiting... (think=False)  [ollama] 2.2s  [ollama] waiting... (think=False)  [ollama] 2.1s  04:42:55 A3R6 [SHOP] skip_pack
+    ↳ fallback: LLM failed to produce a tool call
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → buy_card: Flash Card is a +Mult joker. In the early game, flat Mult is extremely powerful 
+  04:43:00 A3R6 [SHOP] buy_card idx=0
+    ↳ Flash Card is a +Mult joker. In the early game, flat Mult is extremely powerful for scaling. Althoug
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → use_consumable: The Tower is a tarot card that can upgrade the rank of a single card. While I do
+  04:43:06 A3R6 [SHOP] use_consumable idx=1  ✗ BalatrobotError -32002: Consumable 'The Tower' requires card
+    ↳ The Tower is a tarot card that can upgrade the rank of a single card. While I don't have cards in my
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → finish_shop: I have $0, so I cannot afford any of the items in the shop (Justice, Seed Money,
+  04:43:09 A3R6 [SHOP] finish_shop
+    ↳ I have $0, so I cannot afford any of the items in the shop (Justice, Seed Money, or the Standard Pac
+
+── BLIND_SELECT  Ante 3  Round 6  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_blind: I am at the start of Ante 3, Round 6. I have a decent collection of Jokers (Gree
+  04:43:14 A3R7 [BLIND_SELECT] select_blind
+    ↳ I am at the start of Ante 3, Round 6. I have a decent collection of Jokers (Green Joker, Scary Face,
+
+── SELECTING_HAND  Ante 3  Round 7  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: I have 4 clubs in my hand (QC, 9C, 8C, 5C, 2C) which forms a Flush. A Flush is m
+  04:43:24 A3R7 [SELECTING_HAND] play_hand cards=[1, 3, 4, 6, 7]
+    ↳ I have 4 clubs in my hand (QC, 9C, 8C, 5C, 2C) which forms a Flush. A Flush is much stronger than a 
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Flush (KH, QH, JH, 6H, 3H) available. A Flush is the highest scoring ha
+  04:43:34 A3R7 [ROUND_EVAL] play_hand cards=[1, 2, 4, 5, 7]
+    ↳ I have a Flush (KH, QH, JH, 6H, 3H) available. A Flush is the highest scoring hand currently playabl
+
+── ROUND_EVAL  Ante 3  Round 7  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 7  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → use_consumable: I have $7. The Hierophant gives money based on joker sell value. My current joke
+  04:43:42 A3R7 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ I have $7. The Hierophant gives money based on joker sell value. My current jokers (Green Joker, Sca
+  [ollama] waiting... (think=False)  [ollama] 5.8s  → use_consumable: I have $7. The Tower is a tarot card that destroys a card to create a new one (u
+  04:43:49 A3R7 [SHOP] use_consumable idx=1  ✗ BalatrobotError -32002: Consumable 'The Tower' requires card
+    ↳ I have $7. The Tower is a tarot card that destroys a card to create a new one (usually used for powe
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → buy_pack: I have $7. The Celestial Pack costs $4. I am currently playing a hand-type focus
+  04:43:54 A3R7 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ I have $7. The Celestial Pack costs $4. I am currently playing a hand-type focused run (based on rec
+  [ollama] waiting... (think=False)  [ollama] 8.5s  [ollama] waiting... (think=False)  [ollama] 2.6s  → select_pack_card: Earth upgrades Three of a Kind, which is a reliable and frequent hand to play. I
+  04:44:07 A3R7 [SHOP] select_pack_card idx=1
+    ↳ Earth upgrades Three of a Kind, which is a reliable and frequent hand to play. Improving its base ch
+  [ollama] waiting... (think=False)  [ollama] 5.1s  → buy_card: I have $3. Sly Joker costs $3. Sly Joker provides +Chips for every card played, 
+  04:44:12 A3R7 [SHOP] buy_card idx=0
+    ↳ I have $3. Sly Joker costs $3. Sly Joker provides +Chips for every card played, which helps scale my
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → finish_shop: I have $0, so I cannot afford any of the items in the shop. Reserved Parking is 
+  04:44:15 A3R7 [SHOP] finish_shop
+    ↳ I have $0, so I cannot afford any of the items in the shop. Reserved Parking is $6, Seed Money is $1
+
+── BLIND_SELECT  Ante 3  Round 7  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → select_blind: I have $0, so I cannot skip the blind or reroll the shop. I need to play the Sma
+  04:44:20 A3R8 [BLIND_SELECT] select_blind
+    ↳ I have $0, so I cannot skip the blind or reroll the shop. I need to play the Small Blind to build my
+
+── SELECTING_HAND  Ante 3  Round 8  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → discard_cards: I have a pair of 4s (indices 4 and 5). By discarding the high cards (K, 9, 8, 7)
+  04:44:25 A3R8 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3]
+    ↳ I have a pair of 4s (indices 4 and 5). By discarding the high cards (K, 9, 8, 7), I increase the cha
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Flush available (QS, JS, 5S, 4S, 3S). A Flush provides much higher base
+  04:44:34 A3R8 [SELECTING_HAND] play_hand cards=[0, 1, 3, 4, 6]
+    ↳ I have a Flush available (QS, JS, 5S, 4S, 3S). A Flush provides much higher base chips and mult than
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have a pair of 4s. While it's not a strong hand, it's the best available scori
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: I have a pair of 4s. While it's not a strong hand, it's the best available scoring option (Pair vs High Card) to progres
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 3 Round 8
+    Money: $0 | Hands left: 3 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (Q of H)
+      [1] Base Card (T of C)
+      [2] Base Card (9 of D)
+      [3] Base Card (8 of H)
+      [4] Base Card (5 of H)
+      [5] Base Card (4 of C)
+      [6] Base Card (4 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (QH, TC, 9D, 4C, 4D)
+      High Card: play indices [0, 1, 2, 3, 4]  (QH, TC, 9D, 8H, 5H)
+    
+    ## Jokers
+      [0] Green Joker (sell $2)
+      [1] Scary Face (sell $2)
+      [2] Ceremonial Dagger (sell $3)
+    
+    ## Consumables
+      [0] The Hierophant
+      [1] The Tower
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 3, round 8
+    Recent wallet: A2R4=$8, A2R5=$9, A3R6=$9, A3R7=$7
+    Recent hands:
+      - A2R4: mixed scored 1071 (hands_used=3, discards_used=2)
+      - A2R5: mixed scored 1494 (hands_used=3, discards_used=3)
+      - A2R6: mixed scored 2862 (hands_used=2, discards_used=2)
+      - A3R7: mixed scored 3846 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A2 : 2862/None
+      - A3 : 3846/None
+      - A3 : 0/None
+    Recent joker moves: buy c_pluto ($3), buy j_joker ($2), buy ? ($0), buy j_flash ($5), buy j_sly ($3)
+    ── end prompt ──
+
+  04:44:42 A3R8 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ I have a pair of 4s. While it's not a strong hand, it's the best available scoring option (Pair vs H
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have Two Pair (Jacks and 5s). This is the strongest playable hand available. S
+  04:44:52 A3R8 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have Two Pair (Jacks and 5s). This is the strongest playable hand available. Since I have 2 hands 
+
+── ROUND_EVAL  Ante 3  Round 8  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 8  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 7.9s  [ollama] waiting... (think=False)  [ollama] 2.2s  → finish_shop: I only have $5. None of the Jokers or Packs are affordable. Rerolling costs $5, 
+  04:45:04 A3R8 [SHOP] finish_shop
+    ↳ I only have $5. None of the Jokers or Packs are affordable. Rerolling costs $5, which would leave me
+
+── BLIND_SELECT  Ante 3  Round 8  $5 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: I have no choice but to select the blind as skipping is not permitted. I'll aim 
+  04:45:08 A3R9 [BLIND_SELECT] select_blind
+    ↳ I have no choice but to select the blind as skipping is not permitted. I'll aim to beat the target u
+
+── SELECTING_HAND  Ante 3  Round 9  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → discard_cards: I have a pair of 6s (indices 4 and 5) and three other low/unconnected cards. I w
+  04:45:14 A3R9 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have a pair of 6s (indices 4 and 5) and three other low/unconnected cards. I will discard the high
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: I have Two Pair (7s and 5s) available. This is the highest scoring playable hand
+  04:45:23 A3R9 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have Two Pair (7s and 5s) available. This is the highest scoring playable hand currently available
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have Two Pair (8s and 6s). This is my strongest available hand and provides a 
+  04:45:31 A3R9 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have Two Pair (8s and 6s). This is my strongest available hand and provides a much higher base sco
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → discard_cards: I have Two Pair (Queens and 2s) already in my hand ([0,1,6,7]). I'll discard the
+  04:45:37 A3R9 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ I have Two Pair (Queens and 2s) already in my hand ([0,1,6,7]). I'll discard the remaining unconnect
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: I have Two Pair (Kings and Queens) available. This is my strongest playable hand
+  04:45:49 A4R9 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have Two Pair (Kings and Queens) available. This is my strongest playable hand and will provide a 
+
+── ROUND_EVAL  Ante 4  Round 9  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 4  Round 9  $10 ──
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → use_consumable: The Hierophant provides a Planet card. Since I don't have a specific hand focus 
+  04:45:56 A4R9 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant provides a Planet card. Since I don't have a specific hand focus listed in the recent
+  [ollama] waiting... (think=False)  [ollama] 7.2s  → use_consumable: I'll use The Hierophant to level up my most played hand type. Since I'm in the s
+  04:46:04 A4R9 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ I'll use The Hierophant to level up my most played hand type. Since I'm in the shop, I cannot target
+  [ollama] waiting... (think=False)  [ollama] 5.3s  → use_consumable: The Hierophant is a Planet card. Although the system error previously claimed it
+  04:46:11 A4R9 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant is a Planet card. Although the system error previously claimed it requires target_car
+  [ollama] waiting... (think=False)  [ollama] 6.8s  → use_consumable: The Hierophant is a Planet card. Since I am in the shop and not in the SELECTING
+  04:46:19 A4R9 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant is a Planet card. Since I am in the shop and not in the SELECTING_HAND phase, I canno
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → buy_pack: I have $10 and an Arcana Pack costs $4. Buying an Arcana Pack is a high-priority
+  04:46:25 A4R9 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $10 and an Arcana Pack costs $4. Buying an Arcana Pack is a high-priority move to find more p
+  [ollama] waiting... (think=False)  [ollama] 9.3s  → select_pack_card: The current hand is very weak (only a pair of 3s or a high card). I am discardin
+[balatrobot] BAD_REQUEST on pack({'card': 0, 'targets': [3, 4, 5, 6, 7]}): Card 'c_magician' requires 1-2 target card(s). Provided: 5
+  04:46:35 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The current hand is very weak (only a pair of 3s or a high card). I am discarding the low-value card
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: I'm opening the booster pack. The Magician is a Tarot card which can provide pow
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:46:38 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ I'm opening the booster pack. The Magician is a Tarot card which can provide powerful enhancements o
+  [ollama] waiting... (think=False)  [ollama] 6.1s  → select_pack_card: The current hand is very weak (only a pair of 3s or a high card). I am discardin
+[balatrobot] BAD_REQUEST on pack({'card': 0, 'targets': [2, 3, 4, 5, 7]}): Card 'c_magician' requires 1-2 target card(s). Provided: 5
+  04:46:44 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The current hand is very weak (only a pair of 3s or a high card). I am discarding the low-value card
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_pack_card: I'm opening the booster pack to see the content. The Magician (Tarot) is high va
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:46:48 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ I'm opening the booster pack to see the content. The Magician (Tarot) is high value for card transfo
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The pack contains three Tarot cards: The Magician, The Chariot, and The Empress.
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:46:52 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three Tarot cards: The Magician, The Chariot, and The Empress. These are all power
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_pack_card: The pack contains three Tarot cards: The Magician, The Chariot, and The Empress.
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:46:55 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three Tarot cards: The Magician, The Chariot, and The Empress. I'll pick The Magic
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: The pack contains three powerful Tarot cards: The Magician, The Chariot, and The
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:46:59 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three powerful Tarot cards: The Magician, The Chariot, and The Empress. The Magici
+  [ollama] waiting... (think=False)  [ollama] 3.7s  [ollama] waiting... (think=False)  [ollama] 1.8s  → select_pack_card: The Magician is a versatile Tarot card that can transform cards into different s
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:04 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Magician is a versatile Tarot card that can transform cards into different suits or ranks, which
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_pack_card: The pack contains three Tarot cards: The Magician, The Chariot, and The Empress.
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:07 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three Tarot cards: The Magician, The Chariot, and The Empress. I will select The M
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_pack_card: I'm opening the booster pack to see the contents. The Magician is a strong Tarot
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:11 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ I'm opening the booster pack to see the contents. The Magician is a strong Tarot card for transforma
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The pack contains three Tarot cards: The Magician, The Chariot, and The Empress.
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:14 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three Tarot cards: The Magician, The Chariot, and The Empress. The Magician is a v
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The pack contains three powerful Tarot cards: The Magician, The Chariot, and The
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:18 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three powerful Tarot cards: The Magician, The Chariot, and The Empress. I will sel
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → select_pack_card: The pack contains three Tarot cards: The Magician, The Chariot, and The Empress.
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:22 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three Tarot cards: The Magician, The Chariot, and The Empress. I will select The M
+  [ollama] waiting... (think=False)  [ollama] 6.5s  → select_pack_card: The pack contains three powerful Tarot cards: The Magician, The Chariot, and The
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:28 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains three powerful Tarot cards: The Magician, The Chariot, and The Empress. The Magici
+  [ollama] waiting... (think=False)  [ollama] 10.1s  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The Magician is a powerful Tarot card that can transform card ranks or suits, wh
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:48 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Magician is a powerful Tarot card that can transform card ranks or suits, which is essential for
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The pack contains The Magician, The Chariot, and The Empress. I'll pick The Magi
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  04:47:57 A4R9 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The pack contains The Magician, The Chariot, and The Empress. I'll pick The Magician because its abi
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=False)  [ollama] 15.7s  → use_consumable: The Hierophant is a Planet card that provides a level up. Even though the previo
+  04:50:25 A4R9 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'The Hierophant' requires
+    ↳ The Hierophant is a Planet card that provides a level up. Even though the previous attempt failed du
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → use_consumable: The Tower is a Tarot card. Since I cannot use The Hierophant in the SHOP state d
+  04:50:29 A4R9 [SHOP] use_consumable idx=1  ✗ BalatrobotError -32002: Consumable 'The Tower' requires card
+    ↳ The Tower is a Tarot card. Since I cannot use The Hierophant in the SHOP state due to the engine's r
+  [ollama] waiting... (think=False)  [ollama] 11.5s  → buy_card: Delayed Gratification is a joker that can provide substantial scaling or utility
+  04:50:41 A4R9 [SHOP] buy_card idx=0
+    ↳ Delayed Gratification is a joker that can provide substantial scaling or utility. While I only have 
+  [ollama] waiting... (think=False)  [ollama] 10.2s  → finish_shop: I have only $2 and cannot afford any items in the shop (Ramen is $6, Grabber is 
+  04:50:51 A4R9 [SHOP] finish_shop
+    ↳ I have only $2 and cannot afford any items in the shop (Ramen is $6, Grabber is $10, Jumbo Spectral 
+
+── BLIND_SELECT  Ante 4  Round 9  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → select_blind: I need to play this blind to progress. I have very little money ($2), so I canno
+  04:50:56 A4R10 [BLIND_SELECT] select_blind
+    ↳ I need to play this blind to progress. I have very little money ($2), so I cannot afford to skip and
+
+── SELECTING_HAND  Ante 4  Round 10  $2 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have a pair of Jacks (indices 2 and 3). I will discard the other cards to try 
+  04:51:01 A4R10 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 6]
+    ↳ I have a pair of Jacks (indices 2 and 3). I will discard the other cards to try and draw for a Three
+  [ollama] waiting... (think=False)  [ollama] 4.9s  → play_hand: I have a Full House (Jacks over Fours). This is the highest scoring hand availab
+  04:51:11 A4R10 [SELECTING_HAND] play_hand cards=[1, 2, 5, 6, 7]
+    ↳ I have a Full House (Jacks over Fours). This is the highest scoring hand available in my hand and wi
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → discard_cards: I have 10, 9, 8, 6, 5. I am discarding the high cards (A, K, Q) to try and draw 
+  04:51:16 A4R10 [SELECTING_HAND] discard_cards cards=[0, 1, 2]
+    ↳ I have 10, 9, 8, 6, 5. I am discarding the high cards (A, K, Q) to try and draw cards that can compl
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Straight (10, 9, 8, 7, 6). This is my highest scoring playable hand and
+  04:51:25 A4R10 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Straight (10, 9, 8, 7, 6). This is my highest scoring playable hand and will provide the mo
+
+── ROUND_EVAL  Ante 4  Round 10  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 4  Round 10  $9 ──
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=False)

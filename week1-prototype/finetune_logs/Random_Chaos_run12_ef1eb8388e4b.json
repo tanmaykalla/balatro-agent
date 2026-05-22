@@ -1,0 +1,112 @@
+{
+  "run_id": "ef1eb8388e4b",
+  "run_num": 12,
+  "strategy_name": "Random_Chaos",
+  "source": "strategy",
+  "system_prompt": "",
+  "action_log": [
+    {
+      "ante": 1,
+      "round": 0,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "Random_Chaos: select small blind (margin 0.0x)"
+      },
+      "reasoning": "Random_Chaos: select small blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 0\nMoney: $4 | Hands left: 4 | Discards left: 4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          3
+        ],
+        "reasoning": "Random_Chaos: discard ['C_8'] to build toward best hand"
+      },
+      "reasoning": "Random_Chaos: discard ['C_8'] to build toward best hand",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] S_A (A of S)\n  [1] H_9 (9 of H)\n  [2] S_8 (8 of S)\n  [3] C_8 (8 of C)\n  [4] C_5 (5 of C)\n  [5] H_4 (4 of H)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['S_4', 'H_4', 'S_A', 'H_9', 'S_8'] (blind target 0, scored 0)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['S_4', 'H_4', 'S_A', 'H_9', 'S_8'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_A (A of S)\n  [1] H_9 (9 of H)\n  [2] S_8 (8 of S)\n  [3] C_5 (5 of C)\n  [4] S_4 (4 of S)\n  [5] H_4 (4 of H)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['C_5', 'D_5', 'D_K', 'D_J', 'C_9'] (blind target 0, scored 36)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['C_5', 'D_5', 'D_K', 'D_J', 'C_9'] (blind target 0, scored 36)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 3 | Discards left: 3\n\n## Hand\n  [0] D_K (K of D)\n  [1] D_J (J of D)\n  [2] C_9 (9 of C)\n  [3] C_7 (7 of C)\n  [4] C_5 (5 of C)\n  [5] D_5 (5 of D)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Two Pair with ['H_T', 'D_T', 'S_7', 'C_7', 'D_9'] (blind target 0, scored 76)"
+      },
+      "reasoning": "Random_Chaos: play Two Pair with ['H_T', 'D_T', 'S_7', 'C_7', 'D_9'] (blind target 0, scored 76)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 2 | Discards left: 3\n\n## Hand\n  [0] H_T (T of H)\n  [1] D_T (T of D)\n  [2] D_9 (9 of D)\n  [3] S_7 (7 of S)\n  [4] C_7 (7 of C)\n  [5] S_6 (6 of S)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['S_6', 'H_6', 'D_A', 'C_J', 'D_8'] (blind target 0, scored 184)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['S_6', 'H_6', 'D_A', 'C_J', 'D_8'] (blind target 0, scored 184)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 1 | Discards left: 3\n\n## Hand\n  [0] D_A (A of D)\n  [1] C_J (J of C)\n  [2] D_8 (8 of D)\n  [3] S_6 (6 of S)\n  [4] H_6 (6 of H)\n  [5] D_4 (4 of D)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    }
+  ]
+}

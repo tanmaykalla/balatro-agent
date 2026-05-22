@@ -1,0 +1,357 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/8236d7ebf3e9.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.8s  → select_blind: Starting the first blind, play Small blind and work on building up scoring power
+  07:10:27 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind, play Small blind and work on building up scoring power.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Pair of 7s with JH, 8D, 6S, 5C, 7C. Best available hand. Base score 20 × 2 = 40.
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair of 7s with JH, 8D, 6S, 5C, 7C. Best available hand. Base score 20 × 2 = 40.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (J of H)
+      [1] Base Card (8 of D)
+      [2] Base Card (7 of S)
+      [3] Base Card (7 of C)
+      [4] Base Card (6 of S)
+      [5] Base Card (5 of C)
+      [6] Base Card (3 of S)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (JH, 8D, 7S, 7C, 6S)
+      High Card: play indices [0, 1, 2, 4, 5]  (JH, 8D, 7S, 6S, 5C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  07:10:34 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair of 7s with JH, 8D, 6S, 5C, 7C. Best available hand. Base score 20 × 2 = 40.
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → play_hand: Three of a Kind (fives) with QD, 9S, 5S, 5H, 5C. Base chips 30 + 3 joker chips =
+  07:10:42 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 3, 4, 5]
+    ↳ Three of a Kind (fives) with QD, 9S, 5S, 5H, 5C. Base chips 30 + 3 joker chips = 33. Base mult 3 + 3
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: High Card with A of D, K of C, 9 of D, 6 of D, 3 of S. Best available hand. Base
+  07:10:49 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ High Card with A of D, K of C, 9 of D, 6 of D, 3 of S. Best available hand. Base score 5 × 1 = 5.
+  [ollama] waiting... (think=False)  [ollama] 80.3s  → play_hand: Full House with three 2s (2H, 2C, 2D) and pair of tens (TS, TC). Base chips 40 ×
+  07:12:16 A1R1 [ROUND_EVAL] play_hand cards=[1, 2, 5, 6, 7]
+    ↳ Full House with three 2s (2H, 2C, 2D) and pair of tens (TS, TC). Base chips 40 × base mult 4 = 160. 
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → buy_card: Buy Mars (PLANET) for $3. It's a high-priority purchase to level up my hands imm
+  07:12:22 A1R1 [SHOP] buy_card idx=0
+    ↳ Buy Mars (PLANET) for $3. It's a high-priority purchase to level up my hands immediately. With 4 han
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → buy_card: Buy the Smiley Face Joker. It's a valuable addition to my hand selection, offeri
+  07:12:25 A1R1 [SHOP] buy_card idx=0
+    ↳ Buy the Smiley Face Joker. It's a valuable addition to my hand selection, offering flexibility and p
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → finish_shop: No more useful items to purchase. I have the Smiley Face Joker and Mars planet c
+  07:12:27 A1R1 [SHOP] finish_shop
+    ↳ No more useful items to purchase. I have the Smiley Face Joker and Mars planet card, which are both 
+
+── BLIND_SELECT  Ante 1  Round 1  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.0s  → select_blind: {'type': 'skip', 'description': 'Forced to play blind due to game state constrai
+  07:12:31 A1R2 [BLIND_SELECT] select_blind
+    ↳ {'type': 'skip', 'description': 'Forced to play blind due to game state constraints'}
+
+── SELECTING_HAND  Ante 1  Round 2  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 44.8s  → play_hand: Play Pair of Kings (indices 0,1) with QS, TH, 7C kickers. This is the best avail
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Play Pair of Kings (indices 0,1) with QS, TH, 7C kickers. This is the best available hand; Pair scores 20 chips × 2 mult
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $0 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (K of S)
+      [1] Base Card (K of C)
+      [2] Base Card (Q of S)
+      [3] Base Card (T of H)
+      [4] Base Card (7 of C)
+      [5] Base Card (5 of D)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KS, KC, QS, TH, 7C)
+      High Card: play indices [0, 2, 3, 4, 5]  (KS, QS, TH, 7C, 5D)
+    
+    ## Jokers
+      [0] Smiley Face (sell $2)
+    
+    ## Consumables
+      [0] Mars
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$7
+    Recent hands:
+      - A1R1: mixed scored 463 (hands_used=4, discards_used=0)
+    Recent blinds:
+      - A1 : 463/None
+      - A1 : 0/None
+    Recent joker moves: buy c_mars ($3), buy j_smiley ($4)
+    ── end prompt ──
+
+  07:13:20 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair of Kings (indices 0,1) with QS, TH, 7C kickers. This is the best available hand; Pair scor
+  [ollama] waiting... (think=False)  [ollama] 5.2s  → play_hand: Play Two Pair (Jacks and Fives) with the Smiley Face Joker. This hand scores 40 
+  07:13:29 A1R2 [SELECTING_HAND] play_hand cards=[0, 3, 4, 6, 7]
+    ↳ Play Two Pair (Jacks and Fives) with the Smiley Face Joker. This hand scores 40 chips × 4 mult = 160
+  [ollama] waiting... (think=False)  [ollama] 87.7s  → play_hand: Play Two Pair (8s and 4s) with Smiley Face Joker. Base score: 20 chips × 2 mult 
+  07:15:02 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Play Two Pair (8s and 4s) with Smiley Face Joker. Base score: 20 chips × 2 mult = 40. Smiley Face ad
+
+── ROUND_EVAL  Ante 1  Round 2  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $3 ──
+  [ollama] waiting... (think=False)  [ollama] 22.2s  → buy_card: Buy Temperance tarot for $3 to gain $2 from selling jokers. This provides immedi
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Card is not affordable. Cost: 5, Available money: 3
+  07:15:27 A1R2 [SHOP] buy_card idx=0
+    ↳ Buy Temperance tarot for $3 to gain $2 from selling jokers. This provides immediate value and aligns
+  [ollama] waiting... (think=False)  [ollama] 15.2s  [ollama] waiting... (think=False)  [ollama] 17.1s  → use_consumable: Use Mars consumable to maximize early-game efficiency before finishing shop.
+  07:16:01 A1R2 [SHOP] use_consumable idx=0
+    ↳ Use Mars consumable to maximize early-game efficiency before finishing shop.
+  [ollama] waiting... (think=False)  [ollama] 18.3s  → buy_card: Buy Temperance tarot card for $3. It provides immediate economic value by genera
+  07:16:20 A1R2 [SHOP] buy_card idx=1
+    ↳ Buy Temperance tarot card for $3. It provides immediate economic value by generating $2 from selling
+  [ollama] waiting... (think=False)  [ollama] 2.1s  → finish_shop: Finish shop to proceed with the current round after making optimal purchases.
+  07:16:22 A1R2 [SHOP] finish_shop
+    ↳ Finish shop to proceed with the current round after making optimal purchases.
+
+── BLIND_SELECT  Ante 1  Round 2  $0 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.0s  → select_blind: {'description': 'Reason for selecting the current blind.', 'type': 'string'}
+  07:16:26 A1R3 [BLIND_SELECT] select_blind
+    ↳ {'description': 'Reason for selecting the current blind.', 'type': 'string'}
+
+── SELECTING_HAND  Ante 1  Round 3  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 97.3s  → play_hand: Selected Pair of Jacks (indices 3 and 4) with additional scoring cards (A, K, Q)
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Selected Pair of Jacks (indices 3 and 4) with additional scoring cards (A, K, Q) for maximum chips. Base Pair (10 chips)
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $0 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of D)
+      [3] Base Card (J of H)
+      [4] Base Card (J of C)
+      [5] Base Card (6 of D)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of S)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AC, KD, QD, JH, JC)
+      High Card: play indices [0, 1, 2, 3, 5]  (AC, KD, QD, JH, 6D)
+    
+    ## Jokers
+      [0] Smiley Face (sell $2)
+    
+    ## Consumables
+      [0] Temperance
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$7, A1R2=$3
+    Recent hands:
+      - A1R1: mixed scored 463 (hands_used=4, discards_used=0)
+      - A1R2: mixed scored 516 (hands_used=3, discards_used=0)
+    Recent blinds:
+      - A1 : 463/None
+      - A1 : 516/None
+      - A1 : 0/None
+    Recent joker moves: buy c_mars ($3), buy j_smiley ($4), buy j_red_card ($5), buy c_temperance ($3)
+    ── end prompt ──
+
+  07:18:07 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Selected Pair of Jacks (indices 3 and 4) with additional scoring cards (A, K, Q) for maximum chips. 
+  [ollama] waiting... (think=False)  [ollama] 6.1s  → play_hand: Selected Full House with 4S, 4H, 2S, 2C, 2D. This scores 40 base chips + 40 mult
+  07:18:18 A1R3 [SELECTING_HAND] play_hand cards=[2, 3, 5, 6, 7]
+    ↳ Selected Full House with 4S, 4H, 2S, 2C, 2D. This scores 40 base chips + 40 mult = 160. Additional c
+  [ollama] waiting... (think=False)  [ollama] 98.9s  → play_hand: Selected Two Pair (KH, QS, QH, 6C, 6D) with base chips 20 + face values (10+10+1
+  07:20:03 A2R3 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Selected Two Pair (KH, QS, QH, 6C, 6D) with base chips 20 + face values (10+10+10+6+6=42) = 62 chips
+
+── ROUND_EVAL  Ante 2  Round 3  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → use_consumable: Use Temperance to generate additional money. It provides a one-time effect equal
+  07:20:11 A2R3 [SHOP] use_consumable idx=0
+    ↳ Use Temperance to generate additional money. It provides a one-time effect equal to the total sell v
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → use_consumable: Use Temperance to generate additional money. It provides a one-time effect equal
+[balatrobot] BAD_REQUEST on use({'consumable': 0}): Consumable index out of range: 0
+  07:20:14 A2R3 [SHOP] use_consumable idx=0
+    ↳ Use Temperance to generate additional money. It provides a one-time effect equal to the total sell v
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → finish_shop: Leave the shop as no immediately useful items are available, and we have limited
+  07:20:17 A2R3 [SHOP] finish_shop
+    ↳ Leave the shop as no immediately useful items are available, and we have limited funds. We will focu
+
+── BLIND_SELECT  Ante 2  Round 3  $7 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → select_blind: Flush is the highest scoring hand available and provides consistent points. With
+  07:20:21 A2R4 [BLIND_SELECT] select_blind
+    ↳ Flush is the highest scoring hand available and provides consistent points. With 4 hands left, playi
+
+── SELECTING_HAND  Ante 2  Round 4  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → play_hand: Pair with High Card kicker: play AH, KS, JS, JD, 7D. This gives Pair with two Hi
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair with High Card kicker: play AH, KS, JS, JD, 7D. This gives Pair with two High Card kickers (A, K, J). Better than H
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 4
+    Money: $7 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of H)
+      [1] Base Card (K of S)
+      [2] Base Card (J of S)
+      [3] Base Card (J of D)
+      [4] Base Card (7 of D)
+      [5] Base Card (6 of H)
+      [6] Base Card (4 of H)
+      [7] Base Card (3 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AH, KS, JS, JD, 7D)
+      High Card: play indices [0, 1, 2, 4, 5]  (AH, KS, JS, 7D, 6H)
+    
+    ## Jokers
+      [0] Smiley Face (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 2, round 4
+    Recent wallet: A1R1=$7, A1R2=$3, A2R3=$5
+    Recent hands:
+      - A1R1: mixed scored 463 (hands_used=4, discards_used=0)
+      - A1R2: mixed scored 516 (hands_used=3, discards_used=0)
+      - A1R3: mixed scored 1120 (hands_used=3, discards_used=0)
+    Recent blinds:
+      - A1 : 516/None
+      - A1 : 1120/None
+      - A2 : 0/None
+    Recent joker moves: buy c_mars ($3), buy j_smiley ($4), buy j_red_card ($5), buy c_temperance ($3)
+    ── end prompt ──
+
+  07:20:30 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair with High Card kicker: play AH, KS, JS, JD, 7D. This gives Pair with two High Card kickers (A, 
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → play_hand: Play Two Pair: JH, JC, 8S, 7S, 7H. This gives Two Pair (Jacks) with 8S, 7S, and 
+  07:20:40 A2R4 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Two Pair: JH, JC, 8S, 7S, 7H. This gives Two Pair (Jacks) with 8S, 7S, and 7H kickers. It's the
+
+── ROUND_EVAL  Ante 2  Round 4  $7 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $13 ──
+  [ollama] waiting... (think=False)  [ollama] 24.5s  → buy_card: Buy Lusty Joker for $5 to boost scoring power. With $13, this is a priority befo
+  07:21:07 A2R4 [SHOP] buy_card idx=1
+    ↳ Buy Lusty Joker for $5 to boost scoring power. With $13, this is a priority before buying packs.
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_pack: Buy the Spectral Pack for $4 to get extra jokers. With 4 hands left and $8, this
+  07:21:13 A2R4 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Buy the Spectral Pack for $4 to get extra jokers. With 4 hands left and $8, this is a good investmen
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → skip_pack: I'm skipping the pack to save joker slots for later rounds.
+  07:21:17 A2R4 [SHOP] skip_pack
+    ↳ I'm skipping the pack to save joker slots for later rounds.
+  [ollama] waiting... (think=False)  [ollama] 5.1s  → buy_pack: Buy the Jumbo Arcana Pack for $6 to get tarot cards. With $4 and 4 hands left, t
+[balatrobot] BAD_REQUEST on buy({'pack': 0}): Card is not affordable. Cost: 6, Available money: 4
+  07:21:22 A2R4 [SHOP] buy_pack idx=0
+    ↳ Buy the Jumbo Arcana Pack for $6 to get tarot cards. With $4 and 4 hands left, this pack fits within
+  [ollama] waiting... (think=False)  [ollama] 12.7s  → finish_shop: No affordable items in shop (Baseball Card $8, Jumbo Arcana Pack $6 exceed $4 bu
+  07:21:35 A2R4 [SHOP] finish_shop
+    ↳ No affordable items in shop (Baseball Card $8, Jumbo Arcana Pack $6 exceed $4 budget). Finish shop t
+
+── BLIND_SELECT  Ante 2  Round 4  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → select_blind: Starting the Boss blind on Ante 2 Round 4 with $13 and 4 hands left. I will aim 
+  07:21:40 A2R5 [BLIND_SELECT] select_blind
+    ↳ Starting the Boss blind on Ante 2 Round 4 with $13 and 4 hands left. I will aim to clear the Boss bl
+
+── SELECTING_HAND  Ante 2  Round 5  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 5.4s  → play_hand: Pair: AS (11) + QC (10) + 8S (8) + 8C (8) + 7S (7) = 44 chips × 4 mult = 176. Tw
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair: AS (11) + QC (10) + 8S (8) + 8C (8) + 7S (7) = 44 chips × 4 mult = 176. Two Pair is not available, and Full House 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 5
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (Q of C)
+      [2] Base Card (8 of S)
+      [3] Base Card (8 of C)
+      [4] Base Card (7 of S)
+      [5] Base Card (5 of D)
+      [6] Base Card (4 of C)
+      [7] Base Card (3 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AS, QC, 8S, 8C, 7S)
+      High Card: play indices [0, 1, 2, 4, 5]  (AS, QC, 8S, 7S, 5D)
+    
+    ## Jokers
+      [0] Smiley Face (sell $2)
+      [1] Lusty Joker (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 2, round 5
+    Recent wallet: A1R1=$7, A1R2=$3, A2R3=$5, A2R4=$13
+    Recent hands:
+      - A1R1: mixed scored 463 (hands_used=4, discards_used=0)
+      - A1R2: mixed scored 516 (hands_used=3, discards_used=0)
+      - A1R3: mixed scored 1120 (hands_used=3, discards_used=0)
+      - A2R4: mixed scored 1008 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 1120/None
+      - A2 : 1008/None
+      - A2 : 0/None
+    Recent joker moves: buy c_mars ($3), buy j_smiley ($4), buy j_red_card ($5), buy c_temperance ($3), buy j_lusty_joker ($5)
+    ── end prompt ──
+
+  07:21:49 A2R5 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair: AS (11) + QC (10) + 8S (8) + 8C (8) + 7S (7) = 44 chips × 4 mult = 176. Two Pair is not availa
+  [ollama] waiting... (think=False)  [ollama] 87.7s  → play_hand: Two Pair: TS (10) + TC (10) + 9S (9) + 9H (9) + 5H (5) = 43 face chips + 20 base
+  07:23:21 A2R5 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair: TS (10) + TC (10) + 9S (9) + 9H (9) + 5H (5) = 43 face chips + 20 base = 63 chips × 2 mult
+  [ollama] waiting... (think=False)

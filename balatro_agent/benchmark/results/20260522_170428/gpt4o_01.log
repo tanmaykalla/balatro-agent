@@ -1,0 +1,338 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: openai (gpt-4o)
+[agent] logging to runs/57d8454129aa.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → skip_blind: I'm skipping the small blind to gain a tag reward. Since this is the first round
+  17:04:34 A1R0 [BLIND_SELECT] skip_blind
+    ↳ I'm skipping the small blind to gain a tag reward. Since this is the first round and I'm in a good p
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → select_blind: This is Ante 1, and skipping is not an option. We need to select the current bli
+  17:04:37 A1R1 [BLIND_SELECT] select_blind
+    ↳ This is Ante 1, and skipping is not an option. We need to select the current blind and proceed to pl
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  → discard_cards: I am aiming for a Flush as it is my top priority hand. Currently, I have three S
+  17:04:40 A1R1 [SELECTING_HAND] discard_cards cards=[3, 6, 7]
+    ↳ I am aiming for a Flush as it is my top priority hand. Currently, I have three Spades (A, Q) and nee
+  → play_hand: Selecting the Flush as it is the highest-ranked available hand with the best chi
+  17:05:10 A1R1 [SELECTING_HAND] play_hand cards=[1, 4, 5, 6, 7]
+    ↳ Selecting the Flush as it is the highest-ranked available hand with the best chip-to-multiplier rati
+  → discard_cards: There is a potential for a Straight with the sequence 7-8-9-T. Discarding the no
+  17:05:12 A1R1 [SELECTING_HAND] discard_cards cards=[3, 4, 7]
+    ↳ There is a potential for a Straight with the sequence 7-8-9-T. Discarding the non-contributing cards
+  → discard_cards: I'm targeting a stronger hand than a High Card, such as a potential Straight or 
+  17:05:34 A1R1 [SELECTING_HAND] discard_cards cards=[3, 4, 7]
+    ↳ I'm targeting a stronger hand than a High Card, such as a potential Straight or Flush. By discarding
+  → play_hand: Selecting the Pair as the only viable option to play given no available discards
+  17:06:14 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Selecting the Pair as the only viable option to play given no available discards left and it offers 
+  → play_hand: Playing the Straight as it is the better scoring hand compared to High Card. Thi
+  17:06:58 A1R1 [ROUND_EVAL] play_hand cards=[2, 3, 4, 5, 6]
+    ↳ Playing the Straight as it is the better scoring hand compared to High Card. This provides a good co
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  → buy_card: Wee Joker is a +Mult joker which is important early game for boosting your hand 
+  17:07:01 A1R1 [SHOP] buy_card idx=0
+    ↳ Wee Joker is a +Mult joker which is important early game for boosting your hand scores.
+  → buy_card: Popcorn is a +Mult joker, valuable for enhancing long-term scoring potential. It
+  17:07:02 A1R1 [SHOP] buy_card idx=0
+    ↳ Popcorn is a +Mult joker, valuable for enhancing long-term scoring potential. It's worth buying cons
+  → finish_shop: Currently, we don't have enough funds to make additional purchases, and holding 
+  17:07:04 A1R1 [SHOP] finish_shop
+    ↳ Currently, we don't have enough funds to make additional purchases, and holding onto the remaining $
+
+── BLIND_SELECT  Ante 1  Round 1  $4 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  → select_blind: We need to start the game and the first ante cannot be skipped, so we will selec
+  17:07:13 A1R2 [BLIND_SELECT] select_blind
+    ↳ We need to start the game and the first ante cannot be skipped, so we will select the blind.
+
+── SELECTING_HAND  Ante 1  Round 2  $4 ──
+  → discard_cards: Chasing a better hand by discarding 3 weak cards (J, T, 8) and a duplicate card 
+  17:07:16 A1R2 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ Chasing a better hand by discarding 3 weak cards (J, T, 8) and a duplicate card (2H) to improve the 
+  → play_hand: Play the Flush with indices [0, 1, 2, 4, 5] (AS, KS, QS, 9S, 8S). The Flush is t
+  17:07:24 A2R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Play the Flush with indices [0, 1, 2, 4, 5] (AS, KS, QS, 9S, 8S). The Flush is the highest priority 
+
+── ROUND_EVAL  Ante 2  Round 2  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 2  $9 ──
+  → buy_card: Burnt Joker provides a multiplier effect, which is crucial for increasing overal
+  17:07:28 A2R2 [SHOP] buy_card idx=0
+    ↳ Burnt Joker provides a multiplier effect, which is crucial for increasing overall score potential. I
+  → finish_shop: With only $1 remaining, it's not possible to purchase any items in the shop. The
+  17:07:29 A2R2 [SHOP] finish_shop
+    ↳ With only $1 remaining, it's not possible to purchase any items in the shop. There are no opportunit
+
+── BLIND_SELECT  Ante 2  Round 2  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → skip_blind: Given our limited funds ($1), low-value jokers, and the memory of comfortably cl
+  17:07:45 A2R2 [BLIND_SELECT] skip_blind
+    ↳ Given our limited funds ($1), low-value jokers, and the memory of comfortably clearing the last boss
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → select_blind: As the Boss round in Ante 2 cannot be skipped, this selection is mandatory to pr
+  17:08:02 A2R3 [BLIND_SELECT] select_blind
+    ↳ As the Boss round in Ante 2 cannot be skipped, this selection is mandatory to progress in the game. 
+
+── SELECTING_HAND  Ante 2  Round 3  $5 ──
+  → play_hand: Selecting the Flush hand since it has the highest base score. Discards are not w
+  17:08:10 A2R3 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 7]
+    ↳ Selecting the Flush hand since it has the highest base score. Discards are not warranted here becaus
+
+── ROUND_EVAL  Ante 2  Round 3  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $13 ──
+  → buy_card: Buying the 'Droll Joker' will support our core strategy of increasing chip gains
+  17:08:15 A2R3 [SHOP] buy_card idx=1
+    ↳ Buying the 'Droll Joker' will support our core strategy of increasing chip gains since it adds +Mult
+  → buy_card: The Wily Joker offers xMult, which is crucial as it provides the most impactful 
+  17:08:16 A2R3 [SHOP] buy_card idx=0
+    ↳ The Wily Joker offers xMult, which is crucial as it provides the most impactful scoring potential. I
+  → buy_pack: The Arcana Pack is affordable at $4 and contains tarot cards, which can offer po
+  17:08:21 A2R3 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ The Arcana Pack is affordable at $4 and contains tarot cards, which can offer powerful one-time effe
+  → select_pack_card: The Death tarot card is pivotal as it allows for card cycling during hands, whic
+[balatrobot] BAD_REQUEST on pack({'card': 2}): Card 'c_death' requires exactly 2 target card(s). Provided: 0
+  17:08:27 A2R3 [SMODS_BOOSTER_OPENED] select_pack_card idx=2
+    ↳ The Death tarot card is pivotal as it allows for card cycling during hands, which can significantly 
+  → select_pack_card: The Hierophant tarot card is valuable for converting unused suits to a more desi
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_heirophant' requires 1-2 target card(s). Provided: 0
+  17:08:34 A2R3 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Hierophant tarot card is valuable for converting unused suits to a more desirable one, potential
+  → select_pack_card: The Magician tarot card allows me to transform a set of low-value cards into hig
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  17:08:40 A2R3 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ The Magician tarot card allows me to transform a set of low-value cards into high-value ones, potent
+  → select_pack_card: The Hierophant tarot card allows suit conversion, which aligns perfectly with ou
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_heirophant' requires 1-2 target card(s). Provided: 0
+  17:08:48 A2R3 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Hierophant tarot card allows suit conversion, which aligns perfectly with our Flush strategy. Th
+  → select_pack_card: Selecting the Death card enhances card cycling, aligning well with my discard st
+[balatrobot] BAD_REQUEST on pack({'card': 2}): Card 'c_death' requires exactly 2 target card(s). Provided: 0
+  17:09:11 A2R3 [SMODS_BOOSTER_OPENED] select_pack_card idx=2
+    ↳ Selecting the Death card enhances card cycling, aligning well with my discard strategy to leverage o
+  [pack] auto-skip after 51s (5 decisions)
+  → finish_shop: With only $1 remaining, we don't have enough funds to make further purchases or 
+  17:09:17 A2R3 [SHOP] finish_shop
+    ↳ With only $1 remaining, we don't have enough funds to make further purchases or a reroll. We'll proc
+
+── BLIND_SELECT  Ante 2  Round 3  $1 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=True → is_boss=True
+  → select_blind: We've completed Ante 1 and the Small blind of Ante 2 with a score of 1600, and w
+  17:09:20 A2R4 [BLIND_SELECT] select_blind
+    ↳ We've completed Ante 1 and the Small blind of Ante 2 with a score of 1600, and we noticed that our r
+
+── SELECTING_HAND  Ante 2  Round 4  $1 ──
+  → play_hand: Playing the Two Pair hand, as it is the highest-scoring hand available from the 
+  17:09:28 A3R4 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Two Pair hand, as it is the highest-scoring hand available from the options given. On th
+
+── ROUND_EVAL  Ante 3  Round 4  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 4  $9 ──
+  → buy_card: Uranus is a planet card that permanently enhances a specific hand type. At $3, i
+  17:09:33 A3R4 [SHOP] buy_card idx=0
+    ↳ Uranus is a planet card that permanently enhances a specific hand type. At $3, it's a valuable and a
+  → sell_joker: Sell Droll Joker to free up inventory space and add to funds. Its effect is not 
+  17:09:34 A3R4 [SHOP] sell_joker idx=3
+    ↳ Sell Droll Joker to free up inventory space and add to funds. Its effect is not aligned with current
+  → buy_pack: Mega Buffoon Pack offers multiple jokers, which are crucial for enhancing our ha
+  17:09:36 A3R4 [SHOP] buy_pack idx=0
+    ↳ Mega Buffoon Pack offers multiple jokers, which are crucial for enhancing our hand strategies. Spend
+  → sell_joker: Sell Popcorn Joker to increase funds without major impact on strategy. Its effec
+  17:09:44 A3R4 [SHOP] sell_joker idx=1
+    ↳ Sell Popcorn Joker to increase funds without major impact on strategy. Its effect is not significant
+  → buy_card: Smiley Face Joker adds chip bonus to hands, synergizing with our current strateg
+  17:09:52 A3R4 [SHOP] buy_card idx=0
+    ↳ Smiley Face Joker adds chip bonus to hands, synergizing with our current strategy. Affordable at $4.
+  → buy_pack: Purchase the Arcana Pack for $4 to gain a Tarot card, which can provide powerful
+  17:10:01 A3R4 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Purchase the Arcana Pack for $4 to gain a Tarot card, which can provide powerful one-time effects. T
+  → select_pack_card: The Lovers gives a guaranteed Pair, which fits well with our Two Pair and Pair s
+[balatrobot] BAD_REQUEST on pack({'card': 2}): Card 'c_lovers' requires exactly 1 target card(s). Provided: 0
+  17:10:07 A3R4 [SMODS_BOOSTER_OPENED] select_pack_card idx=2
+    ↳ The Lovers gives a guaranteed Pair, which fits well with our Two Pair and Pair strategy and boosts h
+  → select_pack_card: The Lovers gives a guaranteed Pair, which fits our focus on pairs and two-pair s
+  17:10:13 A3R4 [SMODS_BOOSTER_OPENED] select_pack_card idx=2  ✗ BalatrobotError -32002: Method 'pack' requires one of these 
+    ↳ The Lovers gives a guaranteed Pair, which fits our focus on pairs and two-pair strategy. It provides
+  → use_consumable: Use Uranus to enhance a specific hand type. This will permanently increase its c
+  17:10:22 A3R4 [SHOP] use_consumable idx=0
+    ↳ Use Uranus to enhance a specific hand type. This will permanently increase its chip and mult rewards
+  → finish_shop: We have no affordable options in the current shop with our $2 balance. We also w
+  17:10:28 A3R4 [SHOP] finish_shop
+    ↳ We have no affordable options in the current shop with our $2 balance. We also want to preserve our 
+
+── BLIND_SELECT  Ante 3  Round 4  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → select_blind: We're on Ante 3, Round 4, and skipping is not an option in this scenario. Our go
+  17:10:36 A3R5 [BLIND_SELECT] select_blind
+    ↳ We're on Ante 3, Round 4, and skipping is not an option in this scenario. Our goal is to efficiently
+
+── SELECTING_HAND  Ante 3  Round 5  $2 ──
+  → play_hand: Playing the Flush with indices [0, 2, 3, 6, 7] as it provides the highest scorin
+  17:10:46 A3R5 [SELECTING_HAND] play_hand cards=[0, 2, 3, 6, 7]
+    ↳ Playing the Flush with indices [0, 2, 3, 6, 7] as it provides the highest scoring potential with cur
+  → discard_cards: Discarding to chase a Flush. We have three Diamonds and can improve our hand by 
+  17:10:50 A3R5 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 6, 7]
+    ↳ Discarding to chase a Flush. We have three Diamonds and can improve our hand by drawing additional D
+  → play_hand: Playing the Flush with indices [0, 1, 2, 3, 6] as it offers the strongest hand a
+  17:11:00 A3R5 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 6]
+    ↳ Playing the Flush with indices [0, 1, 2, 3, 6] as it offers the strongest hand available based on th
+  → discard_cards: Discarding to draw better potential cards for higher hands. Holding only a Pair 
+  17:11:05 A3R5 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ Discarding to draw better potential cards for higher hands. Holding only a Pair currently, the likel
+  → play_hand: Playing the Straight with indices [0, 3, 4, 5, 6] as it provides a higher base s
+  17:11:15 A3R5 [SELECTING_HAND] play_hand cards=[0, 3, 4, 5, 6]
+    ↳ Playing the Straight with indices [0, 3, 4, 5, 6] as it provides a higher base score compared to the
+  → play_hand: Playing the Pair with indices [0, 1, 2, 3, 4]. This offers the best available sc
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Playing the Pair with indices [0, 1, 2, 3, 4]. This offers the best available score with a Pair of Kings, which contribu
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 3 Round 5
+    Money: $2 | Hands left: 1 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (K of H)
+      [2] Base Card (K of C)
+      [3] Base Card (Q of C)
+      [4] Base Card (J of S)
+      [5] Base Card (8 of H)
+      [6] Base Card (6 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AD, KH, KC, QC, JS)
+      High Card: play indices [0, 1, 3, 4, 5]  (AD, KH, QC, JS, 8H)
+    
+    ## Jokers
+      [0] Wee Joker (sell $4)
+      [1] Burnt Joker (sell $4)
+      [2] Wily Joker (sell $2)
+      [3] Smiley Face (sell $2)
+    
+    ## Run Memory (Optimal_Chaser)
+    Current: ante 3, round 5
+    Recent wallet: A1R1=$9, A2R2=$9, A2R3=$13, A3R4=$9
+    Recent hands:
+      - A1R1: mixed scored 544 (hands_used=3, discards_used=3)
+      - A1R2: mixed scored 1992 (hands_used=1, discards_used=1)
+      - A2R3: mixed scored 1600 (hands_used=1, discards_used=0)
+      - A2R4: mixed scored 980 (hands_used=1, discards_used=0)
+    Recent blinds:
+      - A2 : 1600/None
+      - A2 : 980/None
+      - A3 : 0/None
+    Recent joker moves: buy j_wily ($4), buy c_uranus ($3), sell j_droll ($2), sell j_popcorn ($2), buy j_smiley ($4)
+    ── end prompt ──
+
+  17:11:24 A3R5 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Pair with indices [0, 1, 2, 3, 4]. This offers the best available score with a Pair of K
+
+── ROUND_EVAL  Ante 3  Round 5  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 5  $7 ──
+  → buy_card: To the Moon is a cheaper option for adding to our joker collection and provides 
+  17:11:28 A3R5 [SHOP] buy_card idx=0
+    ↳ To the Moon is a cheaper option for adding to our joker collection and provides economy benefits, fi
+  → finish_shop: With only $2 remaining, we can't afford to buy anything else in the current shop
+  17:11:32 A3R5 [SHOP] finish_shop
+    ↳ With only $2 remaining, we can't afford to buy anything else in the current shop. Holding onto our J
+
+── BLIND_SELECT  Ante 3  Round 5  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  → select_blind: Since skipping is not allowed at the Boss blind, we proceed to play it.
+  17:11:40 A3R6 [BLIND_SELECT] select_blind
+    ↳ Since skipping is not allowed at the Boss blind, we proceed to play it.
+
+── SELECTING_HAND  Ante 3  Round 6  $2 ──
+  → discard_cards: Attempt to build towards a Flush with Hearts. Discard off-suit cards to increase
+  17:11:47 A3R6 [SELECTING_HAND] discard_cards cards=[2, 3, 5, 6]
+    ↳ Attempt to build towards a Flush with Hearts. Discard off-suit cards to increase the chance of pulli
+  → play_hand: Playing a Flush is currently the best option because it scores better than a Hig
+  17:11:57 A3R6 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ Playing a Flush is currently the best option because it scores better than a High Card and is more c
+  → discard_cards: Attempt to build a Flush with Hearts. The hand currently has four Hearts, discar
+  17:11:59 A3R6 [SELECTING_HAND] discard_cards cards=[0, 1, 3, 5, 7]
+    ↳ Attempt to build a Flush with Hearts. The hand currently has four Hearts, discarding the non-Heart c
+  → play_hand: Playing the Straight is the best available hand, which provides a higher score o
+  17:12:12 A3R6 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Straight is the best available hand, which provides a higher score of 120 compared to th
+  → play_hand: Play the Pair since it's better than the High Card. This will maximize the score
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: Play the Pair since it's better than the High Card. This will maximize the score potential given the current hand and li
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 3 Round 6
+    Money: $2 | Hands left: 2 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (A of H)
+      [1] Base Card (T of S)
+      [2] Base Card (8 of S)
+      [3] Base Card (7 of H)
+      [4] Base Card (5 of C)
+      [5] Base Card (3 of H)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (AH, TS, 8S, 3H, 3C)
+      High Card: play indices [0, 1, 2, 3, 4]  (AH, TS, 8S, 7H, 5C)
+    
+    ## Jokers
+      [0] Wee Joker (sell $4)
+      [1] Burnt Joker (sell $4)
+      [2] Wily Joker (sell $2)
+      [3] Smiley Face (sell $2)
+      [4] To the Moon (sell $2)
+    
+    ## Run Memory (Optimal_Chaser)
+    Current: ante 3, round 6
+    Recent wallet: A2R2=$9, A2R3=$13, A3R4=$9, A3R5=$7
+    Recent hands:
+      - A1R2: mixed scored 1992 (hands_used=1, discards_used=1)
+      - A2R3: mixed scored 1600 (hands_used=1, discards_used=0)
+      - A2R4: mixed scored 980 (hands_used=1, discards_used=0)
+      - A3R5: mixed scored 2303 (hands_used=4, discards_used=2)
+    Recent blinds:
+      - A2 : 980/None
+      - A3 : 2303/None
+      - A3 : 0/None
+    Recent joker moves: buy c_uranus ($3), sell j_droll ($2), sell j_popcorn ($2), buy j_smiley ($4), buy j_to_the_moon ($5)
+    ── end prompt ──
+
+  17:12:18 A3R6 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Play the Pair since it's better than the High Card. This will maximize the score potential given the
+  → play_hand: Play the Two Pair since it's the highest scoring hand available compared to the 
+  17:12:25 A3R6 [GAME_OVER] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Play the Two Pair since it's the highest scoring hand available compared to the alternatives of Pair
+
+── GAME_OVER  Ante 3  Round 6  $2 ──
+
+LOST at ante 3
+  [log] saved 55 entries → runs/57d8454129aa.json
+  ~tokens: gemini 158478/3433  cost ~$0.0172
+Run 1/1 | Strategy: Optimal_Chaser | Result: LOST ante 3

@@ -1,0 +1,157 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/14b24195ec1d.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.0s  → select_blind: I am starting the run. At Ante 1, I need to build my economy and hands. I will p
+  14:45:57 A1R1 [BLIND_SELECT] select_blind
+    ↳ I am starting the run. At Ante 1, I need to build my economy and hands. I will play the Small Blind 
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → play_hand: I have a Flush (KC, 9C, 7C, 6C, 2C) available. Since I am in Ante 1, Round 1, I 
+  14:46:05 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 7]
+    ↳ I have a Flush (KC, 9C, 7C, 6C, 2C) available. Since I am in Ante 1, Round 1, I want to maximize sco
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → play_hand: I have Two Pair (TS, TC, 8H, 8D) available. In the early game, playing Two Pair 
+  14:46:14 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have Two Pair (TS, TC, 8H, 8D) available. In the early game, playing Two Pair is a solid way to bu
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → buy_pack: I am in Ante 1, Round 1 with $9. I need to build my Joker lineup. Since my perso
+  14:46:20 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I am in Ante 1, Round 1 with $9. I need to build my Joker lineup. Since my personality focuses on Fu
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_pack_card: Neither joker is a high-priority joker for my strategy (Full House/Two Pair focu
+  14:46:23 A1R1 [SHOP] select_pack_card idx=0
+    ↳ Neither joker is a high-priority joker for my strategy (Full House/Two Pair focus), but Wrathful Jok
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → buy_card: Chaos the Clown is an xMult joker. In Balatro, xMult is the most powerful scalin
+  14:46:27 A1R1 [SHOP] buy_card idx=0
+    ↳ Chaos the Clown is an xMult joker. In Balatro, xMult is the most powerful scaling factor. Even thoug
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → reroll_shop: I have $1. I cannot afford 'Throwback' ($9) or 'Mega Celestial Pack' ($8). 'Blan
+  14:46:31 A1R1 [SHOP] reroll_shop
+    ↳ I have $1. I cannot afford 'Throwback' ($9) or 'Mega Celestial Pack' ($8). 'Blank' is a voucher and 
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → use_consumable: I have $1 left. I cannot afford Neptune ($3) or The Chariot ($3). I cannot affor
+[balatrobot] BAD_REQUEST on use({'consumable': 0}): Consumable index out of range: 0
+  14:46:34 A1R1 [SHOP] use_consumable idx=0
+    ↳ I have $1 left. I cannot afford Neptune ($3) or The Chariot ($3). I cannot afford the Mega Celestial
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → finish_shop: I have only $1 remaining. I cannot afford any of the items in the shop (Neptune 
+  14:46:36 A1R1 [SHOP] finish_shop
+    ↳ I have only $1 remaining. I cannot afford any of the items in the shop (Neptune is $3, Chariot is $3
+
+── BLIND_SELECT  Ante 1  Round 1  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → select_blind: At the start of the run, I need to play the Small Blind to build up my economy a
+  14:46:40 A1R2 [BLIND_SELECT] select_blind
+    ↳ At the start of the run, I need to play the Small Blind to build up my economy and prepare for later
+
+── SELECTING_HAND  Ante 1  Round 2  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have a pair of Kings (indices 1 and 2). I will discard the non-pair cards (A, 
+  14:46:44 A1R2 [SELECTING_HAND] discard_cards cards=[0, 3, 4, 5, 6]
+    ↳ I have a pair of Kings (indices 1 and 2). I will discard the non-pair cards (A, 10, 8, 4, 3) to try 
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have a Pair of Kings (KH, KC). This is my best available hand and I want to bu
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: I have a Pair of Kings (KH, KC). This is my best available hand and I want to build towards a Full House as per my strat
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $1 | Hands left: 4 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (K of H)
+      [1] Base Card (K of C)
+      [2] Base Card (Q of D)
+      [3] Base Card (9 of H)
+      [4] Base Card (7 of H)
+      [5] Base Card (6 of S)
+      [6] Base Card (5 of D)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KH, KC, QD, 9H, 7H)
+      High Card: play indices [0, 2, 3, 4, 5]  (KH, QD, 9H, 7H, 6S)
+    
+    ## Jokers
+      [0] Wrathful Joker (sell $2)
+      [1] Chaos the Clown (sell $2)
+    
+    ## Run Memory (FullHouse_TwoPair_Economic)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$9
+    Recent hands:
+      - A1R1: mixed scored 388 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 388/None
+      - A1 : 0/None
+    Recent joker moves: buy j_chaos ($4)
+    ── end prompt ──
+
+  14:46:51 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Pair of Kings (KH, KC). This is my best available hand and I want to build towards a Full H
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → play_hand: I have Three of a Kind (5H, 5C, 5D). This is much stronger than a Pair or High C
+  14:46:57 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 4, 5, 6]
+    ↳ I have Three of a Kind (5H, 5C, 5D). This is much stronger than a Pair or High Card and helps me app
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → discard_cards: I have a very weak High Card hand. I will discard all the high-value cards to tr
+  14:47:01 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have a very weak High Card hand. I will discard all the high-value cards to try and draw cards tha
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Pair of 6s (6H, 6D). This is the highest scoring hand available. Playin
+  14:47:07 A1R2 [SELECTING_HAND] play_hand cards=[3, 4]
+    ↳ I have a Pair of 6s (6H, 6D). This is the highest scoring hand available. Playing it will help me re
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: I have a Pair of 9s (9C, 9D). This is my best available hand and will provide th
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[3, 4]
+    reasoning: I have a Pair of 9s (9C, 9D). This is my best available hand and will provide the most chips and mult to reach the targe
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $1 | Hands left: 1 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (Q of H)
+      [2] Base Card (J of S)
+      [3] Base Card (9 of C)
+      [4] Base Card (9 of D)
+      [5] Base Card (5 of S)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AD, QH, JS, 9C, 9D)
+      High Card: play indices [0, 1, 2, 3, 5]  (AD, QH, JS, 9C, 5S)
+    
+    ## Jokers
+      [0] Wrathful Joker (sell $2)
+      [1] Chaos the Clown (sell $2)
+    
+    ## Run Memory (FullHouse_TwoPair_Economic)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$9
+    Recent hands:
+      - A1R1: mixed scored 388 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 388/None
+      - A1 : 0/None
+    Recent joker moves: buy j_chaos ($4)
+    ── end prompt ──
+
+  14:47:13 A1R2 [GAME_OVER] play_hand cards=[3, 4]
+    ↳ I have a Pair of 9s (9C, 9D). This is my best available hand and will provide the most chips and mul
+
+── GAME_OVER  Ante 1  Round 2  $1 ──
+
+LOST at ante 1
+  [log] saved 16 entries → runs/14b24195ec1d.json
+  ~tokens: ollama (free) 31363/1134  cost free
+Run 1/1 | Strategy: FullHouse_TwoPair_Economic | Result: LOST ante 1

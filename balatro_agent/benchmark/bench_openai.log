@@ -1,0 +1,21 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801
+Roster: ['gpt4o-mini-opt', 'gpt4o-mini-free']
+Runs/agent: 1  Timeout: 900s
+
+════ gpt4o-mini-opt (llm) ════
+
+──── gpt4o-mini-opt run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm openai
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801/gpt4o-mini-opt_01.log
+  → copied f08acee2b0df.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801/runs/gpt4o-mini-opt_01.json
+
+════ gpt4o-mini-free (llm) ════
+
+──── gpt4o-mini-free run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm openai
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801/gpt4o-mini-free_01.log
+  → copied c2597d33641a.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801/runs/gpt4o-mini-free_01.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_164801

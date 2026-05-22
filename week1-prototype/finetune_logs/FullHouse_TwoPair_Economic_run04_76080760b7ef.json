@@ -1,0 +1,519 @@
+{
+  "run_id": "76080760b7ef",
+  "run_num": 4,
+  "strategy_name": "FullHouse_TwoPair_Economic",
+  "source": "strategy",
+  "system_prompt": "",
+  "action_log": [
+    {
+      "ante": 1,
+      "round": 0,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: select small blind (margin 0.0x)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: select small blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 0\nMoney: $4 | Hands left: 4 | Discards left: 4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['D_K', 'S_T', 'D_9', 'S_6'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['D_K', 'S_T', 'D_9', 'S_6'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] D_K (K of D)\n  [1] S_Q (Q of S)\n  [2] H_Q (Q of H)\n  [3] S_T (T of S)\n  [4] D_9 (9 of D)\n  [5] S_6 (6 of S)\n  [6] S_4 (4 of S)\n  [7] H_4 (4 of H)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['H_A', 'S_J', 'C_8', 'C_6'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['H_A', 'S_J', 'C_8', 'C_6'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] H_A (A of H)\n  [1] S_Q (Q of S)\n  [2] H_Q (Q of H)\n  [3] S_J (J of S)\n  [4] C_8 (8 of C)\n  [5] C_6 (6 of C)\n  [6] S_4 (4 of S)\n  [7] H_4 (4 of H)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          6,
+          7
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Full House with ['S_Q', 'H_Q', 'C_Q', 'S_4', 'H_4'] (blind target 0, scored 0)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Full House with ['S_Q', 'H_Q', 'C_Q', 'S_4', 'H_4'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] H_Q (Q of H)\n  [2] C_Q (Q of C)\n  [3] H_T (T of H)\n  [4] S_8 (8 of S)\n  [5] S_7 (7 of S)\n  [6] S_4 (4 of S)\n  [7] H_4 (4 of H)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "ROUND_EVAL",
+      "action": "cash_out",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: cash out round"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: cash out round",
+      "prompt": "# Phase: ROUND_EVAL | Ante 1 Round 1\nMoney: $4 | Hands left: 3 | Discards left: 2",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: buy j_scholar from shop"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: buy j_scholar from shop",
+      "prompt": "# Phase: SHOP | Ante 1 Round 1\nMoney: $10 | Hands left: 4 | Discards left: 4\n\n## Shop\n  [0] Scholar (JOKER) \u2014 $4\n  [1] Mars (PLANET) \u2014 $3",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed",
+      "prompt": "# Phase: SHOP | Ante 1 Round 1\nMoney: $6 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n\n## Shop\n  [0] Mars (PLANET) \u2014 $3",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: select big blind (margin 0.0x)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: select big blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 1\nMoney: $6 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['S_K', 'C_Q', 'H_J', 'H_6', 'H_4'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['S_K', 'C_Q', 'H_J', 'H_6', 'H_4'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] S_K (K of S)\n  [1] C_Q (Q of C)\n  [2] H_J (J of H)\n  [3] H_9 (9 of H)\n  [4] D_9 (9 of D)\n  [5] H_6 (6 of H)\n  [6] H_4 (4 of H)\n  [7] S_2 (2 of S)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['D_Q', 'D_8', 'D_6', 'C_5'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['D_Q', 'D_8', 'D_6', 'C_5'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] D_Q (Q of D)\n  [1] H_9 (9 of H)\n  [2] D_9 (9 of D)\n  [3] D_8 (8 of D)\n  [4] D_6 (6 of D)\n  [5] C_5 (5 of C)\n  [6] S_2 (2 of S)\n  [7] D_2 (2 of D)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          5,
+          6,
+          7,
+          1,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Full House with ['S_2', 'H_2', 'D_2', 'H_9', 'D_9'] (blind target 0, scored 0)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Full House with ['S_2', 'H_2', 'D_2', 'H_9', 'D_9'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] C_K (K of C)\n  [1] H_9 (9 of H)\n  [2] D_9 (9 of D)\n  [3] S_6 (6 of S)\n  [4] D_4 (4 of D)\n  [5] S_2 (2 of S)\n  [6] H_2 (2 of H)\n  [7] D_2 (2 of D)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Pair with ['C_K', 'D_K', 'H_Q', 'H_8', 'S_7'] (blind target 0, scored 256)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Pair with ['C_K', 'D_K', 'H_Q', 'H_8', 'S_7'] (blind target 0, scored 256)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] C_K (K of C)\n  [1] D_K (K of D)\n  [2] H_Q (Q of H)\n  [3] H_8 (8 of H)\n  [4] S_7 (7 of S)\n  [5] S_6 (6 of S)\n  [6] D_4 (4 of D)\n  [7] S_3 (3 of S)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          2,
+          3,
+          6,
+          7,
+          0
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['H_7', 'C_7', 'S_3', 'C_3', 'S_Q'] (blind target 0, scored 316)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['H_7', 'C_7', 'S_3', 'C_3', 'S_Q'] (blind target 0, scored 316)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 2 | Discards left: 2\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] D_J (J of D)\n  [2] H_7 (7 of H)\n  [3] C_7 (7 of C)\n  [4] S_6 (6 of S)\n  [5] D_4 (4 of D)\n  [6] S_3 (3 of S)\n  [7] C_3 (3 of C)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['C_J', 'D_J', 'S_T', 'H_T', 'S_8'] (blind target 0, scored 396)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['C_J', 'D_J', 'S_T', 'H_T', 'S_8'] (blind target 0, scored 396)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $6 | Hands left: 1 | Discards left: 2\n\n## Hand\n  [0] C_J (J of C)\n  [1] D_J (J of D)\n  [2] S_T (T of S)\n  [3] H_T (T of H)\n  [4] S_8 (8 of S)\n  [5] S_6 (6 of S)\n  [6] C_6 (6 of C)\n  [7] D_4 (4 of D)\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "ROUND_EVAL",
+      "action": "cash_out",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: cash out round"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: cash out round",
+      "prompt": "# Phase: ROUND_EVAL | Ante 1 Round 2\nMoney: $6 | Hands left: 0 | Discards left: 2\n\n## Jokers\n  [0] Scholar (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: buy j_egg from shop"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: buy j_egg from shop",
+      "prompt": "# Phase: SHOP | Ante 1 Round 2\nMoney: $12 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n\n## Shop\n  [0] Egg (JOKER) \u2014 $4\n  [1] The Wheel of Fortune (TAROT) \u2014 $3",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed",
+      "prompt": "# Phase: SHOP | Ante 1 Round 2\nMoney: $8 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)\n\n## Shop\n  [0] The Wheel of Fortune (TAROT) \u2014 $3",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: select boss blind (margin 0.0x)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: select boss blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 2\nMoney: $8 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          4,
+          7
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['C_Q', 'S_T', 'C_5', 'C_3'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['C_Q', 'S_T', 'C_5', 'C_3'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 3\nMoney: $8 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] C_Q (Q of C)\n  [1] S_T (T of S)\n  [2] S_6 (6 of S)\n  [3] H_6 (6 of H)\n  [4] C_5 (5 of C)\n  [5] S_4 (4 of S)\n  [6] C_4 (4 of C)\n  [7] C_3 (3 of C)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          4,
+          7
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['D_9', 'C_7', 'D_5', 'S_2'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['D_9', 'C_7', 'D_5', 'S_2'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 3\nMoney: $8 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] D_9 (9 of D)\n  [1] C_7 (7 of C)\n  [2] S_6 (6 of S)\n  [3] H_6 (6 of H)\n  [4] D_5 (5 of D)\n  [5] S_4 (4 of S)\n  [6] C_4 (4 of C)\n  [7] S_2 (2 of S)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_6', 'H_6', 'S_4', 'C_4', 'D_A'] (blind target 0, scored 0)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_6', 'H_6', 'S_4', 'C_4', 'D_A'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 3\nMoney: $8 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] D_A (A of D)\n  [1] S_Q (Q of S)\n  [2] C_T (T of C)\n  [3] S_6 (6 of S)\n  [4] H_6 (6 of H)\n  [5] S_4 (4 of S)\n  [6] C_4 (4 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_A', 'C_A', 'S_Q', 'H_Q', 'S_K'] (blind target 0, scored 68)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_A', 'C_A', 'S_Q', 'H_Q', 'S_K'] (blind target 0, scored 68)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 3\nMoney: $8 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] S_A (A of S)\n  [1] C_A (A of C)\n  [2] S_K (K of S)\n  [3] S_Q (Q of S)\n  [4] H_Q (Q of H)\n  [5] C_T (T of C)\n  [6] S_9 (9 of S)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 3,
+      "phase": "ROUND_EVAL",
+      "action": "cash_out",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: cash out round"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: cash out round",
+      "prompt": "# Phase: ROUND_EVAL | Ante 2 Round 3\nMoney: $8 | Hands left: 2 | Discards left: 2\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 3,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 1,
+        "reasoning": "FullHouse_TwoPair_Economic: buy j_castle from shop"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: buy j_castle from shop",
+      "prompt": "# Phase: SHOP | Ante 2 Round 3\nMoney: $13 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n\n## Shop\n  [0] The Chariot (TAROT) \u2014 $3\n  [1] Castle (JOKER) \u2014 $6",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 3,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: finish shop and proceed",
+      "prompt": "# Phase: SHOP | Ante 2 Round 3\nMoney: $7 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)\n\n## Shop\n  [0] The Chariot (TAROT) \u2014 $3",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic: select small blind (margin 0.0x)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: select small blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 2 Round 3\nMoney: $7 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['C_A', 'D_J', 'S_T', 'S_7', 'D_6'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['C_A', 'D_J', 'S_T', 'S_7', 'D_6'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] C_A (A of C)\n  [1] S_Q (Q of S)\n  [2] D_Q (Q of D)\n  [3] D_J (J of D)\n  [4] S_T (T of S)\n  [5] S_7 (7 of S)\n  [6] D_6 (6 of D)\n  [7] D_2 (2 of D)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          4,
+          7
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: discard ['S_8', 'D_2'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: discard ['S_8', 'D_2'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] D_Q (Q of D)\n  [2] S_9 (9 of S)\n  [3] D_9 (9 of D)\n  [4] S_8 (8 of S)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n  [7] D_2 (2 of D)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_Q', 'D_Q', 'S_9', 'D_9', 'S_J'] (blind target 0, scored 0)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['S_Q', 'D_Q', 'S_9', 'D_9', 'S_J'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] D_Q (Q of D)\n  [2] S_J (J of S)\n  [3] S_9 (9 of S)\n  [4] D_9 (9 of D)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          5,
+          6,
+          0
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['C_8', 'D_8', 'H_3', 'C_3', 'H_A'] (blind target 0, scored 134)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['C_8', 'D_8', 'H_3', 'C_3', 'H_A'] (blind target 0, scored 134)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] H_A (A of H)\n  [1] C_8 (8 of C)\n  [2] D_8 (8 of D)\n  [3] S_6 (6 of S)\n  [4] C_4 (4 of C)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Pair with ['S_6', 'H_6', 'C_T', 'C_9', 'D_7'] (blind target 0, scored 236)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Pair with ['S_6', 'H_6', 'C_T', 'C_9', 'D_7'] (blind target 0, scored 236)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 2 | Discards left: 2\n\n## Hand\n  [0] C_T (T of C)\n  [1] C_9 (9 of C)\n  [2] D_7 (7 of D)\n  [3] S_6 (6 of S)\n  [4] H_6 (6 of H)\n  [5] H_5 (5 of H)\n  [6] C_4 (4 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    },
+    {
+      "ante": 2,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          5,
+          6,
+          0
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['H_T', 'D_T', 'H_4', 'C_4', 'D_A'] (blind target 0, scored 298)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic: play Two Pair with ['H_T', 'D_T', 'H_4', 'C_4', 'D_A'] (blind target 0, scored 298)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 4\nMoney: $7 | Hands left: 1 | Discards left: 2\n\n## Hand\n  [0] D_A (A of D)\n  [1] H_T (T of H)\n  [2] D_T (T of D)\n  [3] C_6 (6 of C)\n  [4] H_5 (5 of H)\n  [5] H_4 (4 of H)\n  [6] C_4 (4 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Scholar (sell $2)\n  [1] Egg (sell $5)\n  [2] Castle (sell $3)",
+      "source": "strategy"
+    }
+  ]
+}

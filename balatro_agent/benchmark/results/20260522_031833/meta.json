@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260522_031833",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 1,
+  "results": [
+    {
+      "agent": "gemma4-noThink",
+      "run": 1,
+      "status": "TIMEOUT",
+      "timeout": true,
+      "elapsed_sec": 900.0,
+      "run_json": null,
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_031833/gemma4-noThink_01.log"
+    }
+  ]
+}

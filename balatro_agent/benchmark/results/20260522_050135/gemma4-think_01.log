@@ -1,0 +1,26 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/5b38e9ab85c1.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 9.1s  → select_blind: It's the start of the run. I need to play the Small Blind to earn money and prog
+  06:16:20 A1R1 [BLIND_SELECT] select_blind
+    ↳ It's the start of the run. I need to play the Small Blind to earn money and progress through the Ant
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 41.8s  → thoughtlib:hand_simulator:play_hand: (no reasoning provided)
+  06:17:06 A1R1 [SELECTING_HAND] thoughtlib:hand_simulator:play_hand
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=True)  [ollama] 25.4s  → discard_cards: I have two pairs (5s and 3s) and an extra pair (2s). I'm discarding the high car
+  06:17:32 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1]
+    ↳ I have two pairs (5s and 3s) and an extra pair (2s). I'm discarding the high cards (QH, 7C) to try a
+  [ollama] waiting... (think=True)  [ollama] 27.9s  → play_hand: I have Two Pair (5s and 3s) with a King kicker. This is the highest scoring hand
+  06:18:04 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ I have Two Pair (5s and 3s) with a King kicker. This is the highest scoring hand currently available
+  [ollama] waiting... (think=True)  [ollama] 313.4s  [ollama] waiting... (think=True)

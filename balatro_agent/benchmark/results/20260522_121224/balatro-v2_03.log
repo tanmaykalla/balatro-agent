@@ -1,0 +1,71 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3-v2 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/cbcddb05f958.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → select_blind: Starting the first blind with a clear plan to focus on completing flushes and im
+  14:16:51 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind with a clear plan to focus on completing flushes and improving scoring effi
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 89.7s  → play_hand: Play Pair (2 of S and 2 of C) with remaining cards. This is the best available h
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: Play Pair (2 of S and 2 of C) with remaining cards. This is the best available hand and meets the current target require
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (J of C)
+      [1] Base Card (T of D)
+      [2] Base Card (9 of D)
+      [3] Base Card (6 of C)
+      [4] Base Card (4 of S)
+      [5] Base Card (3 of D)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (JC, TD, 9D, 2S, 2C)
+      High Card: play indices [0, 1, 2, 3, 4]  (JC, TD, 9D, 6C, 4S)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:18:24 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Play Pair (2 of S and 2 of C) with remaining cards. This is the best available hand and meets the cu
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Two Pair (5C, 5D, 4S, 4D) scores 40 chips × 4 mult = 160. This is the best avail
+  14:18:32 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Two Pair (5C, 5D, 4S, 4D) scores 40 chips × 4 mult = 160. This is the best available hand and meets 
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → discard_cards: Discard the off-suit cards (AS, KD, QC, JH) to improve flush chances. We have 4 
+  14:18:37 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3]
+    ↳ Discard the off-suit cards (AS, KD, QC, JH) to improve flush chances. We have 4 cards of the same su
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Play Two Pair (6S, 6C, QS, JD, KC) scores 40 chips × 4 mult = 160. This is the b
+  14:18:44 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Two Pair (6S, 6C, QS, JD, KC) scores 40 chips × 4 mult = 160. This is the best available hand a
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → discard_cards: Discard the off-suit cards (AD, KH, TS, 8S) to improve flush chances. We have 4 
+  14:18:48 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3]
+    ↳ Discard the off-suit cards (AD, KH, TS, 8S) to improve flush chances. We have 4 cards of the same su
+  [ollama] waiting... (think=False)  [ollama] 30.1s  → play_hand: Play Two Pair (7S, 7H, 2H, 2D) with remaining cards. This is the best available 
+  14:19:22 A1R1 [GAME_OVER] play_hand cards=[0, 2, 3, 6, 7]
+    ↳ Play Two Pair (7S, 7H, 2H, 2D) with remaining cards. This is the best available hand and meets the c
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 7 entries → runs/cbcddb05f958.json
+  ~tokens: ollama (free) 18836/338  cost free
+Run 1/1 | Strategy: Discard_Chaser | Result: LOST ante 1

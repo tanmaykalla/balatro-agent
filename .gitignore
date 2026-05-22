@@ -1,0 +1,8 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+models/
+fused_model/
+finetune_adapters/
+*.safetensors

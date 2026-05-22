@@ -1,0 +1,588 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/61dcb8193173.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.3s  → select_blind: I need to start the run by playing the first Small Blind. I have $4, which is no
+  05:44:54 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the run by playing the first Small Blind. I have $4, which is not enough to skip (sk
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have two pairs (Jacks and 5s) and two more pairs (2s) in hand. I want to disca
+  05:44:58 A1R1 [SELECTING_HAND] discard_cards cards=[2, 5, 6, 7]
+    ↳ I have two pairs (Jacks and 5s) and two more pairs (2s) in hand. I want to discard the junk cards (1
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → play_hand: I have a Full House (Jacks and 5s). This is my highest scoring playable hand and
+  05:45:08 A1R1 [ROUND_EVAL] play_hand cards=[1, 2, 4, 5, 6]
+    ↳ I have a Full House (Jacks and 5s). This is my highest scoring playable hand and will help me reach 
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $10 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_card: Mercury (Planet) provides a permanent level up to a hand type. Since it's Ante 1
+  05:45:12 A1R1 [SHOP] buy_card idx=0
+    ↳ Mercury (Planet) provides a permanent level up to a hand type. Since it's Ante 1, increasing the bas
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → buy_pack: A Buffoon Pack is the highest priority in the early game because finding a Joker
+  05:45:17 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ A Buffoon Pack is the highest priority in the early game because finding a Joker provides much more 
+  [ollama] waiting... (think=False)  [ollama] 4.9s  → select_pack_card: Mail-In Rebate provides a chance for money/jokers, but Raised Fist offers a perm
+  05:45:22 A1R1 [SHOP] select_pack_card idx=1
+    ↳ Mail-In Rebate provides a chance for money/jokers, but Raised Fist offers a permanent +Mult boost to
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → reroll_shop: I only have $3, and the only Joker available (Turtle Bean) costs $6. The current
+  05:45:29 A1R1 [SHOP] reroll_shop  ✗ BalatrobotError -32003: Not enough dollars to reroll. Availa
+    ↳ I only have $3, and the only Joker available (Turtle Bean) costs $6. The current shop contents are n
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Raised Fist is a +Mult joker. While I cannot afford the $6 Turtle Bean, I can af
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Card is not affordable. Cost: 6, Available money: 3
+  05:45:32 A1R1 [SHOP] buy_card idx=0
+    ↳ Raised Fist is a +Mult joker. While I cannot afford the $6 Turtle Bean, I can afford this $2 joker. 
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → finish_shop: I have $3, which is not enough to reroll ($5). I cannot afford Turtle Bean ($6) 
+  05:45:34 A1R1 [SHOP] finish_shop
+    ↳ I have $3, which is not enough to reroll ($5). I cannot afford Turtle Bean ($6) or the Arcana Pack (
+
+── BLIND_SELECT  Ante 1  Round 1  $3 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → select_blind: Starting the first round of Ante 1. I have $3, which is not enough to buy anythi
+  05:45:38 A1R2 [BLIND_SELECT] select_blind
+    ↳ Starting the first round of Ante 1. I have $3, which is not enough to buy anything new in the shop y
+
+── SELECTING_HAND  Ante 1  Round 2  $3 ──
+  [ollama] waiting... (think=False)  [ollama] 4.8s  → discard_cards: I have a pair of 5s (indices 3 and 4) and a 4, 5, 6 potential straight flush/str
+  05:45:44 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1]
+    ↳ I have a pair of 5s (indices 3 and 4) and a 4, 5, 6 potential straight flush/straight. However, the 
+  [ollama] waiting... (think=False)  [ollama] 5.9s  → discard_cards: I have a 4-card straight flush draw (6S, 5S, 4S, 3H - wait, 3H is not a spade). 
+  05:45:51 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1, 6, 7]
+    ↳ I have a 4-card straight flush draw (6S, 5S, 4S, 3H - wait, 3H is not a spade). I have 6S, 5S, 4S. I
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Flush (QS, 7S, 6S, 5S, 4S). A Flush is the highest scoring hand availab
+  05:45:59 A1R2 [ROUND_EVAL] play_hand cards=[0, 2, 3, 4, 7]
+    ↳ I have a Flush (QS, 7S, 6S, 5S, 4S). A Flush is the highest scoring hand available and is much more 
+
+── ROUND_EVAL  Ante 1  Round 2  $3 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → use_consumable: I have Mercury, which enhances a card with +10 chips. Since it's very early (Ant
+  05:46:07 A1R2 [SHOP] use_consumable idx=0
+    ↳ I have Mercury, which enhances a card with +10 chips. Since it's very early (Ante 1), increasing my 
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → buy_card: Neptune is a Planet card that levels up my Three of a Kind. Since I have the mon
+  05:46:10 A1R2 [SHOP] buy_card idx=1
+    ↳ Neptune is a Planet card that levels up my Three of a Kind. Since I have the money ($9) and it provi
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → buy_card: Green Joker provides +25 Mult, which is a massive boost for early game scoring. 
+  05:46:13 A1R2 [SHOP] buy_card idx=0
+    ↳ Green Joker provides +25 Mult, which is a massive boost for early game scoring. Even though I have t
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → reroll_shop: I am currently at $2 and the shop contents (Standard Packs) are not immediately 
+  05:46:19 A1R2 [SHOP] reroll_shop  ✗ BalatrobotError -32003: Not enough dollars to reroll. Availa
+    ↳ I am currently at $2 and the shop contents (Standard Packs) are not immediately useful as I cannot a
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → buy_pack: I have $2 and the Standard Pack costs $4. I cannot afford the packs or the vouch
+[balatrobot] BAD_REQUEST on buy({'pack': 0}): Card is not affordable. Cost: 4, Available money: 2
+  05:46:22 A1R2 [SHOP] buy_pack idx=0
+    ↳ I have $2 and the Standard Pack costs $4. I cannot afford the packs or the voucher. I have no other 
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → finish_shop: I have $2, which is not enough to reroll ($5) or buy any items (Standard Packs a
+  05:46:24 A1R2 [SHOP] finish_shop
+    ↳ I have $2, which is not enough to reroll ($5) or buy any items (Standard Packs are $4). I will move 
+
+── BLIND_SELECT  Ante 1  Round 2  $2 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → select_blind: I am selecting the Big Blind. I have 4 hands and 4 discards left to reach the ta
+  05:46:28 A1R3 [BLIND_SELECT] select_blind
+    ↳ I am selecting the Big Blind. I have 4 hands and 4 discards left to reach the target. I need to accu
+
+── SELECTING_HAND  Ante 1  Round 3  $2 ──
+  [ollama] waiting... (think=False)  [ollama] 5.3s  → discard_cards: I have a pair of Tens (indices 1 and 2). I will discard the other cards to try a
+  05:46:35 A1R3 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 7]
+    ↳ I have a pair of Tens (indices 1 and 2). I will discard the other cards to try and find a third Ten 
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → play_hand: I have a pair of Kings. I will play this pair to make progress toward the target
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[1, 2]
+    reasoning: I have a pair of Kings. I will play this pair to make progress toward the target. It's a solid foundation for a higher h
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $2 | Hands left: 4 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of S)
+      [2] Base Card (K of D)
+      [3] Base Card (T of S)
+      [4] Base Card (9 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (6 of D)
+      [7] Base Card (4 of S)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AS, KS, KD, TS, 9H)
+      High Card: play indices [0, 1, 3, 4, 5]  (AS, KS, TS, 9H, 7C)
+    
+    ## Jokers
+      [0] Raised Fist (sell $2)
+      [1] Green Joker (sell $2)
+    
+    ## Consumables
+      [0] Neptune
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$10, A1R2=$9
+    Recent hands:
+      - A1R1: mixed scored 300 (hands_used=1, discards_used=1)
+      - A1R2: mixed scored 938 (hands_used=1, discards_used=2)
+    Recent blinds:
+      - A1 : 300/None
+      - A1 : 938/None
+      - A1 : 0/None
+    Recent joker moves: buy c_mercury ($3), buy j_turtle_bean ($6), buy c_neptune ($3), buy j_green_joker ($4)
+    ── end prompt ──
+
+  05:46:41 A1R3 [SELECTING_HAND] play_hand cards=[1, 2]
+    ↳ I have a pair of Kings. I will play this pair to make progress toward the target. It's a solid found
+  [ollama] waiting... (think=False)  [ollama] 5.5s  → discard_cards: I have 4 cards to a Flush (Ace, Queen, Ten, 4 of Spades). I'll discard the non-s
+  05:46:48 A1R3 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have 4 cards to a Flush (Ace, Queen, Ten, 4 of Spades). I'll discard the non-spade cards (9H, 7C, 
+  [ollama] waiting... (think=False)  [ollama] 7.6s  → play_hand: I have 4 cards of the same suit (Ace, Queen, Ten, 5 of Spades). Playing them as 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 2, 3, 7]
+    reasoning: I have 4 cards of the same suit (Ace, Queen, Ten, 5 of Spades). Playing them as a High Card hand is not a valid move in 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $2 | Hands left: 3 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of H)
+      [2] Base Card (Q of S)
+      [3] Base Card (T of S)
+      [4] Base Card (T of C)
+      [5] Base Card (9 of D)
+      [6] Base Card (6 of C)
+      [7] Base Card (5 of S)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AS, KH, QS, TS, TC)
+      High Card: play indices [0, 1, 2, 3, 5]  (AS, KH, QS, TS, 9D)
+    
+    ## Jokers
+      [0] Raised Fist (sell $2)
+      [1] Green Joker (sell $2)
+    
+    ## Consumables
+      [0] Neptune
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$10, A1R2=$9
+    Recent hands:
+      - A1R1: mixed scored 300 (hands_used=1, discards_used=1)
+      - A1R2: mixed scored 938 (hands_used=1, discards_used=2)
+    Recent blinds:
+      - A1 : 300/None
+      - A1 : 938/None
+      - A1 : 0/None
+    Recent joker moves: buy c_mercury ($3), buy j_turtle_bean ($6), buy c_neptune ($3), buy j_green_joker ($4)
+    ── end prompt ──
+
+  05:47:01 A2R3 [ROUND_EVAL] play_hand cards=[0, 2, 3, 7]
+    ↳ I have 4 cards of the same suit (Ace, Queen, Ten, 5 of Spades). Playing them as a High Card hand is 
+
+── ROUND_EVAL  Ante 2  Round 3  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → use_consumable: I have a Neptune card. Using it now to level up my highest scoring hand type (li
+  05:47:08 A2R3 [SHOP] use_consumable idx=0
+    ↳ I have a Neptune card. Using it now to level up my highest scoring hand type (likely Flush or Full H
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → buy_card: Gluttonous Joker provides +Mult or xMult (depending on specific game effect, but
+  05:47:11 A2R3 [SHOP] buy_card idx=0
+    ↳ Gluttonous Joker provides +Mult or xMult (depending on specific game effect, but generally powerful)
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → buy_card: Scholar is a Joker that provides +Mult for playing 4-of-a-kind. While I haven't 
+  05:47:16 A2R3 [SHOP] buy_card idx=0
+    ↳ Scholar is a Joker that provides +Mult for playing 4-of-a-kind. While I haven't been playing 4-of-a-
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → finish_shop: I have $0, so I cannot buy any packs or vouchers. I currently have a strong line
+  05:47:19 A2R3 [SHOP] finish_shop
+    ↳ I have $0, so I cannot buy any packs or vouchers. I currently have a strong lineup of Jokers (Green 
+
+── BLIND_SELECT  Ante 2  Round 3  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: I have no choice but to select a blind. Since I have no money ($0), I cannot ski
+  05:47:23 A2R4 [BLIND_SELECT] select_blind
+    ↳ I have no choice but to select a blind. Since I have no money ($0), I cannot skip the Big Blind to g
+
+── SELECTING_HAND  Ante 2  Round 4  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → discard_cards: I have a 4-card flush draw in Clubs (A, K, 3, 2). I will discard the off-suit ca
+  05:47:28 A2R4 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5]
+    ↳ I have a 4-card flush draw in Clubs (A, K, 3, 2). I will discard the off-suit cards (Q of H, 8 of S,
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Flush (AC, KC, 9C, 6C, 3C). This is the highest scoring playable hand a
+  05:47:38 A2R4 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 6]
+    ↳ I have a Flush (AC, KC, 9C, 6C, 3C). This is the highest scoring playable hand available and will co
+
+── ROUND_EVAL  Ante 2  Round 4  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 5.3s  → buy_card: I currently have Green Joker, Gluttonous Joker, and Scholar. Green Joker is a de
+  05:47:46 A2R4 [SHOP] buy_card idx=1
+    ↳ I currently have Green Joker, Gluttonous Joker, and Scholar. Green Joker is a decent early game +Mul
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → finish_shop: I have $4 left. I cannot afford Mr. Bones ($5), the Paint Brush ($10), or the Me
+  05:47:50 A2R4 [SHOP] finish_shop
+    ↳ I have $4 left. I cannot afford Mr. Bones ($5), the Paint Brush ($10), or the Mega Standard Pack ($8
+
+── BLIND_SELECT  Ante 2  Round 4  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_blind: I need to play this blind to build up my economy and progress through the Antes.
+  05:47:55 A2R5 [BLIND_SELECT] select_blind
+    ↳ I need to play this blind to build up my economy and progress through the Antes. I have a solid setu
+
+── SELECTING_HAND  Ante 2  Round 5  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → discard_cards: I have a pair of Jacks and a pair of 4s. Discarding the 10 of Spades and 7 of Sp
+  05:47:59 A2R5 [SELECTING_HAND] discard_cards cards=[3, 4]
+    ↳ I have a pair of Jacks and a pair of 4s. Discarding the 10 of Spades and 7 of Spades to try and draw
+  [ollama] waiting... (think=False)  [ollama] 6.5s  → play_hand: I have Two Pair (Jacks and 4s). While the game engine's 'PLAYABLE HANDS' list is
+  05:48:11 A2R5 [SELECTING_HAND] play_hand cards=[3, 4, 5, 6]
+    ↳ I have Two Pair (Jacks and 4s). While the game engine's 'PLAYABLE HANDS' list is slightly strange (l
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have Two Pair (Aces and 2s). This is the highest scoring playable hand availab
+  05:48:21 A2R5 [ROUND_EVAL] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ I have Two Pair (Aces and 2s). This is the highest scoring playable hand available and will help me 
+
+── ROUND_EVAL  Ante 2  Round 5  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 5  $10 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → use_consumable: Using Strength to upgrade my highest scoring hand type (based on recent high sco
+  05:48:28 A2R5 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'Strength' requires card 
+    ↳ Using Strength to upgrade my highest scoring hand type (based on recent high scores being around 230
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_pack: I currently have Strength in my inventory. I want to use it during the next hand
+  05:48:33 A2R5 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I currently have Strength in my inventory. I want to use it during the next hand to level up my most
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → select_pack_card: I am opening the Mars pack to look for a Planet card. I need to level up my hand
+  05:48:38 A2R5 [SHOP] select_pack_card idx=0
+    ↳ I am opening the Mars pack to look for a Planet card. I need to level up my hands (specifically look
+  [ollama] waiting... (think=False)  [ollama] 5.8s  → buy_card: Riff-raff is a Joker that provides scaling chips or mult based on its mechanic (
+  05:48:44 A2R5 [SHOP] buy_card idx=0
+    ↳ Riff-raff is a Joker that provides scaling chips or mult based on its mechanic (though specifically,
+  [ollama] waiting... (think=False)  [ollama] 2.4s  → buy_card: I have $0 currently. I cannot buy anything in the shop. I will leave the shop an
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Card is not affordable. Cost: 3, Available money: 0
+  05:48:46 A2R5 [SHOP] buy_card idx=0
+    ↳ I have $0 currently. I cannot buy anything in the shop. I will leave the shop and proceed to the nex
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → use_consumable: I have $0, so I cannot buy anything. However, I can use the Tarot card 'The Char
+  05:48:50 A2R5 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'Strength' requires card 
+    ↳ I have $0, so I cannot buy anything. However, I can use the Tarot card 'The Chariot' if I had money,
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → buy_card: I have $0 currently, so I cannot afford 'The Chariot' ($3). I will finish the sh
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Card is not affordable. Cost: 3, Available money: 0
+  05:48:53 A2R5 [SHOP] buy_card idx=0
+    ↳ I have $0 currently, so I cannot afford 'The Chariot' ($3). I will finish the shop and move to the n
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → finish_shop: I have $0 and cannot afford any items in the shop. I'll proceed to the next blin
+  05:48:55 A2R5 [SHOP] finish_shop
+    ↳ I have $0 and cannot afford any items in the shop. I'll proceed to the next blind selection.
+
+── BLIND_SELECT  Ante 2  Round 5  $0 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: I am at the start of a new round (Ante 2, Round 5). I have no choice but to sele
+  05:48:59 A2R6 [BLIND_SELECT] select_blind
+    ↳ I am at the start of a new round (Ante 2, Round 5). I have no choice but to select a blind as skippi
+
+── SELECTING_HAND  Ante 2  Round 6  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → discard_cards: I am looking to build a better hand, specifically aiming for a Flush or Straight
+  05:49:04 A2R6 [SELECTING_HAND] discard_cards cards=[0, 1, 3]
+    ↳ I am looking to build a better hand, specifically aiming for a Flush or Straight. I currently have 4
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: I have a Flush available (QS, 9S, 6S, 5S, 3S). A Flush has much higher base chip
+  05:49:13 A2R6 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ I have a Flush available (QS, 9S, 6S, 5S, 3S). A Flush has much higher base chips and mult compared 
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → play_hand: I have Two Pair (6C, 6H, 5C, 5D) along with the QD as a kicker. This is my highe
+  05:49:22 A2R6 [SELECTING_HAND] play_hand cards=[0, 3, 4, 5, 6]
+    ↳ I have Two Pair (6C, 6H, 5C, 5D) along with the QD as a kicker. This is my highest scoring available
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have a Pair of Aces (index 0 and 1). I will discard the low, unrelated cards (
+  05:49:27 A2R6 [SELECTING_HAND] discard_cards cards=[5, 6, 7]
+    ↳ I have a Pair of Aces (index 0 and 1). I will discard the low, unrelated cards (7S, 6H, 2H) to try a
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have Two Pair (Aces and Tens). Since I have 2 hands remaining and the target f
+  05:49:38 A3R6 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5]
+    ↳ I have Two Pair (Aces and Tens). Since I have 2 hands remaining and the target for this round is lik
+
+── ROUND_EVAL  Ante 3  Round 6  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 6  $6 ──
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → finish_shop: I have very little money ($6) and none of the jokers in the shop are affordable 
+  05:49:45 A3R6 [SHOP] finish_shop
+    ↳ I have very little money ($6) and none of the jokers in the shop are affordable or immediately benef
+
+── BLIND_SELECT  Ante 3  Round 6  $6 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_blind: I have no option to skip the Small Blind. I will play the blind to advance towar
+  05:49:50 A3R7 [BLIND_SELECT] select_blind
+    ↳ I have no option to skip the Small Blind. I will play the blind to advance towards the next Ante. I 
+
+── SELECTING_HAND  Ante 3  Round 7  $6 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → discard_cards: I have Three of a Kind (Tens) in my hand. I'm discarding the non-matching cards 
+  05:49:55 A3R7 [SELECTING_HAND] discard_cards cards=[0, 1, 5, 6, 7]
+    ↳ I have Three of a Kind (Tens) in my hand. I'm discarding the non-matching cards (Ace, King, 7, 6, 3)
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → play_hand: I have Three of a Kind (Tens). This is the highest scoring hand available in my 
+  05:50:02 A3R7 [SELECTING_HAND] play_hand cards=[2, 3, 4]
+    ↳ I have Three of a Kind (Tens). This is the highest scoring hand available in my playable hands and w
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have a Flush (AH, KH, 7H, 5H, 3H) available. A Flush provides a much higher ba
+  05:50:13 A3R7 [ROUND_EVAL] play_hand cards=[0, 1, 3, 5, 7]
+    ↳ I have a Flush (AH, KH, 7H, 5H, 3H) available. A Flush provides a much higher base chip and mult val
+
+── ROUND_EVAL  Ante 3  Round 7  $6 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 7  $12 ──
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → use_consumable: Using Strength on a card to increase its mult, hoping to improve my scoring pote
+  05:50:20 A3R7 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'Strength' requires card 
+    ↳ Using Strength on a card to increase its mult, hoping to improve my scoring potential for upcoming h
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → use_consumable: I'll use the Strength tarot card on the highest value card in my hand (assuming 
+  05:50:26 A3R7 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'Strength' requires card 
+    ↳ I'll use the Strength tarot card on the highest value card in my hand (assuming I have an Ace or fac
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → buy_pack: I have $12 and an Arcana Pack is $4. I want more Tarot cards like Strength to en
+  05:50:33 A3R7 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ I have $12 and an Arcana Pack is $4. I want more Tarot cards like Strength to enhance my hand. Since
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The Sun is a powerful Tarot card that provides a permanent boost to a specific h
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:36 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a powerful Tarot card that provides a permanent boost to a specific hand type by upgradin
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: The Sun is a powerful Tarot card that upgrades a hand type. Since I'm currently 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:40 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a powerful Tarot card that upgrades a hand type. Since I'm currently playing a mix of han
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_pack_card: The Sun is a top-tier Tarot card that permanently upgrades the level of a specif
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:43 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a top-tier Tarot card that permanently upgrades the level of a specific hand type. Since 
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: The Sun is a powerful Tarot card that upgrades the level of a specific hand type
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:47 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a powerful Tarot card that upgrades the level of a specific hand type. In the early-mid g
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_pack_card: The Sun is a powerful Tarot card that upgrades a hand type. Since I am in Ante 3
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:50 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a powerful Tarot card that upgrades a hand type. Since I am in Ante 3 and looking to scal
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → select_pack_card: The Sun is a powerful Tarot card that upgrades a hand type. Since I am in Ante 3
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:54 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a powerful Tarot card that upgrades a hand type. Since I am in Ante 3, upgrading a hand t
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: The Sun is a highly valuable Tarot card because it permanently upgrades a hand t
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:50:57 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a highly valuable Tarot card because it permanently upgrades a hand type. Given I have 4 
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → select_pack_card: The Sun is a highly valuable Tarot card because it permanently upgrades a hand t
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:00 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a highly valuable Tarot card because it permanently upgrades a hand type. Upgrading a han
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → select_pack_card: The Sun is an extremely powerful Tarot card as it provides a permanent level up 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:04 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is an extremely powerful Tarot card as it provides a permanent level up to a hand type. Sinc
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → select_pack_card: The Sun is a highly valuable Tarot card that permanently upgrades a hand type. S
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:08 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a highly valuable Tarot card that permanently upgrades a hand type. Since I am in Ante 3,
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → select_pack_card: The Sun is a top-tier Tarot card that provides a permanent level up to a hand ty
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:11 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a top-tier Tarot card that provides a permanent level up to a hand type. In Ante 3, upgra
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → select_pack_card: The Sun is a highly valuable Tarot card because it provides a permanent level up
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:15 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a highly valuable Tarot card because it provides a permanent level up to a hand type. In 
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → select_pack_card: The Sun is a top-tier Tarot card that provides a permanent level up to a hand ty
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:19 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a top-tier Tarot card that provides a permanent level up to a hand type. Given that I hav
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card here. It upgrades a specific suit, which ca
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:29 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card here. It upgrades a specific suit, which can significantly boos
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → select_pack_card: The Sun is a top-tier Tarot card because it provides a permanent level up to a h
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:39 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a top-tier Tarot card because it provides a permanent level up to a hand type. Upgrading 
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the most powerful card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:49 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most powerful card in this pack because it provides a permanent level up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:51:58 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:08 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:18 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 9.3s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:27 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:37 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 10.6s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:48 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:52:57 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 9.0s  → select_pack_card: The Sun is the most valuable card in this pack as it provides a permanent level-
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:06 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack as it provides a permanent level-up to a hand type. I
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:16 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type (
+  [ollama] waiting... (think=False)  [ollama] 9.2s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:25 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 5.0s  → google:mcp:balmung:select_card_from_pack: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:30 A3R7 [SMODS_BOOSTER_OPENED] google:mcp:balmung:select_card_from_pack
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 8.6s  → google:mcp:balmung:select_card_from_pack: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:39 A3R7 [SMODS_BOOSTER_OPENED] google:mcp:balmung:select_card_from_pack
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → select_pack_card: The Sun is the highest priority card here as it provides a permanent upgrade (sc
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:49 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card here as it provides a permanent upgrade (scaling/leveling) to a
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The Sun is the most valuable card in the pack, offering a permanent increase to 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:53:58 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in the pack, offering a permanent increase to a skill/stat. The ot
+  [ollama] waiting... (think=False)  [ollama] 9.1s  → select_pack_card: The Sun is the best choice here as it provides a permanent scaling/leveling bene
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:07 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the best choice here as it provides a permanent scaling/leveling benefit (the Sun card in
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → select_pack_card: The Sun provides a permanent upgrade to a card (or in this context, a level up/s
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:17 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent upgrade to a card (or in this context, a level up/scaling boost), which
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → select_pack_card: The Sun is the highest priority card in the pack. It provides a permanent upgrad
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:27 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in the pack. It provides a permanent upgrade (leveling up a han
+  [ollama] waiting... (think=False)  [ollama] 8.1s  [ollama] waiting... (think=False)  [ollama] 9.4s  → select_pack_card: The Sun is the most valuable card in this pack because it provides a permanent l
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:44 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack because it provides a permanent level-up to a hand ty
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → select_pack_card: The Sun provides a permanent level up to a hand type. In a game where scaling is
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:48 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent level up to a hand type. In a game where scaling is key, increasing the
+  [ollama] waiting... (think=False)  [ollama] 11.3s  → select_pack_card: The Sun is the most valuable card in this selection. In Balatro/SMODS, 'The Sun'
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:54:59 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this selection. In Balatro/SMODS, 'The Sun' typically provides 
+  [ollama] waiting... (think=False)  [ollama] 8.2s  → select_pack_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:07 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:17 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:27 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type (
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → select_pack_card: The Sun is the highest priority card in this pack because it provides a permanen
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:37 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack because it provides a permanent upgrade (leveling 
+  [ollama] waiting... (think=False)  [ollama] 8.2s  → select_pack_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:45 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card here because it provides a permanent level-
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:55:55 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card here because it provides a permanent level-up to a hand type, w
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:05 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → select_pack_card: The Sun is the most valuable card in this pack. It provides a permanent boost to
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:15 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the most valuable card in this pack. It provides a permanent boost to the base value of a
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → select_pack_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:25 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 8.4s  [ollama] waiting... (think=False)  [ollama] 9.3s  → select_pack_card: The Sun provides a permanent hand level-up, which is the most powerful scaling m
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:42 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent hand level-up, which is the most powerful scaling mechanic available in
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → select_pack_card: The Sun is the highest priority card in this booster pack. It provides a permane
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:47 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this booster pack. It provides a permanent boost to hand lev
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → select_pack_card: The Sun is the highest priority card here as it provides a permanent upgrade to 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:56:57 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card here as it provides a permanent upgrade to a hand level (Planet
+  [ollama] waiting... (think=False)  [ollama] 10.6s  → select_pack_card: The Sun is a high-value card that provides a permanent boost to a hand's level, 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:57:07 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a high-value card that provides a permanent boost to a hand's level, which is crucial for
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card in this pack. It provides a permanent level
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:57:17 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack. It provides a permanent level-up to a hand type, 
+  [ollama] waiting... (think=False)  [ollama] 10.3s  [ollama] waiting... (think=False)  [ollama] 9.8s  → select_pack_card: The Sun is the highest priority card because it provides a permanent level-up to
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:57:37 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card because it provides a permanent level-up to a hand type, which 
+  [ollama] waiting... (think=False)  [ollama] 8.5s  → select_pack_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:57:46 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → select_pack_card: The Sun is the highest priority card because it provides a permanent hand level-
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:57:56 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card because it provides a permanent hand level-up, which is the mos
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → select_pack_card: The Sun is the highest priority card in this pack because it provides a permanen
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:58:06 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack because it provides a permanent hand level-up, whi
+  [ollama] waiting... (think=False)  [ollama] 8.6s  [ollama] waiting... (think=False)  [ollama] 10.2s  → select_pack_card: The Sun is the highest priority card in this pack because it provides a permanen
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:58:25 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is the highest priority card in this pack because it provides a permanent hand level-up, whi
+  [ollama] waiting... (think=False)  [ollama] 22.0s  [ollama] waiting... (think=False)  [ollama] 9.5s  → select_pack_card: The Sun provides a permanent hand level-up, which is essential for scaling into 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:58:56 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent hand level-up, which is essential for scaling into higher Antes. It is 
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → select_pack_card: The Sun provides a permanent hand level-up, which is the most reliable way to sc
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:59:00 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent hand level-up, which is the most reliable way to scale scoring potentia
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → select_pack_card: The Sun provides a permanent hand level-up, which is essential for scaling scori
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:59:10 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun provides a permanent hand level-up, which is essential for scaling scoring power through hig
+  [ollama] waiting... (think=False)  [ollama] 10.3s  → select_pack_card: The Sun is a Planet card that provides a permanent level-up to a hand type. In B
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:59:20 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a Planet card that provides a permanent level-up to a hand type. In Balatro, permanent sc
+  [ollama] waiting... (think=False)  [ollama] 10.6s  → select_pack_card: The Sun is a Planet card, providing a permanent level-up to a hand type. In the 
+[balatrobot] BAD_REQUEST on pack({'card': 0}): Card 'c_sun' requires 1-3 target card(s). Provided: 0
+  05:59:31 A3R7 [SMODS_BOOSTER_OPENED] select_pack_card idx=0
+    ↳ The Sun is a Planet card, providing a permanent level-up to a hand type. In the current state (Ante 
+  [ollama] waiting... (think=False)

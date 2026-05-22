@@ -1,0 +1,169 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3-v2 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/e3cb837c80a4.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 21.2s  → select_blind: Starting with the Small blind to build momentum and accumulate chips efficiently
+  07:30:38 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting with the Small blind to build momentum and accumulate chips efficiently. Limited funds ($4)
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 13.7s  → play_hand: Played Pair of 3s (indices 5 and 6) with A/K/J as kickers. Best available hand b
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: Played Pair of 3s (indices 5 and 6) with A/K/J as kickers. Best available hand beating High Card.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of C)
+      [2] Base Card (J of D)
+      [3] Base Card (6 of C)
+      [4] Base Card (5 of S)
+      [5] Base Card (3 of S)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (AS, KC, JD, 3S, 3C)
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KC, JD, 6C, 5S)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  07:30:55 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Played Pair of 3s (indices 5 and 6) with A/K/J as kickers. Best available hand beating High Card.
+  [ollama] waiting... (think=False)  [ollama] 17.4s  → play_hand: Played Full House (9s and 6s) with base 40 chips × 4 mult = 160 score. This matc
+  07:31:20 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Played Full House (9s and 6s) with base 40 chips × 4 mult = 160 score. This matches the Small Blind 
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → buy_card: Buy the Space Joker for $5 to boost joker slots and future scoring potential.
+  07:31:24 A1R1 [SHOP] buy_card idx=0
+    ↳ Buy the Space Joker for $5 to boost joker slots and future scoring potential.
+  [ollama] waiting... (think=False)  [ollama] 1.8s  → finish_shop: Completed the shop with available funds and proceed to the next blind selection.
+  07:31:26 A1R1 [SHOP] finish_shop
+    ↳ Completed the shop with available funds and proceed to the next blind selection.
+
+── BLIND_SELECT  Ante 1  Round 1  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 15.5s  → select_blind: Starting Ante 1 Small blind. $4 remains to manage. Play aggressively with 4 hand
+  07:31:43 A1R2 [BLIND_SELECT] select_blind
+    ↳ Starting Ante 1 Small blind. $4 remains to manage. Play aggressively with 4 hands left.
+
+── SELECTING_HAND  Ante 1  Round 2  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → play_hand: Two Pair (QS, QC, 5S, 5C) scores 40 chips × 4 mult = 160. The Space Joker adds +
+  07:31:52 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Two Pair (QS, QC, 5S, 5C) scores 40 chips × 4 mult = 160. The Space Joker adds +10 chips, making 200
+  [ollama] waiting... (think=False)  [ollama] 18.9s  → play_hand: Pair (3H, 3D) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, mak
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: Pair (3H, 3D) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, making 30 chips × 2 = 60. This is the best 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $4 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (K of C)
+      [2] Base Card (T of C)
+      [3] Base Card (9 of C)
+      [4] Base Card (7 of D)
+      [5] Base Card (3 of H)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (AD, KC, TC, 3H, 3D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AD, KC, TC, 9C, 7D)
+    
+    ## Jokers
+      [0] Space Joker (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$9
+    Recent hands:
+      - A1R1: mixed scored 336 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 336/None
+      - A1 : 0/None
+    Recent joker moves: buy j_space ($5)
+    ── end prompt ──
+
+  07:32:15 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Pair (3H, 3D) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, making 30 chips × 2 = 6
+  [ollama] waiting... (think=False)  [ollama] 14.8s  → play_hand: Pair (8H, 8C) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, mak
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair (8H, 8C) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, making 30 chips × 2 = 60. This is the best 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of H)
+      [1] Base Card (9 of C)
+      [2] Base Card (8 of H)
+      [3] Base Card (8 of C)
+      [4] Base Card (7 of D)
+      [5] Base Card (5 of D)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AH, 9C, 8H, 8C, 7D)
+      High Card: play indices [0, 1, 2, 4, 5]  (AH, 9C, 8H, 7D, 5D)
+    
+    ## Jokers
+      [0] Space Joker (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$9
+    Recent hands:
+      - A1R1: mixed scored 336 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 336/None
+      - A1 : 0/None
+    Recent joker moves: buy j_space ($5)
+    ── end prompt ──
+
+  07:32:33 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair (8H, 8C) scores 10 chips × 2 mult = 20. The Space Joker adds +10 chips, making 30 chips × 2 = 6
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → discard_cards: Discard the Pair to try for a better hand like Two Pair or Three of a Kind.
+  07:32:37 A1R2 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ Discard the Pair to try for a better hand like Two Pair or Three of a Kind.
+  [ollama] waiting... (think=False)  [ollama] 127.5s  → play_hand: Two Pair (8S, 8D, 2S, 2D) scores 20 chips × 4 mult = 80. The Space Joker adds +1
+  07:34:48 A1R2 [GAME_OVER] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Two Pair (8S, 8D, 2S, 2D) scores 20 chips × 4 mult = 80. The Space Joker adds +10 mult, making 4 × 1
+
+── GAME_OVER  Ante 1  Round 2  $4 ──
+
+LOST at ante 1
+  [log] saved 11 entries → runs/e3cb837c80a4.json
+  ~tokens: ollama (free) 20777/440  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

@@ -1,0 +1,124 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/0079e3aefe5e.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → select_blind: I need to start the first round. Since it's Ante 1, I'll take the Small Blind to
+  12:17:27 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the first round. Since it's Ante 1, I'll take the Small Blind to build my economy an
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have Three of a Kind (8s) available. Since this is the first round and I have 
+  12:17:34 A1R1 [SELECTING_HAND] play_hand cards=[2, 3, 4]
+    ↳ I have Three of a Kind (8s) available. Since this is the first round and I have plenty of hands and 
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → play_hand: I have a Straight (7, 6, 5, 4, 3) available. A Straight is the highest scoring h
+  12:17:44 A1R1 [ROUND_EVAL] play_hand cards=[2, 3, 4, 5, 7]
+    ↳ I have a Straight (7, 6, 5, 4, 3) available. A Straight is the highest scoring hand currently playab
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → finish_shop: I don't have enough money to buy the interesting Joker (Mime costs $5, leaving o
+  12:17:49 A1R1 [SHOP] finish_shop
+    ↳ I don't have enough money to buy the interesting Joker (Mime costs $5, leaving only $4, and I need m
+
+── BLIND_SELECT  Ante 1  Round 1  $9 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: Since it is the first blind of the first ante, I need to build up my economy and
+  12:17:53 A1R2 [BLIND_SELECT] select_blind
+    ↳ Since it is the first blind of the first ante, I need to build up my economy and scoring potential. 
+
+── SELECTING_HAND  Ante 1  Round 2  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → discard_cards: I have two pair (8s and 3s). I will discard the Ten of Spades and the 4 of Diamo
+  12:17:57 A1R2 [SELECTING_HAND] discard_cards cards=[0, 5]
+    ↳ I have two pair (8s and 3s). I will discard the Ten of Spades and the 4 of Diamonds to try and draw 
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → play_hand: I have Two Pair (8s and 3s). Since this is an early round and I have plenty of h
+  12:18:04 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ I have Two Pair (8s and 3s). Since this is an early round and I have plenty of hands left, I will pl
+  [ollama] waiting... (think=False)  [ollama] 2.4s  → play_hand: I have Two Pair (9s and 6s). This is my strongest available hand and will contri
+  12:18:10 A1R2 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have Two Pair (9s and 6s). This is my strongest available hand and will contribute the most chips 
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → play_hand: I have a Full House (Queens over Fives). This is my strongest possible hand and 
+  12:18:19 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 5, 6, 7]
+    ↳ I have a Full House (Queens over Fives). This is my strongest possible hand and will provide a signi
+
+── ROUND_EVAL  Ante 1  Round 2  $9 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $14 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → finish_shop: I don't have enough money to buy the Hieroglyph voucher, and the available Joker
+  12:18:25 A1R2 [SHOP] finish_shop
+    ↳ I don't have enough money to buy the Hieroglyph voucher, and the available Jokers (Rocket, To the Mo
+
+── BLIND_SELECT  Ante 1  Round 2  $14 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → select_blind: I need to proceed to the Big Blind. Since I have $14 and have already cleared th
+  12:18:29 A1R3 [BLIND_SELECT] select_blind
+    ↳ I need to proceed to the Big Blind. Since I have $14 and have already cleared the Small Blind, I wan
+
+── SELECTING_HAND  Ante 1  Round 3  $14 ──
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → play_hand: I have Two Pair (7s and 4s) available. Two Pair is my highest scoring playable h
+  12:18:37 A1R3 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ I have Two Pair (7s and 4s) available. Two Pair is my highest scoring playable hand and will help me
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → play_hand: I have a Flush (AC, JC, 8C, 6C, 3C) available. A Flush is the highest scoring ha
+  12:18:44 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 3, 5, 6]
+    ↳ I have a Flush (AC, JC, 8C, 6C, 3C) available. A Flush is the highest scoring hand I can make right 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → discard_cards: I have a pair of Jacks (indices 1 and 2). By discarding the other cards, I can t
+  12:18:48 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5]
+    ↳ I have a pair of Jacks (indices 1 and 2). By discarding the other cards, I can try to find another J
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → play_hand: I have a Pair of Tens (10H, 10D). This is my highest scoring playable hand and i
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[3, 4]
+    reasoning: I have a Pair of Tens (10H, 10D). This is my highest scoring playable hand and it is a solid way to progress toward the 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $14 | Hands left: 2 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (Q of S)
+      [2] Base Card (J of D)
+      [3] Base Card (T of H)
+      [4] Base Card (T of D)
+      [5] Base Card (8 of D)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AS, QS, JD, TH, TD)
+      High Card: play indices [0, 1, 2, 3, 5]  (AS, QS, JD, TH, 8D)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$9, A1R2=$14
+    Recent hands:
+      - A1R1: mixed scored 382 (hands_used=2, discards_used=0)
+      - A1R2: mixed scored 484 (hands_used=3, discards_used=1)
+    Recent blinds:
+      - A1 : 382/None
+      - A1 : 484/None
+      - A1 : 0/None
+    ── end prompt ──
+
+  12:18:52 A1R3 [SELECTING_HAND] play_hand cards=[3, 4]
+    ↳ I have a Pair of Tens (10H, 10D). This is my highest scoring playable hand and it is a solid way to 
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → play_hand: I have Three of a Kind (8S, 8H, 8D) available. This is my highest scoring playab
+  12:18:58 A1R3 [GAME_OVER] play_hand cards=[0, 1, 3, 4, 5]
+    ↳ I have Three of a Kind (8S, 8H, 8D) available. This is my highest scoring playable hand, and since t
+
+── GAME_OVER  Ante 1  Round 3  $14 ──
+
+LOST at ante 1
+  [log] saved 16 entries → runs/0079e3aefe5e.json
+  ~tokens: ollama (free) 30383/1046  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

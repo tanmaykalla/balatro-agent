@@ -1,0 +1,245 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/a4ed3508f2e5.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 13.9s  → select_blind: I need to start the first round to build economy and gain experience. Skipping t
+  12:12:44 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the first round to build economy and gain experience. Skipping the Small Blind is un
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → play_hand: I have a pair of 9s. This is my highest scoring playable hand available. Even th
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[2, 3]
+    reasoning: I have a pair of 9s. This is my highest scoring playable hand available. Even though it's only a pair, it's better than 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (K of S)
+      [1] Base Card (Q of H)
+      [2] Base Card (9 of S)
+      [3] Base Card (9 of H)
+      [4] Base Card (7 of H)
+      [5] Base Card (6 of C)
+      [6] Base Card (5 of D)
+      [7] Base Card (3 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KS, QH, 9S, 9H, 7H)
+      High Card: play indices [0, 1, 2, 4, 5]  (KS, QH, 9S, 7H, 6C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  12:12:50 A1R1 [SELECTING_HAND] play_hand cards=[2, 3]
+    ↳ I have a pair of 9s. This is my highest scoring playable hand available. Even though it's only a pai
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → discard_cards: I have a pair of 6s (indices 4 and 5). I'm discarding the high cards (K, Q, 8) t
+  12:12:55 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2]
+    ↳ I have a pair of 6s (indices 4 and 5). I'm discarding the high cards (K, Q, 8) to try and draw more 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have two pairs: 7s and 6s. Playing Two Pair is my strongest option and will pr
+  12:13:02 A1R1 [SELECTING_HAND] play_hand cards=[2, 3, 4, 5]
+    ↳ I have two pairs: 7s and 6s. Playing Two Pair is my strongest option and will provide a higher base 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Flush (KD, JD, 8D, 5D, 3D). A Flush is my highest scoring hand availabl
+  12:13:11 A1R1 [ROUND_EVAL] play_hand cards=[1, 2, 4, 5, 7]
+    ↳ I have a Flush (KD, JD, 8D, 5D, 3D). A Flush is my highest scoring hand available and provides signi
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → buy_card: The Wheel of Fortune is a high-value tarot card that can significantly boost my 
+  12:13:16 A1R1 [SHOP] buy_card idx=0
+    ↳ The Wheel of Fortune is a high-value tarot card that can significantly boost my run by providing pow
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → use_consumable: I have enough money to use The Wheel of Fortune. I'll use it to see if I can get
+  12:13:21 A1R1 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32003: Consumable 'The Wheel of Fortune' ca
+    ↳ I have enough money to use The Wheel of Fortune. I'll use it to see if I can get a high-value tarot 
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → buy_card: Zany Joker provides +Mult for playing any hand containing a single Joker. While 
+  12:13:25 A1R1 [SHOP] buy_card idx=0
+    ↳ Zany Joker provides +Mult for playing any hand containing a single Joker. While I don't have any Jok
+  [ollama] waiting... (think=False)  [ollama] 2.1s  → finish_shop: I have very little money ($1) and no useful jokers or vouchers are currently aff
+  12:13:27 A1R1 [SHOP] finish_shop
+    ↳ I have very little money ($1) and no useful jokers or vouchers are currently affordable or present i
+
+── BLIND_SELECT  Ante 1  Round 1  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: I have $1 and need to play the Small Blind to gain more money and progress. Even
+  12:13:31 A1R2 [BLIND_SELECT] select_blind
+    ↳ I have $1 and need to play the Small Blind to gain more money and progress. Even though I don't have
+
+── SELECTING_HAND  Ante 1  Round 2  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Flush available. A Flush (35 chips, 4 mult) is much stronger than a Pai
+  12:13:38 A1R2 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 7]
+    ↳ I have a Flush available. A Flush (35 chips, 4 mult) is much stronger than a Pair or High Card and w
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → discard_cards: I am attempting to build a Flush. I already have 5 Spades in hand (Indices 0, 2,
+  12:13:42 A1R2 [SELECTING_HAND] discard_cards cards=[1, 3, 7]
+    ↳ I am attempting to build a Flush. I already have 5 Spades in hand (Indices 0, 2, 4, 5, 6). I will di
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Flush available (JS, TS, 4S, 3S, 2S). A Flush is the highest-scoring pl
+  12:13:51 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5, 6]
+    ↳ I have a Flush available (JS, TS, 4S, 3S, 2S). A Flush is the highest-scoring playable hand availabl
+
+── ROUND_EVAL  Ante 1  Round 2  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → finish_shop: I have $5 and nothing in the shop is worth spending it on right now. Zany Joker 
+  12:13:57 A1R2 [SHOP] finish_shop
+    ↳ I have $5 and nothing in the shop is worth spending it on right now. Zany Joker is my only joker, an
+
+── BLIND_SELECT  Ante 1  Round 2  $5 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → select_blind: I need to play the Big Blind to progress through the Ante. I don't have enough m
+  12:14:02 A1R3 [BLIND_SELECT] select_blind
+    ↳ I need to play the Big Blind to progress through the Ante. I don't have enough money to skip and a s
+
+── SELECTING_HAND  Ante 1  Round 3  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: I have a Straight (K, Q, J, 10, 9) available. Since this is the highest scoring 
+  12:14:10 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Straight (K, Q, J, 10, 9) available. Since this is the highest scoring hand available and w
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have Three of a Kind (8s) available. This is the highest scoring hand in my pl
+  12:14:18 A2R3 [ROUND_EVAL] play_hand cards=[2, 3, 4, 0, 1]
+    ↳ I have Three of a Kind (8s) available. This is the highest scoring hand in my playable hands list an
+
+── ROUND_EVAL  Ante 2  Round 3  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $11 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → finish_shop: The shop currently offers no useful jokers. Card Sharp and Reserved Parking are 
+  12:14:25 A2R3 [SHOP] finish_shop
+    ↳ The shop currently offers no useful jokers. Card Sharp and Reserved Parking are not immediately impa
+
+── BLIND_SELECT  Ante 2  Round 3  $11 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → select_blind: I need to play this blind to progress and build my economy/scoring. I have $11 a
+  12:14:29 A2R4 [BLIND_SELECT] select_blind
+    ↳ I need to play this blind to progress and build my economy/scoring. I have $11 and a Zany Joker, whi
+
+── SELECTING_HAND  Ante 2  Round 4  $11 ──
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → discard_cards: I have a high card (Ace) with several high cards (K, Q, J) in my hand. I will di
+  12:14:34 A2R4 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have a high card (Ace) with several high cards (K, Q, J) in my hand. I will discard the low cards 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a Straight (Ace, King, Queen, Jack, Ten). This is the highest scoring han
+  12:14:41 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have a Straight (Ace, King, Queen, Jack, Ten). This is the highest scoring hand available and prov
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → discard_cards: I have Two Pair (Tens and Twos) available. To improve my scoring potential and a
+  12:14:45 A2R4 [SELECTING_HAND] discard_cards cards=[3, 4, 5]
+    ↳ I have Two Pair (Tens and Twos) available. To improve my scoring potential and aim for a Full House 
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → play_hand: I have Two Pair (Tens and Twos). This is the highest scoring playable hand avail
+  12:14:52 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ I have Two Pair (Tens and Twos). This is the highest scoring playable hand available and will help m
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have a Full House (9s, 9c, 9d, 8c, 8d). This is my highest scoring hand availa
+  12:15:01 A2R4 [ROUND_EVAL] play_hand cards=[1, 2, 3, 4, 5]
+    ↳ I have a Full House (9s, 9c, 9d, 8c, 8d). This is my highest scoring hand available and will maximiz
+
+── ROUND_EVAL  Ante 2  Round 4  $11 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $19 ──
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → use_consumable: The Wheel of Fortune is a high-risk, high-reward consumable. Since I have enough
+  12:15:08 A2R4 [SHOP] use_consumable idx=0
+    ↳ The Wheel of Fortune is a high-risk, high-reward consumable. Since I have enough money to absorb the
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_card: 8 Ball is an excellent early-game Joker. It provides a x1 multiplier for every 8
+  12:15:12 A2R4 [SHOP] buy_card idx=1
+    ↳ 8 Ball is an excellent early-game Joker. It provides a x1 multiplier for every 8 played. Since I'm i
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → buy_pack: I'm looking to level up my hands to increase my base score. Since I don't have a
+  12:15:16 A2R4 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I'm looking to level up my hands to increase my base score. Since I don't have a specific hand-type 
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_pack_card: I am looking for upgrades to my hands. Mercury (Three of a Kind) is useful as it
+  12:15:21 A2R4 [SHOP] select_pack_card idx=0
+    ↳ I am looking for upgrades to my hands. Mercury (Three of a Kind) is useful as it is a relatively eas
+  [ollama] waiting... (think=False)  [ollama] 5.2s  → buy_pack: I am looking for Planet cards to increase the base chips and mult of my hands. S
+  12:15:28 A2R4 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I am looking for Planet cards to increase the base chips and mult of my hands. Since I'm currently i
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → select_pack_card: I am currently in Ante 2, Round 4. I have $2 in my wallet. Neptune is a planet c
+  12:15:34 A2R4 [SHOP] select_pack_card idx=0
+    ↳ I am currently in Ante 2, Round 4. I have $2 in my wallet. Neptune is a planet card that levels up F
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → finish_shop: I only have $2, which is not enough to buy 'Ride the Bus' ($6) or 'Blank' ($10).
+  12:15:38 A2R4 [SHOP] finish_shop
+    ↳ I only have $2, which is not enough to buy 'Ride the Bus' ($6) or 'Blank' ($10). Rerolling would cos
+
+── BLIND_SELECT  Ante 2  Round 4  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → select_blind: I have $2, which is not enough to buy anything in the shop, so I need to play th
+  12:15:42 A2R5 [BLIND_SELECT] select_blind
+    ↳ I have $2, which is not enough to buy anything in the shop, so I need to play this round to increase
+
+── SELECTING_HAND  Ante 2  Round 5  $2 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: I have a Flush available (QH, TH, 7H, 4H, 2H). A Flush is my highest scoring pla
+  12:15:50 A2R5 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 7]
+    ↳ I have a Flush available (QH, TH, 7H, 4H, 2H). A Flush is my highest scoring playable hand and will 
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → discard_cards: I have Three of a Kind (3S, 3C, 3D) available. I will discard the high cards (KH
+  12:15:55 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have Three of a Kind (3S, 3C, 3D) available. I will discard the high cards (KH, QS, JD, 9D, 7S) to
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: I have a Full House (AA 333) available. This is my highest scoring hand and will
+  12:16:05 A2R5 [ROUND_EVAL] play_hand cards=[0, 1, 5, 6, 7]
+    ↳ I have a Full House (AA 333) available. This is my highest scoring hand and will provide much more c
+
+── ROUND_EVAL  Ante 2  Round 5  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 5  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → use_consumable: Death is a powerful tarot card that can turn a card into a Gold card or create a
+[balatrobot] BAD_REQUEST on use({'consumable': 1, 'cards': [0]}): Consumable index out of range: 1
+  12:16:11 A2R5 [SHOP] use_consumable idx=1
+    ↳ Death is a powerful tarot card that can turn a card into a Gold card or create a Steel card, which p
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → buy_card: Mime is an extremely powerful xMult-enabling joker because it triggers all card 
+  12:16:14 A2R5 [SHOP] buy_card idx=0
+    ↳ Mime is an extremely powerful xMult-enabling joker because it triggers all card enhancements (like M
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → buy_card: I have $3 and Death costs $3. Death is one of the strongest tarot cards in the g
+  12:16:18 A2R5 [SHOP] buy_card idx=0
+    ↳ I have $3 and Death costs $3. Death is one of the strongest tarot cards in the game as it allows me 
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → use_consumable: I have $0, so I cannot buy anything. I will use Death on a low-value card in my 
+  12:16:22 A2R5 [SHOP] use_consumable idx=0  ✗ BalatrobotError -32002: Consumable 'Death' requires card sel
+    ↳ I have $0, so I cannot buy anything. I will use Death on a low-value card in my hand to try and tran
+  [ollama] waiting... (think=False)  [ollama] 3.1s  [ollama] waiting... (think=False)  [ollama] 1.4s  → finish_shop: I have $0 and cannot afford any items or a reroll. I'll proceed to the next blin
+  12:16:26 A2R5 [SHOP] finish_shop
+    ↳ I have $0 and cannot afford any items or a reroll. I'll proceed to the next blind.
+
+── BLIND_SELECT  Ante 2  Round 5  $0 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → select_blind: I have no choice but to select a blind as skipping is not allowed. I will play t
+  12:16:31 A2R6 [BLIND_SELECT] select_blind
+    ↳ I have no choice but to select a blind as skipping is not allowed. I will play the current blind to 
+
+── SELECTING_HAND  Ante 2  Round 6  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → discard_cards: I have a pair of 7s and a pair of 2s (Two Pair). I'm discarding the non-pair car
+  12:16:36 A2R6 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5]
+    ↳ I have a pair of 7s and a pair of 2s (Two Pair). I'm discarding the non-pair cards (K, J, 5, 3) to t
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → play_hand: I have a Flush (A, 8, 7, 5, 3 of Spades). A Flush is the highest scoring hand av
+  12:16:44 A2R6 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ I have a Flush (A, 8, 7, 5, 3 of Spades). A Flush is the highest scoring hand available and provides
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → discard_cards: I have Two Pair (9s and 2s). I'm discarding the Ten, 8, 7, and 5 to try and draw
+  12:16:49 A2R6 [SELECTING_HAND] discard_cards cards=[0, 3, 4, 5]
+    ↳ I have Two Pair (9s and 2s). I'm discarding the Ten, 8, 7, and 5 to try and draw into a third 9 or a
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: I have Two Pair (9s and 2s). This is the highest scoring hand available in my cu
+  12:16:56 A2R6 [SELECTING_HAND] play_hand cards=[0, 2, 3, 6, 7]
+    ↳ I have Two Pair (9s and 2s). This is the highest scoring hand available in my current hand. Since I 
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have two pairs (Queens and Jacks). I'm discarding the Ace, Ten, 8, and 4 to tr
+  12:17:01 A2R6 [SELECTING_HAND] discard_cards cards=[0, 5, 6, 7]
+    ↳ I have two pairs (Queens and Jacks). I'm discarding the Ace, Ten, 8, and 4 to try and draw into a Fu
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: I have Two Pair (Queens and Jacks). This is the highest scoring hand currently a
+  12:17:08 A2R6 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ I have Two Pair (Queens and Jacks). This is the highest scoring hand currently available. Since I on
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: I have a Pair of 2s. This is my highest scoring playable hand. Since I am on my 
+  12:17:15 A2R6 [GAME_OVER] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ I have a Pair of 2s. This is my highest scoring playable hand. Since I am on my last hand (1 hand le
+
+── GAME_OVER  Ante 2  Round 6  $0 ──
+
+LOST at ante 2
+  [log] saved 46 entries → runs/a4ed3508f2e5.json
+  ~tokens: ollama (free) 93514/3628  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 2

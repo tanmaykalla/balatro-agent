@@ -1,0 +1,43 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/a28fd15ebf4c.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 9.7s  → select_blind: I need to start the run by playing the first Small Blind to build up money and s
+  11:20:12 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the run by playing the first Small Blind to build up money and see the initial hand.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 24.6s  → discard_cards: I have a pair of 5s, but with 4 discards available in the first round, I want to
+  11:20:38 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 7]
+    ↳ I have a pair of 5s, but with 4 discards available in the first round, I want to try and improve the
+  [ollama] waiting... (think=True)  [ollama] 23.2s  → play_hand: Playing Two Pair (JJ and 55) because it's the strongest available hand and will 
+  11:21:05 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ Playing Two Pair (JJ and 55) because it's the strongest available hand and will help reach the targe
+  [ollama] waiting... (think=True)  [ollama] 336.5s  [ollama] waiting... (think=True)  [ollama] 36.5s  → play_hand: Playing Two Pair (QQ and 66) as it is the highest scoring hand available and wil
+  11:27:22 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Playing Two Pair (QQ and 66) as it is the highest scoring hand available and will help chip away at 
+  [ollama] waiting... (think=True)  [ollama] 40.9s  → thought: (no reasoning provided)
+  11:28:10 A1R1 [ROUND_EVAL] thought
+    ↳ (no reasoning provided)
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=True)  [ollama] 36.0s  → buy_pack: Buffoon Packs are the highest priority for finding Jokers. I have $8, and buying
+  11:28:48 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buffoon Packs are the highest priority for finding Jokers. I have $8, and buying this for $4 leaves 
+  [ollama] waiting... (think=True)  [ollama] 15.2s  → select_pack_card: I have very little money ($4), so I'm choosing 'Credit Card' in hopes of an econ
+  11:29:03 A1R1 [SHOP] select_pack_card idx=0
+    ↳ I have very little money ($4), so I'm choosing 'Credit Card' in hopes of an economic boost or utilit
+  [ollama] waiting... (think=True)  [ollama] 26.8s  → buy_pack: I have $4, and the Arcana Pack costs $4. Since I cannot afford the Joker or a re
+  11:29:33 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $4, and the Arcana Pack costs $4. Since I cannot afford the Joker or a reroll, buying the Arc
+  [ollama] waiting... (think=True)

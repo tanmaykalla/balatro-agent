@@ -1,0 +1,57 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: openai (gpt-5-mini)
+[agent] logging to runs/7ea2bce988b2.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [openai] no tool call — fallback
+  18:11:42 A1R1 [BLIND_SELECT] select_blind
+    ↳ fallback
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  → play_hand: I already have a completed Flush (KC, TC, 6C, 5C, 3C). Per rules, play completed
+  18:11:52 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 4, 5, 7]
+    ↳ I already have a completed Flush (KC, TC, 6C, 5C, 3C). Per rules, play completed Flush immediately —
+  → play_hand: I have a completed Flush (QD, JD, TD, 5D, 4D). Per strategy, play a completed Fl
+  18:12:06 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ I have a completed Flush (QD, JD, TD, 5D, 4D). Per strategy, play a completed Flush immediately — it
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [openai] no tool call — fallback
+  18:12:13 A1R1 [SHOP] finish_shop
+    ↳ fallback
+
+── BLIND_SELECT  Ante 1  Round 1  $9 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [openai] no tool call — fallback
+  18:12:22 A1R2 [BLIND_SELECT] select_blind
+    ↳ fallback
+
+── SELECTING_HAND  Ante 1  Round 2  $9 ──
+  [openai] no tool call — fallback
+  18:12:34 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ fallback
+  [openai] no tool call — fallback
+  18:12:46 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ fallback
+  [openai] no tool call — fallback
+  18:12:57 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ fallback
+  [openai] no tool call — fallback
+  18:13:07 A1R2 [GAME_OVER] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ fallback
+
+── GAME_OVER  Ante 1  Round 2  $9 ──
+
+LOST at ante 1
+  [log] saved 9 entries → runs/7ea2bce988b2.json
+  ~tokens: gemini 23917/131  cost ~$0.0024
+Run 1/1 | Strategy: Optimal_Chaser | Result: LOST ante 1

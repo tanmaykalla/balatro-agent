@@ -1,0 +1,307 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: gemini (gemini-2.5-flash)
+[agent] logging to runs/18cd069620d1.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:35:00 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting a new run, always select the first blind to begin accumulating resources.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  07:35:12 A1R1 [SELECTING_HAND] discard_cards cards=[5, 6, 7]
+    ↳ My current best hand (Two Pair) is unlikely to meet the blind target. Discarding the 3 of Diamonds a
+  07:35:23 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5, 6]
+    ↳ Successfully drew into a Full House (Jacks over Fives) after discarding. This is a strong hand for A
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $10 ──
+  07:35:32 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buffoon Packs are high priority for early joker selection.
+  07:35:35 A1R1 [SHOP] select_pack_card idx=1
+    ↳ Raised Fist provides a consistent +Mult bonus for face cards and Aces, which will be useful for scor
+  07:35:42 A1R1 [SHOP] sell_joker idx=0
+    ↳ Raised Fist is a weak joker. Selling it allows me to afford Mercury while retaining $5 for interest.
+  07:35:45 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying Mercury to level up Straights, a strong hand type, and retaining $5 for interest.
+  07:35:51 A1R1 [SHOP] use_consumable idx=0
+    ↳ Using Mercury to level up the Straight hand, permanently increasing its chips and mult.
+  07:35:54 A1R1 [SHOP] finish_shop
+    ↳ I will save my $5 to earn interest and keep my economy strong in the early game. The available items
+
+── BLIND_SELECT  Ante 1  Round 1  $5 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:35:58 A1R2 [BLIND_SELECT] select_blind
+    ↳ It's the first small blind. I need to play to start earning money and see what cards I get. Skipping
+
+── SELECTING_HAND  Ante 1  Round 2  $5 ──
+  07:36:08 A1R2 [SELECTING_HAND] play_hand cards=[2, 3, 5, 6, 7]
+    ↳ Playing the Straight as it is the highest scoring hand available, providing a solid start to the rou
+  07:36:16 A1R2 [SELECTING_HAND] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ Playing Two Pair (K, 7, 7, 5, 5) as it is the highest scoring hand available, providing a good score
+  07:36:22 A1R2 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ Discarding 6D, 4D, 3D, 2H to try and draw a Jack to complete a Straight with Q, T, 9, 8.
+  07:36:31 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Playing the Full House (Three Queens and Two Eights) as it is the highest scoring hand available and
+
+── ROUND_EVAL  Ante 1  Round 2  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $11 ──
+  07:36:39 A1R2 [SHOP] buy_card idx=1
+    ↳ Buy Neptune to level up the Straight hand, a strong hand type, and maintain some money for interest.
+  07:36:45 A1R2 [SHOP] use_consumable idx=0
+    ↳ Use Neptune to level up the Straight hand, a strong hand type, permanently increasing its chips and 
+  07:36:52 A1R2 [SHOP] buy_card idx=0
+    ↳ Green Joker offers a potential +1 Mult for Flushes at a low cost ($4), which is a good early game in
+  07:36:59 A1R2 [SHOP] finish_shop
+    ↳ No strong buys available. Standard packs are marginal, and I need to save money to build up interest
+
+── BLIND_SELECT  Ante 1  Round 2  $4 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  07:37:02 A1R3 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted at this point, so I must select the current blind to proceed.
+
+── SELECTING_HAND  Ante 1  Round 3  $4 ──
+  07:37:10 A1R3 [SELECTING_HAND] discard_cards cards=[3, 4, 5, 6, 7]
+    ↳ Discarding lowest value cards to try and improve on a weak Pair, aiming for Three of a Kind, Two Pai
+  07:37:18 A1R3 [SELECTING_HAND] discard_cards cards=[0, 5, 6, 7]
+    ↳ Discarding low-value cards that aren't part of the Two Pair to try and draw cards that could improve
+  07:37:32 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Playing the Full House (three Kings, two Tens) as it is the highest scoring hand available. It provi
+  07:37:42 A1R3 [SELECTING_HAND] discard_cards cards=[1, 2, 3, 6, 7]
+    ↳ Discarding five low-value cards that are not part of the Pair of Sevens, while keeping the Ace as a 
+  07:37:57 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 6, 7]
+    ↳ Discarding the five lowest-value non-paired cards (Ace, King, Jack, 6, 3) to keep the Pair of Sevens
+  07:38:04 A1R3 [SELECTING_HAND] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ Playing the Two Pair (Sevens and Twos) with an Ace kicker, as it is the highest scoring hand availab
+  07:38:14 A2R3 [ROUND_EVAL] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Playing the Two Pair (Jacks and Threes) as it is the highest scoring hand available, and discards ar
+
+── ROUND_EVAL  Ante 2  Round 3  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $10 ──
+  07:38:26 A2R3 [SHOP] buy_card idx=0
+    ↳ Buying Gluttonous Joker for a good +Mult bonus when playing 5-card hands, and to maintain $5 for int
+  07:38:32 A2R3 [SHOP] finish_shop
+    ↳ Shop offers are not compelling enough to spend money and lose interest. Saving $5 to gain $1 interes
+
+── BLIND_SELECT  Ante 2  Round 3  $5 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  07:38:36 A2R4 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select the current blind to proceed.
+
+── SELECTING_HAND  Ante 2  Round 4  $5 ──
+  07:38:44 A2R4 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5]
+    ↳ Attempting to draw for a Flush, as I currently have 4 clubs. High Card is too weak to play and I hav
+  07:38:54 A2R4 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 6]
+    ↳ Successfully drew into a Flush with the previous discard. Playing the Flush now as it is a strong ha
+
+── ROUND_EVAL  Ante 2  Round 4  $5 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $11 ──
+  07:39:05 A2R4 [SHOP] buy_voucher idx=0
+    ↳ Buying Paint Brush for an extra joker slot, a permanent and very strong upgrade for the long run. Sa
+  07:39:08 A2R4 [SHOP] finish_shop
+    ↳ Cannot afford anything in the shop, nor can I reroll. Moving to the next blind.
+
+── BLIND_SELECT  Ante 2  Round 4  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:39:13 A2R4 [BLIND_SELECT] skip_blind
+    ↳ The previous blind was cleared very comfortably, with 3 hands remaining. Skipping to get a tag rewar
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  07:39:16 A2R5 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted at this point in the game. I must select the current blind to proceed.
+
+── SELECTING_HAND  Ante 2  Round 5  $1 ──
+  07:39:28 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 5, 8]
+    ↳ Discarding single cards to try and draw into a Full House or Three of a Kind, as Two Pair is a low-s
+  07:39:39 A2R5 [SELECTING_HAND] play_hand cards=[1, 2, 5, 6, 7]
+    ↳ Playing a Full House (Jacks over Fours) as it's the highest scoring hand available and should provid
+  07:39:50 A2R5 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 5]
+    ↳ Playing the Flush (AS, KS, QS, JS, 9S) as it's the highest scoring hand available and offers a good 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: Playing the Pair of 5s. With the Gluttonous Joker, this hand scores significantly well due to the King and Queen in the 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 5
+    Money: $1 | Hands left: 2 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (K of D)
+      [1] Base Card (Q of D)
+      [2] Base Card (T of C)
+      [3] Base Card (9 of H)
+      [4] Base Card (6 of D)
+      [5] Base Card (5 of S)
+      [6] Base Card (5 of D)
+      [7] Base Card (3 of C)
+      [8] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (KD, QD, TC, 5S, 5D)
+      High Card: play indices [0, 1, 2, 3, 4]  (KD, QD, TC, 9H, 6D)
+    
+    ## Jokers
+      [0] Green Joker (sell $2)
+      [1] Gluttonous Joker (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 2, round 5
+    Recent wallet: A1R1=$10, A1R2=$11, A2R3=$10, A2R4=$11
+    Recent hands:
+      - A1R1: mixed scored 300 (hands_used=1, discards_used=1)
+      - A1R2: mixed scored 632 (hands_used=3, discards_used=1)
+      - A1R3: mixed scored 615 (hands_used=3, discards_used=4)
+      - A2R4: mixed scored 1554 (hands_used=1, discards_used=1)
+    Recent blinds:
+      - A2 : 1554/None
+      - A2 : SKIPPED
+      - A2 : 0/None
+    Recent joker moves: sell j_raised_fist ($2), buy c_mercury ($3), buy c_neptune ($3), buy j_green_joker ($4), buy j_gluttenous_joker ($5)
+    ── end prompt ──
+
+  07:40:04 A2R5 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Playing the Pair of 5s. With the Gluttonous Joker, this hand scores significantly well due to the Ki
+  07:40:15 A3R5 [ROUND_EVAL] play_hand cards=[2, 3, 4, 6, 7]
+    ↳ Playing the Full House (Sixes over Threes) as it is the highest-scoring hand available and it's the 
+
+── ROUND_EVAL  Ante 3  Round 5  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 5  $8 ──
+  07:40:25 A3R5 [SHOP] sell_joker idx=1
+    ↳ Selling weak economy joker (Gluttonous Joker) to free up a slot and gain money for a better joker, w
+  07:40:33 A3R5 [SHOP] buy_card idx=0
+    ↳ Buying the free xMult Joker 'Madness' to significantly boost scoring potential when playing two pair
+  07:40:38 A3R5 [SHOP] buy_card idx=0
+    ↳ Free joker. Adds +2 MULT for each face card in a scoring hand, which synergizes with Madness if play
+  07:40:42 A3R5 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ Buying the free Jumbo Celestial Pack to get planet cards, which permanently level up hand types and 
+  07:40:53 A3R5 [SHOP] select_pack_card idx=4
+    ↳ Picking Venus to level up Flush. This synergizes with the Green Joker, encouraging a consistent Flus
+  07:40:58 A3R5 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buying the free Jumbo Standard Pack to get more playing cards. This costs $0, keeping our money at $
+  07:41:02 A3R5 [SHOP] select_pack_card idx=2
+    ↳ A Mult Card provides a permanent +4 Mult to a card, which is a consistent benefit for future hands. 
+  07:41:08 A3R5 [SHOP] buy_voucher idx=0
+    ↳ Buying the 'Wasteful' voucher for $10. This grants +1 hand per round, which is a powerful permanent 
+  07:41:10 A3R5 [SHOP] finish_shop
+    ↳ Cannot afford to reroll or buy anything in the shop. Proceeding to the next blind selection.
+
+── BLIND_SELECT  Ante 3  Round 5  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  07:41:13 A3R6 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select this blind.
+
+── SELECTING_HAND  Ante 3  Round 6  $0 ──
+  07:41:19 A3R6 [SELECTING_HAND] discard_cards cards=[2, 3, 6, 7, 8]
+    ↳ Discarding low-value cards to try and improve the hand beyond a basic Pair. Keeping the Pair of 7s a
+  07:41:29 A3R6 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5]
+    ↳ Discarding non-diamond cards to attempt to complete a Diamond Flush, which would significantly impro
+  07:41:38 A3R6 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 8]
+    ↳ Playing the Flush of Diamonds as it's the highest scoring hand available and I have already discarde
+  07:41:47 A3R6 [SELECTING_HAND] play_hand cards=[0, 1, 4, 7, 8]
+    ↳ Playing the Flush of Clubs as it is the highest scoring hand available and is already complete. I sh
+  07:41:56 A3R6 [SELECTING_HAND] discard_cards cards=[5, 6, 7, 8]
+    ↳ Discarding low-value cards not part of the current Two Pair to try and improve the hand. This leaves
+  07:42:11 A3R6 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 5]
+    ↳ Playing the Full House (Tens over Nines) as it is the highest scoring hand available. Without the sp
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 4, 5]
+    reasoning: This is the last hand remaining, so I must play a hand. A Pair is the highest scoring hand available, so I am playing th
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 3 Round 6
+    Money: $0 | Hands left: 1 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (K of C)
+      [1] Base Card (Q of S)
+      [2] Base Card (J of D)
+      [3] Base Card (8 of S)
+      [4] Base Card (7 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (6 of S)
+      [7] Base Card (5 of D)
+      [8] Base Card (3 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 4, 5]  (KC, QS, JD, 7H, 7C)
+      High Card: play indices [0, 1, 2, 3, 4]  (KC, QS, JD, 8S, 7H)
+    
+    ## Jokers
+      [0] Green Joker (sell $2)
+      [1] Madness (sell $3)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 3, round 6
+    Recent wallet: A1R2=$11, A2R3=$10, A2R4=$11, A3R5=$8
+    Recent hands:
+      - A1R2: mixed scored 632 (hands_used=3, discards_used=1)
+      - A1R3: mixed scored 615 (hands_used=3, discards_used=4)
+      - A2R4: mixed scored 1554 (hands_used=1, discards_used=1)
+      - A2R5: mixed scored 1653 (hands_used=4, discards_used=1)
+    Recent blinds:
+      - A2 : SKIPPED
+      - A2 : 1653/None
+      - A3 : 0/None
+    Recent joker moves: buy j_green_joker ($4), buy j_gluttenous_joker ($5), sell j_gluttenous_joker ($2), buy j_madness ($0), buy j_lusty_joker ($0)
+    ── end prompt ──
+
+  07:42:21 A3R6 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ This is the last hand remaining, so I must play a hand. A Pair is the highest scoring hand available
+
+── ROUND_EVAL  Ante 3  Round 6  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 6  $5 ──
+  07:42:29 A3R6 [SHOP] buy_card idx=0
+    ↳ Neptune levels up the Flush hand, which is a consistent high-scoring hand. This is a permanent upgra
+  07:42:32 A3R6 [SHOP] finish_shop
+    ↳ Cannot afford anything in the shop, and selling Green Joker would not allow me to buy anything usefu
+
+── BLIND_SELECT  Ante 3  Round 6  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  07:42:36 A3R7 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so I must select the current blind.
+
+── SELECTING_HAND  Ante 3  Round 7  $2 ──
+  07:42:46 A3R7 [SELECTING_HAND] discard_cards cards=[1, 4, 7, 8]
+    ↳ Discarding non-scoring cards (K, 9, 6, 4) to try and improve the Two Pair or find a better hand, as 
+  07:42:54 A3R7 [SELECTING_HAND] discard_cards cards=[5, 6, 7, 8]
+    ↳ The current Full House (A,A,J,J,J) scores only 208, which is likely too low for Ante 3. With 4 disca
+  07:43:03 A3R7 [SELECTING_HAND] discard_cards cards=[2, 6, 7, 8]
+    ↳ Current Full House scores 368, which is likely too low for Ante 3. With 3 discards remaining, I'm di
+  07:43:18 A3R7 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Playing the Full House (A,A,A, J,J) because it is the highest scoring hand available (372 chips) and
+  07:43:26 A3R7 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7, 8]
+    ↳ The available Straight (K,Q,J,T,9) only scores 196 chips, which is far too low for Ante 3. With 2 di
+  07:43:42 A3R7 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Four of a Kind (Queens) with a King kicker. With the Madness joker providing +3 mult per
+  07:43:53 A3R7 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7, 8]
+    ↳ The current best hand, a Pair of Jacks, scores only 480 chips (60 chips * 8 mult from Madness joker)
+  07:44:02 A3R7 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Pair (Jacks) as it is the highest scoring hand available (854 chips) and I have no disca
+  07:44:10 A3R7 [GAME_OVER] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ Playing the Straight as it is the highest scoring hand available (120 chips) and I have no discards 
+
+── GAME_OVER  Ante 3  Round 7  $2 ──
+
+LOST at ante 3
+  [log] saved 69 entries → runs/18cd069620d1.json
+  ~tokens: gemini 135541/3549  cost ~$0.0150
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 3

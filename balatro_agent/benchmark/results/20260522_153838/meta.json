@@ -1,0 +1,44 @@
+{
+  "timestamp": "20260522_153838",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 1,
+  "results": [
+    {
+      "agent": "gemma4-opt",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 367.1,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/runs/gemma4-opt_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/gemma4-opt_01.log"
+    },
+    {
+      "agent": "balatro-v1-opt",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 680.5,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/runs/balatro-v1-opt_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/balatro-v1-opt_01.log"
+    },
+    {
+      "agent": "balatro-v2-opt",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 126.1,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/runs/balatro-v2-opt_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/balatro-v2-opt_01.log"
+    },
+    {
+      "agent": "gemini-opt",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 190.9,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/runs/gemini-opt_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_153838/gemini-opt_01.log"
+    }
+  ]
+}

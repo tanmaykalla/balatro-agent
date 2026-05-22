@@ -1,0 +1,135 @@
+{
+  "run_id": "7753a8f93e5e",
+  "run_num": 12,
+  "strategy_name": "FullHouse_TwoPair_Economic_v2",
+  "source": "strategy",
+  "system_prompt": "",
+  "action_log": [
+    {
+      "ante": 1,
+      "round": 0,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "FullHouse_TwoPair_Economic_v2: select small blind (margin 0.0x)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: select small blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 0\nMoney: $4 | Hands left: 4 | Discards left: 4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: discard ['D_A', 'D_T', 'D_8', 'C_4', 'H_3'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: discard ['D_A', 'D_T', 'D_8', 'C_4', 'H_3'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] D_A (A of D)\n  [1] D_T (T of D)\n  [2] D_8 (8 of D)\n  [3] C_4 (4 of C)\n  [4] H_3 (3 of H)\n  [5] H_2 (2 of H)\n  [6] C_2 (2 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: discard ['C_A', 'S_K', 'S_Q', 'C_6', 'H_4'] to build toward Full House"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: discard ['C_A', 'S_K', 'S_Q', 'C_6', 'H_4'] to build toward Full House",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] C_A (A of C)\n  [1] S_K (K of S)\n  [2] S_Q (Q of S)\n  [3] C_6 (6 of C)\n  [4] H_4 (4 of H)\n  [5] H_2 (2 of H)\n  [6] C_2 (2 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          5,
+          6,
+          7,
+          0,
+          1
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: play Three of a Kind with ['H_2', 'C_2', 'D_2', 'S_A', 'D_J'] (blind target 0, scored 0)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: play Three of a Kind with ['H_2', 'C_2', 'D_2', 'S_A', 'D_J'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] S_A (A of S)\n  [1] D_J (J of D)\n  [2] D_9 (9 of D)\n  [3] H_7 (7 of H)\n  [4] H_6 (6 of H)\n  [5] H_2 (2 of H)\n  [6] C_2 (2 of C)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['S_8', 'H_8', 'H_K', 'D_Q', 'D_9'] (blind target 0, scored 108)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['S_8', 'H_8', 'H_K', 'D_Q', 'D_9'] (blind target 0, scored 108)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] H_K (K of H)\n  [1] D_Q (Q of D)\n  [2] D_9 (9 of D)\n  [3] S_8 (8 of S)\n  [4] H_8 (8 of H)\n  [5] H_7 (7 of H)\n  [6] H_6 (6 of H)\n  [7] S_5 (5 of S)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['H_6', 'D_6', 'C_Q', 'C_J', 'H_7'] (blind target 0, scored 160)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['H_6', 'D_6', 'C_Q', 'C_J', 'H_7'] (blind target 0, scored 160)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 2 | Discards left: 2\n\n## Hand\n  [0] C_Q (Q of C)\n  [1] C_J (J of C)\n  [2] H_7 (7 of H)\n  [3] H_6 (6 of H)\n  [4] D_6 (6 of D)\n  [5] S_5 (5 of S)\n  [6] C_3 (3 of C)\n  [7] S_2 (2 of S)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          5,
+          6,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['S_3', 'C_3', 'D_K', 'H_Q', 'S_T'] (blind target 0, scored 204)"
+      },
+      "reasoning": "FullHouse_TwoPair_Economic_v2: play Pair with ['S_3', 'C_3', 'D_K', 'H_Q', 'S_T'] (blind target 0, scored 204)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 1 | Discards left: 2\n\n## Hand\n  [0] D_K (K of D)\n  [1] H_Q (Q of H)\n  [2] S_T (T of S)\n  [3] H_9 (9 of H)\n  [4] S_5 (5 of S)\n  [5] S_3 (3 of S)\n  [6] C_3 (3 of C)\n  [7] S_2 (2 of S)",
+      "source": "strategy"
+    }
+  ]
+}

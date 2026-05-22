@@ -1,0 +1,20 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/9fc42b6a8f71.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 12.3s  → select_blind: It's the first blind of the run. I need to play to build my economy and start th
+  11:47:16 A1R1 [BLIND_SELECT] select_blind
+    ↳ It's the first blind of the run. I need to play to build my economy and start the run. There is no i
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 37.6s  → play_hand: The Flush is the highest scoring hand available (152 base score). Since it is th
+  11:47:58 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ The Flush is the highest scoring hand available (152 base score). Since it is the first hand of the 
+  [ollama] waiting... (think=True)

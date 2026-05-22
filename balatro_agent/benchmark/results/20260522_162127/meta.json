@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260522_162127",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 1,
+  "results": [
+    {
+      "agent": "claude-haiku",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 88.7,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_162127/runs/claude-haiku_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_162127/claude-haiku_01.log"
+    },
+    {
+      "agent": "claude-haiku-free",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 247.8,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_162127/runs/claude-haiku-free_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_162127/claude-haiku-free_01.log"
+    }
+  ]
+}

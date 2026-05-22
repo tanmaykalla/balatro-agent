@@ -1,0 +1,140 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135
+Roster: ['qwen3-base-noThink', 'qwen3-base-think', 'gemma4-noThink', 'gemma4-think', 'balatro-v1', 'balatro-v2', 'gemini', 'scripted-flush']
+Runs/agent: 3  Timeout: 900s
+
+════ qwen3-base-noThink (llm) ════
+
+──── qwen3-base-noThink run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-noThink_01.log
+  → copied 468b456fc3d5.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/qwen3-base-noThink_01.json
+
+──── qwen3-base-noThink run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-noThink_02.log
+  ⏱  TIMEOUT after 900s
+  → copied 468b456fc3d5.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/qwen3-base-noThink_02.json
+
+──── qwen3-base-noThink run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-noThink_03.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+════ qwen3-base-think (llm) ════
+
+──── qwen3-base-think run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-think_01.log
+  ⚠ no run JSON found (status=ok)
+
+──── qwen3-base-think run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-think_02.log
+  ⚠ no run JSON found (status=ok)
+
+──── qwen3-base-think run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/qwen3-base-think_03.log
+  ⚠ no run JSON found (status=ok)
+
+════ gemma4-noThink (llm) ════
+
+──── gemma4-noThink run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-noThink_01.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+──── gemma4-noThink run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-noThink_02.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+──── gemma4-noThink run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-noThink_03.log
+  → copied 713ebda60106.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/gemma4-noThink_03.json
+
+════ gemma4-think (llm) ════
+
+──── gemma4-think run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-think_01.log
+  ⏱  TIMEOUT after 900s
+  → copied 713ebda60106.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/gemma4-think_01.json
+
+──── gemma4-think run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-think_02.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+──── gemma4-think run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemma4-think_03.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+════ balatro-v1 (llm) ════
+
+──── balatro-v1 run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v1_01.log
+  → copied 0071ab4b370e.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v1_01.json
+
+──── balatro-v1 run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v1_02.log
+  → copied b6ef51ae6b0b.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v1_02.json
+
+──── balatro-v1 run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v1_03.log
+  ⏱  TIMEOUT after 900s
+  → copied b6ef51ae6b0b.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v1_03.json
+
+════ balatro-v2 (llm) ════
+
+──── balatro-v2 run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v2_01.log
+  → copied 1f06629828ac.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v2_01.json
+
+──── balatro-v2 run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v2_02.log
+  → copied 0fc61050d8c6.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v2_02.json
+
+──── balatro-v2 run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/balatro-v2_03.log
+  → copied e3cb837c80a4.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/balatro-v2_03.json
+
+════ gemini (llm) ════
+
+──── gemini run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm gemini
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemini_01.log
+  → copied 18cd069620d1.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/gemini_01.json
+
+──── gemini run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm gemini
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemini_02.log
+  ⏱  TIMEOUT after 900s
+  → copied 18cd069620d1.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/gemini_02.json
+
+──── gemini run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm gemini
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/gemini_03.log
+  → copied 191498b6cd45.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/runs/gemini_03.json
+
+════ scripted-flush (scripted) ════
+  → ingested Flush_Joker_Specialist_run01_3c79962a5c67.json
+  → ingested Flush_Joker_Specialist_run02_aef88b8298c4.json
+  → ingested Flush_Joker_Specialist_run03_ed39a375399b.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_050135

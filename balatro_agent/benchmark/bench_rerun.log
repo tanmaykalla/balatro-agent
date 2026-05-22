@@ -1,0 +1,62 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523
+Roster: ['qwen3-base-think', 'gemma4-noThink', 'gemma4-think']
+Runs/agent: 3  Timeout: 900s
+
+════ qwen3-base-think (llm) ════
+
+──── qwen3-base-think run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/qwen3-base-think_01.log
+  ⚠ no run JSON found (status=ok)
+
+──── qwen3-base-think run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/qwen3-base-think_02.log
+  ⚠ no run JSON found (status=ok)
+
+──── qwen3-base-think run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model qwen3-base --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/qwen3-base-think_03.log
+  ⚠ no run JSON found (status=ok)
+
+════ gemma4-noThink (llm) ════
+
+──── gemma4-noThink run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-noThink_01.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+──── gemma4-noThink run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-noThink_02.log
+  → copied ac2c61d33a55.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/runs/gemma4-noThink_02.json
+
+──── gemma4-noThink run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-noThink_03.log
+  ⏱  TIMEOUT after 900s
+  → copied ac2c61d33a55.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/runs/gemma4-noThink_03.json
+
+════ gemma4-think (llm) ════
+
+──── gemma4-think run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-think_01.log
+  ⏱  TIMEOUT after 900s
+  ⚠ no run JSON found (status=TIMEOUT)
+
+──── gemma4-think run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-think_02.log
+  → copied f4d79f1c6cc1.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/runs/gemma4-think_02.json
+
+──── gemma4-think run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/gemma4-think_03.log
+  ⏱  TIMEOUT after 900s
+  → copied f4d79f1c6cc1.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/runs/gemma4-think_03.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_103523

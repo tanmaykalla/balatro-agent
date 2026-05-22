@@ -1,0 +1,1328 @@
+{
+  "run_id": "79fc15a71ce9",
+  "run_num": null,
+  "strategy_name": "human_observed",
+  "source": "manual",
+  "system_prompt": "",
+  "action_log": [
+    {
+      "ante": 1,
+      "round": 0,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 0\nMoney: $4 | Hands left: 4 | Discards left: 3",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_A (A of S)\n  [1] C_A (A of C)\n  [2] D_A (A of D)\n  [3] S_K (K of S)\n  [4] D_K (K of D)\n  [5] S_Q (Q of S)\n  [6] D_8 (8 of D)\n  [7] S_7 (7 of S)\n  [8] D_6 (6 of D)\n  [9] H_5 (5 of H)\n  [10] D_2 (2 of D)",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          4,
+          5
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 3 | Discards left: 3\n\n## Hand\n  [0] H_K (K of H)\n  [1] C_K (K of C)\n  [2] S_Q (Q of S)\n  [3] H_J (J of H)\n  [4] D_8 (8 of D)\n  [5] S_7 (7 of S)\n  [6] D_6 (6 of D)\n  [7] H_5 (5 of H)\n  [8] H_4 (4 of H)\n  [9] C_2 (2 of C)\n  [10] D_2 (2 of D)",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          5,
+          7,
+          8,
+          9,
+          10
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 2 | Discards left: 3\n\n## Hand\n  [0] H_K (K of H)\n  [1] C_K (K of C)\n  [2] S_Q (Q of S)\n  [3] H_J (J of H)\n  [4] H_T (T of H)\n  [5] D_7 (7 of D)\n  [6] S_6 (6 of S)\n  [7] D_4 (4 of D)\n  [8] S_3 (3 of S)\n  [9] C_2 (2 of C)\n  [10] D_2 (2 of D)",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 2 | Discards left: 2\n\n## Hand\n  [0] H_K (K of H)\n  [1] C_K (K of C)\n  [2] S_Q (Q of S)\n  [3] C_Q (Q of C)\n  [4] H_J (J of H)\n  [5] C_J (J of C)\n  [6] H_T (T of H)\n  [7] S_6 (6 of S)\n  [8] C_6 (6 of C)\n  [9] D_5 (5 of D)\n  [10] C_3 (3 of C)",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          10
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 1 | Discards left: 2\n\n## Hand\n  [0] S_6 (6 of S)\n  [1] S_5 (5 of S)\n  [2] H_Q (Q of H)\n  [3] H_J (J of H)\n  [4] H_T (T of H)\n  [5] C_J (J of C)\n  [6] C_9 (9 of C)\n  [7] C_6 (6 of C)\n  [8] C_4 (4 of C)\n  [9] C_3 (3 of C)\n  [10] D_5 (5 of D)",
+      "source": "manual"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 1 | Discards left: 1\n\n## Hand\n  [0] S_J (J of S)\n  [1] H_Q (Q of H)\n  [2] H_J (J of H)\n  [3] H_T (T of H)\n  [4] H_9 (9 of H)\n  [5] C_J (J of C)\n  [6] C_T (T of C)\n  [7] C_9 (9 of C)\n  [8] C_6 (6 of C)\n  [9] C_4 (4 of C)\n  [10] C_3 (3 of C)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 1,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 2 Round 1\nMoney: $5 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 1,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 2 Round 1\nMoney: $1 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Joker Stencil (sell $4)\n\n## Pack Contents\n  [0] Obelisk",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 2 Round 1\nMoney: $1 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Joker Stencil (sell $4)\n\n## Shop\n  [0] Crazy Joker (JOKER) \u2014 $7",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 1,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 2 Round 1\nMoney: $1 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)\n\n## Pack Contents\n  [0] Merry Andy\n  [1] Business Card\n  [2] Lusty Joker",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 1,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 2 Round 1\nMoney: $1 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 2\nMoney: $1 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] H_Q (Q of H)\n  [1] C_J (J of C)\n  [2] D_J (J of D)\n  [3] C_T (T of C)\n  [4] C_9 (9 of C)\n  [5] C_8 (8 of C)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 2\nMoney: $1 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] D_Q (Q of D)\n  [1] D_J (J of D)\n  [2] S_5 (5 of S)\n  [3] D_5 (5 of D)\n  [4] S_4 (4 of S)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 2\nMoney: $1 | Hands left: 3 | Discards left: 1\n\n## Hand\n  [0] D_T (T of D)\n  [1] S_9 (9 of S)\n  [2] S_7 (7 of S)\n  [3] C_5 (5 of C)\n  [4] C_4 (4 of C)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 2,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 2 Round 2\nMoney: $1 | Hands left: 3 | Discards left: 0\n\n## Hand\n  [0] D_A (A of D)\n  [1] H_6 (6 of H)\n  [2] C_5 (5 of C)\n  [3] H_4 (4 of H)\n  [4] C_4 (4 of C)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 3 Round 2\nMoney: $22 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_4 (4 of S)\n  [1] D_3 (3 of D)\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Misprint (sell $4)\n  [3] Joker Stencil (sell $4)\n\n## Pack Contents\n  [0] Ectoplasm\n  [1] Trance\n  [2] Hex",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 3 Round 2\nMoney: $16 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Misprint (sell $4)\n  [3] Joker Stencil (sell $4)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": null,
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 3 Round 2\nMoney: $16 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Misprint (sell $4)\n  [3] Joker Stencil (sell $4)\n\n## Shop\n  [0] The Devil (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_throwback",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 3 Round 2\nMoney: $11 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Misprint (sell $4)\n  [3] Joker Stencil (sell $4)\n\n## Shop\n  [0] Throwback (JOKER) \u2014 $6\n  [1] The Devil (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "sell_joker",
+      "params": {
+        "index": 0,
+        "key": null,
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 3 Round 2\nMoney: $5 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Zany Joker (sell $3)\n  [1] Flash Card (sell $2)\n  [2] Misprint (sell $4)\n  [3] Joker Stencil (sell $4)\n  [4] Throwback (sell $3)\n\n## Shop\n  [0] The Devil (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 3 Round 2\nMoney: $8 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] The Devil (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 3 Round 2\nMoney: $8 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 2,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 3 Round 2\nMoney: $38 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 3 Round 3\nMoney: $38 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] D_Q (Q of D)\n  [1] H_J (J of H)\n  [2] D_T (T of D)\n  [3] S_7 (7 of S)\n  [4] D_5 (5 of D)\n  [5] C_3 (3 of C)\n  [6] S_2 (2 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 3 Round 3\nMoney: $38 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] D_Q (Q of D)\n  [1] H_J (J of H)\n  [2] D_T (T of D)\n  [3] S_8 (8 of S)\n  [4] D_7 (7 of D)\n  [5] S_5 (5 of S)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          5,
+          6
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 3 Round 3\nMoney: $38 | Hands left: 4 | Discards left: 1\n\n## Hand\n  [0] S_K (K of S)\n  [1] D_Q (Q of D)\n  [2] H_J (J of H)\n  [3] D_J (J of D)\n  [4] D_T (T of D)\n  [5] H_7 (7 of H)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 3,
+      "round": 3,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 3 Round 3\nMoney: $38 | Hands left: 4 | Discards left: 0\n\n## Hand\n  [0] S_K (K of S)\n  [1] D_Q (Q of D)\n  [2] H_J (J of H)\n  [3] D_J (J of D)\n  [4] D_T (T of D)\n  [5] H_6 (6 of H)\n  [6] C_5 (5 of C)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 4 Round 3\nMoney: $43 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": null,
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 4 Round 3\nMoney: $43 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Castle (JOKER) \u2014 $0\n  [1] Marble Joker (JOKER) \u2014 $0",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_swashbuckler",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 4 Round 3\nMoney: $38 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Swashbuckler (JOKER) \u2014 $4\n  [1] Square Joker (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 4 Round 3\nMoney: $32 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] The Sun (TAROT) \u2014 $3\n  [1] Loyalty Card (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 4 Round 3\nMoney: $32 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 4 Round 3\nMoney: $32 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n  [4] Jolly Joker (sell $1)\n  [5] Splash (sell $1)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 4 Round 3\nMoney: $33 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n  [4] Splash (sell $1)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 4 Round 3\nMoney: $34 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n  [4] Splash (sell $1)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 3,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 4 Round 3\nMoney: $34 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 4 Round 4\nMoney: $34 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_T (T of S)\n  [1] C_9 (9 of C)\n  [2] H_8 (8 of H)\n  [3] D_7 (7 of D)\n  [4] C_6 (6 of C)\n  [5] H_4 (4 of H)\n  [6] C_2 (2 of C)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 4,
+      "round": 4,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 4 Round 4\nMoney: $34 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] C_A (A of C)\n  [1] D_A (A of D)\n  [2] S_5 (5 of S)\n  [3] S_4 (4 of S)\n  [4] C_4 (4 of C)\n  [5] C_3 (3 of C)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 5 Round 4\nMoney: $58 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] H_6 (6 of H)\n  [1] D_5 (5 of D)\n  [2] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] Earth\n  [1] Venus",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_mystic_summit",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 5 Round 4\nMoney: $58 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Mystic Summit (JOKER) \u2014 $0\n  [1] Hiker (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 5 Round 4\nMoney: $53 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Square Joker (JOKER) \u2014 $4\n  [1] Lusty Joker (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 5 Round 4\nMoney: $53 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 5 Round 4\nMoney: $53 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 5 Round 4\nMoney: $53 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 4,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 5 Round 4\nMoney: $53 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 5,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 5 Round 5\nMoney: $53 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] S_A (A of S)\n  [1] D_Q (Q of D)\n  [2] C_T (T of C)\n  [3] C_9 (9 of C)\n  [4] C_6 (6 of C)\n  [5] D_6 (6 of D)\n  [6] C_5 (5 of C)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 5,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 5 Round 5\nMoney: $53 | Hands left: 4 | Discards left: 1\n\n## Hand\n  [0] C_T (T of C)\n  [1] C_9 (9 of C)\n  [2] C_6 (6 of C)\n  [3] D_6 (6 of D)\n  [4] C_5 (5 of C)\n  [5] D_5 (5 of D)\n  [6] S_4 (4 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 5,
+      "round": 5,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 5 Round 5\nMoney: $53 | Hands left: 3 | Discards left: 1\n\n## Hand\n  [0] H_8 (8 of H)\n  [1] C_T (T of C)\n  [2] C_9 (9 of C)\n  [3] C_8 (8 of C)\n  [4] C_3 (3 of C)\n  [5] C_2 (2 of C)\n  [6] D_7 (7 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 6 Round 5\nMoney: $61 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] H_J (J of H)\n  [1] H_7 (7 of H)\n  [2] H_6 (6 of H)\n  [3] C_3 (3 of C)\n  [4] D_A (A of D)\n  [5] D_5 (5 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_card_sharp",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 6 Round 5\nMoney: $61 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Card Sharp (JOKER) \u2014 $6\n  [1] 8 Ball (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 1,
+        "key": "c_moon",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 6 Round 5\nMoney: $56 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Business Card (JOKER) \u2014 $4\n  [1] The Moon (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 6 Round 5\nMoney: $39 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_business",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 6 Round 5\nMoney: $39 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Business Card (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_odd_todd",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 6 Round 5\nMoney: $43 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Odd Todd (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 6 Round 5\nMoney: $36 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Abstract Joker (JOKER) \u2014 $4\n  [1] Shortcut (JOKER) \u2014 $7",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 5,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 6 Round 5\nMoney: $36 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 6,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 6 Round 6\nMoney: $36 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] H_K (K of H)\n  [1] H_Q (Q of H)\n  [2] D_Q (Q of D)\n  [3] D_9 (9 of D)\n  [4] C_4 (4 of C)\n  [5] C_2 (2 of C)\n  [6] D_2 (2 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 6,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          1,
+          2,
+          3
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 6 Round 6\nMoney: $31 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] S_A (A of S)\n  [1] H_K (K of H)\n  [2] D_9 (9 of D)\n  [3] S_7 (7 of S)\n  [4] S_5 (5 of S)\n  [5] H_4 (4 of H)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 6,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          1,
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 6 Round 6\nMoney: $31 | Hands left: 3 | Discards left: 1\n\n## Hand\n  [0] S_A (A of S)\n  [1] C_9 (9 of C)\n  [2] D_8 (8 of D)\n  [3] S_5 (5 of S)\n  [4] H_4 (4 of H)\n  [5] D_3 (3 of D)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 6,
+      "round": 6,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 6 Round 6\nMoney: $31 | Hands left: 3 | Discards left: 0\n\n## Hand\n  [0] S_A (A of S)\n  [1] D_J (J of D)\n  [2] S_5 (5 of S)\n  [3] H_5 (5 of H)\n  [4] H_4 (4 of H)\n  [5] D_3 (3 of D)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 7 Round 6\nMoney: $35 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] C_8 (8 of C)\n  [1] S_4 (4 of S)\n  [2] H_3 (3 of H)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 7 Round 6\nMoney: $31 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_wee",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 6\nMoney: $31 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Wee Joker (JOKER) \u2014 $0\n  [1] The Star (TAROT) \u2014 $3",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_even_steven",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 6\nMoney: $26 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Even Steven (JOKER) \u2014 $4\n  [1] Red Card (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 6\nMoney: $20 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon\n\n## Shop\n  [0] Mr. Bones (JOKER) \u2014 $5\n  [1] Ice Cream (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 7 Round 6\nMoney: $20 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 7 Round 6\nMoney: $33 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 6,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 7 Round 6\nMoney: $46 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Consumables\n  [0] The Moon",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 7 Round 7\nMoney: $46 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] C_J (J of C)\n  [1] C_T (T of C)\n  [2] C_9 (9 of C)\n  [3] C_6 (6 of C)\n  [4] C_5 (5 of C)\n  [5] C_4 (4 of C)\n  [6] S_3 (3 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          3
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 7 Round 7\nMoney: $46 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] H_A (A of H)\n  [1] C_9 (9 of C)\n  [2] C_6 (6 of C)\n  [3] C_5 (5 of C)\n  [4] C_4 (4 of C)\n  [5] S_3 (3 of S)\n  [6] C_3 (3 of C)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 7 Round 7\nMoney: $46 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] H_A (A of H)\n  [1] D_A (A of D)\n  [2] D_8 (8 of D)\n  [3] D_8 (8 of D)\n  [4] H_7 (7 of H)\n  [5] H_6 (6 of H)\n  [6] S_3 (3 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 7 Round 7\nMoney: $57 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 7 Round 7\nMoney: $51 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_wily",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 7\nMoney: $51 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Wily Joker (JOKER) \u2014 $4\n  [1] Stuntman (JOKER) \u2014 $7",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_sly",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 7\nMoney: $46 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Sly Joker (JOKER) \u2014 $3\n  [1] Red Card (JOKER) \u2014 $5",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 7 Round 7\nMoney: $40 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Superposition (JOKER) \u2014 $4\n  [1] Bootstraps (JOKER) \u2014 $7",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 7,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 7 Round 7\nMoney: $40 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 8,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          3,
+          4
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 7 Round 8\nMoney: $40 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_A (A of S)\n  [1] S_K (K of S)\n  [2] H_K (K of H)\n  [3] D_8 (8 of D)\n  [4] D_6 (6 of D)\n  [5] D_3 (3 of D)\n  [6] S_2 (2 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 7,
+      "round": 8,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 7 Round 8\nMoney: $40 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] S_A (A of S)\n  [1] S_K (K of S)\n  [2] H_K (K of H)\n  [3] C_3 (3 of C)\n  [4] C_3 (3 of C)\n  [5] D_3 (3 of D)\n  [6] S_2 (2 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 8 Round 8\nMoney: $50 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SMODS_BOOSTER_OPENED",
+      "action": "pack_select",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SMODS_BOOSTER_OPENED | Ante 8 Round 8\nMoney: $44 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_crazy",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 8 Round 8\nMoney: $44 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Crazy Joker (JOKER) \u2014 $4\n  [1] Ramen (JOKER) \u2014 $6",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_fortune_teller",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 8 Round 8\nMoney: $39 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Fortune Teller (JOKER) \u2014 $6\n  [1] Devious Joker (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_mail",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 8 Round 8\nMoney: $33 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Mail-In Rebate (JOKER) \u2014 $4\n  [1] Smiley Face (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "index": 0,
+        "key": "j_golden",
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 8 Round 8\nMoney: $23 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Golden Joker (JOKER) \u2014 $6",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SHOP | Ante 8 Round 8\nMoney: $15 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)\n\n## Shop\n  [0] Abstract Joker (JOKER) \u2014 $4\n  [1] Mail-In Rebate (JOKER) \u2014 $4",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 8,
+      "phase": "BLIND_SELECT",
+      "action": "skip_blind",
+      "params": {
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: BLIND_SELECT | Ante 8 Round 8\nMoney: $15 | Hands left: 4 | Discards left: 3\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 4 | Discards left: 2\n\n## Hand\n  [0] H_A (A of H)\n  [1] D_T (T of D)\n  [2] S_5 (5 of S)\n  [3] S_4 (4 of S)\n  [4] C_4 (4 of C)\n  [5] C_3 (3 of C)\n  [6] D_2 (2 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0,
+          1,
+          2
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 3 | Discards left: 2\n\n## Hand\n  [0] H_K (K of H)\n  [1] D_T (T of D)\n  [2] C_6 (6 of C)\n  [3] S_4 (4 of S)\n  [4] C_3 (3 of C)\n  [5] D_3 (3 of D)\n  [6] S_2 (2 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 3 | Discards left: 1\n\n## Hand\n  [0] H_8 (8 of H)\n  [1] S_4 (4 of S)\n  [2] C_4 (4 of C)\n  [3] C_3 (3 of C)\n  [4] D_3 (3 of D)\n  [5] S_2 (2 of S)\n  [6] H_2 (2 of H)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          3,
+          5
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 2 | Discards left: 1\n\n## Hand\n  [0] H_8 (8 of H)\n  [1] S_7 (7 of S)\n  [2] H_7 (7 of H)\n  [3] D_7 (7 of D)\n  [4] D_5 (5 of D)\n  [5] S_2 (2 of S)\n  [6] H_2 (2 of H)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          6
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 1 | Discards left: 1\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] D_Q (Q of D)\n  [2] C_9 (9 of C)\n  [3] H_8 (8 of H)\n  [4] H_6 (6 of H)\n  [5] D_5 (5 of D)\n  [6] S_3 (3 of S)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    },
+    {
+      "ante": 8,
+      "round": 9,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          0,
+          1
+        ],
+        "reasoning": ""
+      },
+      "reasoning": "",
+      "prompt": "# Phase: SELECTING_HAND | Ante 8 Round 9\nMoney: $15 | Hands left: 1 | Discards left: 0\n\n## Hand\n  [0] S_Q (Q of S)\n  [1] D_Q (Q of D)\n  [2] C_9 (9 of C)\n  [3] H_8 (8 of H)\n  [4] H_6 (6 of H)\n  [5] D_5 (5 of D)\n  [6] D_3 (3 of D)\n\n## Jokers\n  [0] Flash Card (sell $2)\n  [1] Misprint (sell $4)\n  [2] Joker Stencil (sell $4)\n  [3] Throwback (sell $3)",
+      "source": "manual"
+    }
+  ]
+}

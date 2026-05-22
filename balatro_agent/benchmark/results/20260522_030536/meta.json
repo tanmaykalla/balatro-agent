@@ -1,0 +1,143 @@
+{
+  "timestamp": "20260522_030536",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 3,
+  "results": [
+    {
+      "agent": "gemini",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "gemini",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "gemini",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-noThink",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-noThink",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-noThink",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-think",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-think",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "qwen3-base-think",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-noThink",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-noThink",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-noThink",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-think",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-think",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "gemma4-think",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 1,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 2,
+      "status": "dry"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 3,
+      "status": "dry"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030536/runs/scripted-flush_01.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run01_3c79962a5c67.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030536/runs/scripted-flush_02.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run02_aef88b8298c4.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_030536/runs/scripted-flush_03.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run03_ed39a375399b.json"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: openai (gpt-4o-mini)
+[agent] logging to runs/aa53c45ea09d.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  [openai] api error (fail-fast): Error code: 429 - {'error': {'message': 'You exceeded your current quota, please
+  → buy_card: Buying the Lusty Joker to increase my scoring potential for next rounds as it wi
+  16:44:01 A1R1 [SHOP] buy_card idx=1
+    ↳ Buying the Lusty Joker to increase my scoring potential for next rounds as it will boost my chips in
+  → buy_card: Buying The Wheel of Fortune tarot card for strategic advantage; it can enhance f
+  16:44:03 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying The Wheel of Fortune tarot card for strategic advantage; it can enhance future hands signific
+  → buy_pack: Buying Buffoon Pack for additional joker options as it will enhance my scoring p
+[balatrobot] BAD_REQUEST on buy({'pack': 0}): Card is not affordable. Cost: 4, Available money: 0
+  16:44:06 A1R1 [SHOP] buy_pack idx=0
+    ↳ Buying Buffoon Pack for additional joker options as it will enhance my scoring potential in the upco
+  → buy_card: Buying the Buffoon Pack for the opportunity to gain more jokers which will boost
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:44:30 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack for the opportunity to gain more jokers which will boost scoring potential i
+  → buy_card: Buying the Buffoon Pack to increase my joker pool, helping to boost scoring pote
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:44:54 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack to increase my joker pool, helping to boost scoring potential in future roun
+  → reroll_shop: Rerolling the shop to find better items as the current options are not appealing
+  16:45:19 A1R1 [SHOP] reroll_shop  ✗ BalatrobotError -32003: Not enough dollars to reroll. Availa
+    ↳ Rerolling the shop to find better items as the current options are not appealing, and I need to incr
+  → buy_card: Buying the Buffoon Pack for additional joker options that will enhance my scorin
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:45:21 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack for additional joker options that will enhance my scoring potential.
+  → buy_card: Buying the Buffoon Pack for additional joker options that will enhance my scorin
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:45:44 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack for additional joker options that will enhance my scoring potential.
+  → buy_card: Buying the Buffoon Pack for increased joker options, which will boost my scoring
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:46:07 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack for increased joker options, which will boost my scoring potential in future
+  → buy_card: Buying the Buffoon Pack to increase my joker options and improve my scoring pote
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:46:29 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack to increase my joker options and improve my scoring potential.
+  → buy_card: Buying the Buffoon Pack for additional joker options that will enhance my scorin
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:46:52 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack for additional joker options that will enhance my scoring potential going fo
+  → buy_card: Buying the Buffoon Pack to enhance my joker options, which is crucial as I start
+[balatrobot] BAD_REQUEST on buy({'card': 0}): No jokers/consumables/cards in the shop. Reroll to restock the shop
+  16:47:16 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the Buffoon Pack to enhance my joker options, which is crucial as I start this adventure.
+  → buy_voucher: Buying Reroll Surplus voucher for future benefits as it will help reduce reroll 
+  16:47:42 A1R1 [SHOP] buy_voucher idx=0  ✗ BalatrobotError -32003: HTTPConnectionPool(host='127.0.0.1',
+    ↳ Buying Reroll Surplus voucher for future benefits as it will help reduce reroll costs.
+Traceback (most recent call last):
+  File "/Users/t101/Documents/balatro agent/balatro_agent/phase_handlers.py", line 340, in handle
+    G = self._execute(tool_call, G, bot, memory)
+  File "/Users/t101/Documents/balatro agent/balatro_agent/phase_handlers.py", line 404, in _execute
+    return bot.buy(voucher=idx)
+  File "/Users/t101/Documents/balatro agent/balatro_agent/balatrobot_client.py", line 117, in buy
+    return self._rpc("buy", params)
+  File "/Users/t101/Documents/balatro agent/balatro_agent/balatrobot_client.py", line 74, in _rpc
+    raise last_err or BalatrobotError(INTERNAL_ERROR, f"{method} failed after retries")
+balatrobot_client.BalatrobotError: BalatrobotError -32003: HTTPConnectionPool(host='127.0.0.1', port=12346): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=12346): Failed to establish a new connection: [Errno 61] Connection refused"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/t101/Documents/balatro agent/balatro_agent/agent.py", line 108, in run
+    G = handler.handle(G, self.strategy, memory,
+  File "/Users/t101/Documents/balatro agent/balatro_agent/phase_handlers.py", line 344, in handle
+    G = bot.get_gamestate()
+  File "/Users/t101/Documents/balatro agent/balatro_agent/balatrobot_client.py", line 77, in get_gamestate
+    return self._rpc("gamestate")
+  File "/Users/t101/Documents/balatro agent/balatro_agent/balatrobot_client.py", line 74, in _rpc
+    raise last_err or BalatrobotError(INTERNAL_ERROR, f"{method} failed after retries")
+balatrobot_client.BalatrobotError: BalatrobotError -32003: HTTPConnectionPool(host='127.0.0.1', port=12346): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=12346): Failed to establish a new connection: [Errno 61] Connection refused"))
+[agent] run aborted: BalatrobotError -32003: HTTPConnectionPool(host='127.0.0.1', port=12346): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=12346): Failed to establish a new connection: [Errno 61] Connection refused"))
+  [log] saved 11 entries → runs/aa53c45ea09d.json
+  ~tokens: gemini 336784/426  cost ~$0.0338
+Run 1/1 | Strategy: Optimal_Chaser | Result: LOST ante 1

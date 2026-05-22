@@ -1,0 +1,119 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/ad255cb6e983.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.6s  → select_blind: In the very first round of the game (Ante 1, Round 0), skipping the Small Blind 
+  10:36:45 A1R1 [BLIND_SELECT] select_blind
+    ↳ In the very first round of the game (Ante 1, Round 0), skipping the Small Blind would be a waste of 
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 5.2s  → discard_cards: I have a potential straight flush/straight draw with 9S, 8D, 7D, 6D. However, lo
+  10:36:51 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 6, 7]
+    ↳ I have a potential straight flush/straight draw with 9S, 8D, 7D, 6D. However, looking at my current 
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → play_hand: I have 5 diamonds (JD, 8D, 7D, 6D, 2D) which forms a Flush. A Flush is my highes
+  10:36:59 A1R1 [SELECTING_HAND] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ I have 5 diamonds (JD, 8D, 7D, 6D, 2D) which forms a Flush. A Flush is my highest scoring playable h
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have a pair of 9s. This is my highest scoring playable hand (Pair vs High Card
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[4, 5]
+    reasoning: I have a pair of 9s. This is my highest scoring playable hand (Pair vs High Card). While I could discard other cards to 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 3 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (A of H)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of C)
+      [3] Base Card (T of C)
+      [4] Base Card (9 of S)
+      [5] Base Card (9 of C)
+      [6] Base Card (5 of H)
+      [7] Base Card (3 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 4, 5]  (AH, KD, QC, 9S, 9C)
+      High Card: play indices [0, 1, 2, 3, 4]  (AH, KD, QC, TC, 9S)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  10:37:07 A1R1 [ROUND_EVAL] play_hand cards=[4, 5]
+    ↳ I have a pair of 9s. This is my highest scoring playable hand (Pair vs High Card). While I could dis
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_pack: In Ante 1, finding more Jokers is the highest priority for scaling. A Buffoon Pa
+  10:37:13 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ In Ante 1, finding more Jokers is the highest priority for scaling. A Buffoon Pack offers the best c
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → select_pack_card: Ancient Joker is a Joker card (potential for scaling/utility) whereas The Family
+  10:37:15 A1R1 [SHOP] select_pack_card idx=0
+    ↳ Ancient Joker is a Joker card (potential for scaling/utility) whereas The Family is a Tarot card. In
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → buy_card: Juggler is a great early-game Joker. It provides X1 mult for every played card i
+  10:37:19 A1R1 [SHOP] buy_card idx=0
+    ↳ Juggler is a great early-game Joker. It provides X1 mult for every played card in a hand, which scal
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → reroll_shop: The current shop selection is poor. Hologram is too expensive ($7) given my curr
+  10:37:26 A1R1 [SHOP] reroll_shop  ✗ BalatrobotError -32003: Not enough dollars to reroll. Availa
+    ↳ The current shop selection is poor. Hologram is too expensive ($7) given my current $1 balance, and 
+  [ollama] waiting... (think=False)  [ollama] 2.4s  [ollama] waiting... (think=False)  [ollama] 1.5s  [ollama] waiting... (think=False)  [ollama] 1.5s  10:37:31 A1R1 [SHOP] finish_shop
+    ↳ fallback: LLM failed to produce a tool call
+
+── BLIND_SELECT  Ante 1  Round 1  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → select_blind: I need to play the first blind of the run to build my economy and level up hands
+  10:37:35 A1R2 [BLIND_SELECT] select_blind
+    ↳ I need to play the first blind of the run to build my economy and level up hands. I have enough hand
+
+── SELECTING_HAND  Ante 1  Round 2  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → discard_cards: I have two pairs (Queens and Jacks). I will discard the non-pairing cards (Ace, 
+  10:37:40 A1R2 [SELECTING_HAND] discard_cards cards=[0, 5, 6, 7, 8]
+    ↳ I have two pairs (Queens and Jacks). I will discard the non-pairing cards (Ace, 8, 6, 6, 4) to try a
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have 4 cards of the Clubs suit (A, Q, J, 8, 5) in my hand after the discard. P
+  10:37:47 A1R2 [SELECTING_HAND] play_hand cards=[0, 3, 5, 6, 7]
+    ↳ I have 4 cards of the Clubs suit (A, Q, J, 8, 5) in my hand after the discard. Playing the Flush is 
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → discard_cards: I have a potential Straight Flush or at least a Straight/Flush draw with the Spa
+  10:37:52 A1R2 [SELECTING_HAND] discard_cards cards=[1, 5, 6, 8]
+    ↳ I have a potential Straight Flush or at least a Straight/Flush draw with the Spades (KS, JS, TS, 6S)
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → play_hand: I have Two Pair (Kings and Tens). This is the strongest playable hand available.
+  10:38:01 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ I have Two Pair (Kings and Tens). This is the strongest playable hand available. While I have Spades
+
+── ROUND_EVAL  Ante 1  Round 2  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $6 ──
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → buy_pack: I have $6. An Arcana Pack costs $4 and can provide Tarot cards to enhance my han
+  10:38:09 A1R2 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $6. An Arcana Pack costs $4 and can provide Tarot cards to enhance my hand or economy, which 
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → select_pack_card: I am opening a pack in the middle of Ante 1. The Magician (Tarot) is generally u
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  10:38:13 A1R2 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ I am opening a pack in the middle of Ante 1. The Magician (Tarot) is generally useful for changing c
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → select_pack_card: The Magician is a strong Tarot card for early game, allowing me to change ranks 
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  10:38:16 A1R2 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ The Magician is a strong Tarot card for early game, allowing me to change ranks or suits to build mu
+  [ollama] waiting... (think=False)  [ollama] 10.7s  [ollama] waiting... (think=False)  [ollama] 2.9s  → select_pack_card: I am in the middle of a round (Ante 1, Round 2), but the user prompt suggests I 
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  10:38:30 A1R2 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ I am in the middle of a round (Ante 1, Round 2), but the user prompt suggests I am evaluating pack c
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → select_pack_card: The Magician is a versatile Tarot card that allows me to change the suit or rank
+[balatrobot] BAD_REQUEST on pack({'card': 1}): Card 'c_magician' requires 1-2 target card(s). Provided: 0
+  10:38:33 A1R2 [SMODS_BOOSTER_OPENED] select_pack_card idx=1
+    ↳ The Magician is a versatile Tarot card that allows me to change the suit or rank of a card. In the e
+  [ollama] waiting... (think=False)

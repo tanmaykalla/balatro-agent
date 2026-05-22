@@ -1,0 +1,170 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (qwen3-base @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/8d381a2396ee.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 22.9s  → skip_blind: Skipping the Small blind to obtain a tag reward (e.g., a joker or planet) provid
+  05:13:52 A1R0 [BLIND_SELECT] skip_blind
+    ↳ Skipping the Small blind to obtain a tag reward (e.g., a joker or planet) provides long-term value, 
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 16.1s  → select_blind: Must select the current blind (Small) since skipping is not permitted.
+  05:14:10 A1R1 [BLIND_SELECT] select_blind
+    ↳ Must select the current blind (Small) since skipping is not permitted.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 66.6s  → play_hand: The best available hand is Two Pair (Jacks and Fives). This maximizes the score 
+  05:15:21 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ The best available hand is Two Pair (Jacks and Fives). This maximizes the score for the current roun
+  [ollama] waiting... (think=False)  [ollama] 63.7s  → play_hand: The best available hand is Two Pair (5s and 3s) with a queen kicker. This maximi
+  05:16:29 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ The best available hand is Two Pair (5s and 3s) with a queen kicker. This maximizes the score for th
+  [ollama] waiting... (think=False)  [ollama] 34.4s  → play_hand: The best available hand is Pair (2s) with kickers Ace, King, Queen. This maximiz
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: The best available hand is Pair (2s) with kickers Ace, King, Queen. This maximizes the score with 10 base chips + 11 (Ac
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of C)
+      [3] Base Card (T of C)
+      [4] Base Card (9 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AS, KD, QC, 2S, 2D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KD, QC, TC, 9H)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : SKIPPED
+      - A1 : 0/None
+    ── end prompt ──
+
+  05:17:07 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ The best available hand is Pair (2s) with kickers Ace, King, Queen. This maximizes the score with 10
+  [ollama] waiting... (think=False)  [ollama] 38.8s  → play_hand: The best available hand is a Flush (5 clubs: A, K, T, 7, 4). This maximizes the 
+  05:17:52 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 3, 5, 6]
+    ↳ The best available hand is a Flush (5 clubs: A, K, T, 7, 4). This maximizes the score with 35 base c
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 15.9s  → buy_pack: Prioritize Buffoon Pack for additional joker options, which provide critical xMu
+  05:18:10 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Prioritize Buffoon Pack for additional joker options, which provide critical xMult and +Mult bonuses
+  [ollama] waiting... (think=False)  [ollama] 20.1s  → select_pack_card: Picking Mail-In Rebate to boost funds for potential shop purchases, prioritizing
+  05:18:31 A1R1 [SHOP] select_pack_card idx=0
+    ↳ Picking Mail-In Rebate to boost funds for potential shop purchases, prioritizing economy early game.
+  [ollama] waiting... (think=False)  [ollama] 19.5s  → buy_card: Purchase the Mercury (PLANET) for $3 to level up hand types, providing long-term
+  05:18:50 A1R1 [SHOP] buy_card idx=0
+    ↳ Purchase the Mercury (PLANET) for $3 to level up hand types, providing long-term value and increasin
+  [ollama] waiting... (think=False)  [ollama] 34.8s  → use_consumable: Use the Mercury (PLANET) consumable to level up a hand type, providing +15 chips
+  05:19:27 A1R1 [SHOP] use_consumable idx=0
+    ↳ Use the Mercury (PLANET) consumable to level up a hand type, providing +15 chips and +1 mult for lon
+  [ollama] waiting... (think=False)  [ollama] 31.4s  → finish_shop: Unable to afford any shop items with current $1. Prioritize proceeding to the ne
+  05:19:58 A1R1 [SHOP] finish_shop
+    ↳ Unable to afford any shop items with current $1. Prioritize proceeding to the next blind to utilize 
+
+── BLIND_SELECT  Ante 1  Round 1  $1 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 29.0s  → select_blind: Must select the Small blind as skipping is not permitted. Starting with the firs
+  05:20:29 A1R2 [BLIND_SELECT] select_blind
+    ↳ Must select the Small blind as skipping is not permitted. Starting with the first blind is necessary
+
+── SELECTING_HAND  Ante 1  Round 2  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 121.4s  → play_hand: The Straight (6S, 5S, 4S, 3H, 2C) is the highest-scoring hand available. It prov
+  05:22:36 A1R2 [SELECTING_HAND] play_hand cards=[2, 3, 5, 6, 7]
+    ↳ The Straight (6S, 5S, 4S, 3H, 2C) is the highest-scoring hand available. It provides 30 base chips +
+  [ollama] waiting... (think=False)  [ollama] 47.5s  → play_hand: The Straight (TH, 9C, 8C, 7S, 6D) is the highest-scoring hand available. It prov
+  05:23:29 A1R2 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ The Straight (TH, 9C, 8C, 7S, 6D) is the highest-scoring hand available. It provides 30 base chips +
+  [ollama] waiting... (think=False)  [ollama] 38.5s  → play_hand: The Full House (QS, QC, QD, 4H, 4D) is the highest-scoring hand available. It pr
+  05:24:14 A2R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ The Full House (QS, QC, QD, 4H, 4D) is the highest-scoring hand available. It provides 40 base chips
+
+── ROUND_EVAL  Ante 2  Round 2  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 2  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 49.6s  → buy_card: The Scholar Joker adds +Mult, which is more impactful for increasing the multipl
+  05:25:06 A2R2 [SHOP] buy_card idx=1
+    ↳ The Scholar Joker adds +Mult, which is more impactful for increasing the multiplier compared to the 
+  [ollama] waiting... (think=False)  [ollama] 23.8s  → finish_shop: No affordable items in the shop (Gluttonous Joker costs $5, Standard Pack $4, Pa
+  05:25:30 A2R2 [SHOP] finish_shop
+    ↳ No affordable items in the shop (Gluttonous Joker costs $5, Standard Pack $4, Paint Brush $10). With
+
+── BLIND_SELECT  Ante 2  Round 2  $1 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 19.1s  → skip_blind: Low funds ($1) make skipping a safer choice to gain a tag reward for potential j
+  05:25:49 A2R2 [BLIND_SELECT] skip_blind
+    ↳ Low funds ($1) make skipping a safer choice to gain a tag reward for potential jokers/planets withou
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.1s  → select_blind: {'description': 'Choosing Small blind first to build score incrementally with re
+  05:26:03 A2R3 [BLIND_SELECT] select_blind
+    ↳ {'description': 'Choosing Small blind first to build score incrementally with remaining hands and di
+
+── SELECTING_HAND  Ante 2  Round 3  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 67.5s  → play_hand: The best available hand is High Card with A, K, Q, 8, 7. No better hand is possi
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=0  (High Card)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: The best available hand is High Card with A, K, Q, 8, 7. No better hand is possible with the current cards. Playing this
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 3
+    Money: $1 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (K of C)
+      [2] Base Card (Q of H)
+      [3] Base Card (8 of S)
+      [4] Base Card (7 of D)
+      [5] Base Card (6 of S)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      High Card: play indices [0, 1, 2, 3, 4]  (AC, KC, QH, 8S, 7D)
+    
+    ## Jokers
+      [0] Mail-In Rebate (sell $2)
+      [1] Scholar (sell $2)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 2, round 3
+    Recent wallet: A1R1=$8, A2R2=$5
+    Recent hands:
+      - A1R1: mixed scored 508 (hands_used=4, discards_used=0)
+      - A1R2: mixed scored 792 (hands_used=3, discards_used=0)
+    Recent blinds:
+      - A1 : 792/None
+      - A2 : SKIPPED
+      - A2 : 0/None
+    Recent joker moves: buy c_mercury ($3), buy j_scholar ($4)
+    ── end prompt ──
+
+  05:27:15 A2R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ The best available hand is High Card with A, K, Q, 8, 7. No better hand is possible with the current
+  [ollama] waiting... (think=False)  [ollama] 43.2s  → play_hand: The best available hand is Two Pair (6s and 3s). This maximizes the base score o
+  05:28:02 A2R3 [SELECTING_HAND] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ The best available hand is Two Pair (6s and 3s). This maximizes the base score of 20 chips × 2 mult 
+  [ollama] waiting... (think=False)

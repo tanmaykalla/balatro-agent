@@ -1,0 +1,144 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/0071ab4b370e.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 9.2s  → select_blind: Starting the first blind, play Small Blind.
+  07:01:20 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind, play Small Blind.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → play_hand: Two Pair (Jacks and Fives) is the best available hand. Base score is 40 chips × 
+  07:01:29 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair (Jacks and Fives) is the best available hand. Base score is 40 chips × 4 mult = 160. With 4
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Two Pair (Jacks and Fives) is the best available hand. Base score is 40 chips × 
+  07:01:37 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Two Pair (Jacks and Fives) is the best available hand. Base score is 40 chips × 4 mult = 160. With 4
+  [ollama] waiting... (think=False)  [ollama] 66.0s  → play_hand: Pair of 2s (base 20 chips × 4 mult = 80) is the best available hand. This provid
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: Pair of 2s (base 20 chips × 4 mult = 80) is the best available hand. This provides strong early scoring potential to rea
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of C)
+      [3] Base Card (T of C)
+      [4] Base Card (9 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AS, KD, QC, 2S, 2D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KD, QC, TC, 9H)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  07:02:46 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Pair of 2s (base 20 chips × 4 mult = 80) is the best available hand. This provides strong early scor
+  [ollama] waiting... (think=False)  [ollama] 15.9s  → play_hand: Flush (AC, KC, TC, 7C, 4C) is the best available hand. Base score is 35 chips × 
+  07:03:09 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 3, 5, 6]
+    ↳ Flush (AC, KC, TC, 7C, 4C) is the best available hand. Base score is 35 chips × 4 mult = 140. This m
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → buy_pack: Buy Buffoon Pack for extra joker selection with remaining money.
+  07:03:14 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buy Buffoon Pack for extra joker selection with remaining money.
+  [ollama] waiting... (think=False)  [ollama] 1.9s  → skip_pack: No useful cards in the pack.
+  07:03:16 A1R1 [SHOP] skip_pack
+    ↳ No useful cards in the pack.
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → buy_pack: Buy Arcana Pack to get tarot cards and improve early game with remaining money.
+[balatrobot] BAD_REQUEST on buy({'pack': 0}): Card is not affordable. Cost: 4, Available money: 3
+  07:03:20 A1R1 [SHOP] buy_pack idx=0
+    ↳ Buy Arcana Pack to get tarot cards and improve early game with remaining money.
+  [ollama] waiting... (think=False)  [ollama] 8.2s  → buy_card: Buy Mercury (PLANET) for $3 to level up hands and improve scoring power early.
+  07:03:28 A1R1 [SHOP] buy_card idx=0
+    ↳ Buy Mercury (PLANET) for $3 to level up hands and improve scoring power early.
+  [ollama] waiting... (think=False)  [ollama] 2.1s  → use_consumable: Use Mercury planet to level up all hands immediately and improve scoring power.
+  07:03:32 A1R1 [SHOP] use_consumable idx=0
+    ↳ Use Mercury planet to level up all hands immediately and improve scoring power.
+  [ollama] waiting... (think=False)  [ollama] 12.5s  → finish_shop: No affordable items in shop with $0 remaining; proceed to next blind selection.
+  07:03:44 A1R1 [SHOP] finish_shop
+    ↳ No affordable items in shop with $0 remaining; proceed to next blind selection.
+
+── BLIND_SELECT  Ante 1  Round 1  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.9s  → select_blind: Full House base = 40 chips × 4 mult = 160. Add joker giving +10 mult → 40 × 14 =
+  07:03:49 A1R2 [BLIND_SELECT] select_blind
+    ↳ Full House base = 40 chips × 4 mult = 160. Add joker giving +10 mult → 40 × 14 = 560. Add joker givi
+
+── SELECTING_HAND  Ante 1  Round 2  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → play_hand: Play Pair with KD, 6S, 5S, 5D. This is the highest scoring available hand and pr
+  07:03:56 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair with KD, 6S, 5S, 5D. This is the highest scoring available hand and provides a solid base 
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Play Two Pair with 7S, 7H, 5C, 4S, and TH. This hand scores 40 base chips × 2 mu
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 2, 3, 4, 5]
+    reasoning: Play Two Pair with 7S, 7H, 5C, 4S, and TH. This hand scores 40 base chips × 2 mult = 80 points, which is a solid base fo
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $0 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (T of H)
+      [1] Base Card (9 of C)
+      [2] Base Card (7 of S)
+      [3] Base Card (7 of H)
+      [4] Base Card (5 of C)
+      [5] Base Card (4 of S)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (TH, 9C, 7S, 7H, 5C)
+      High Card: play indices [0, 1, 2, 4, 5]  (TH, 9C, 7S, 5C, 4S)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$7
+    Recent hands:
+      - A1R1: mixed scored 508 (hands_used=4, discards_used=0)
+    Recent blinds:
+      - A1 : 508/None
+      - A1 : 0/None
+    Recent joker moves: buy c_mercury ($3)
+    ── end prompt ──
+
+  07:04:04 A1R2 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Play Two Pair with 7S, 7H, 5C, 4S, and TH. This hand scores 40 base chips × 2 mult = 80 points, whic
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → play_hand: Play Two Pair with QS, 6D, 4D, 3H, and 3D. This hand scores 40 base chips × 2 mu
+  07:04:11 A1R2 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Play Two Pair with QS, 6D, 4D, 3H, and 3D. This hand scores 40 base chips × 2 mult = 80 points, whic
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → play_hand: Play Two Pair with AC, QC, QD, 2H, and 2C. This hand scores 40 base chips × 2 mu
+  07:04:19 A1R2 [GAME_OVER] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Play Two Pair with AC, QC, QD, 2H, and 2C. This hand scores 40 base chips × 2 mult = 80 points, whic
+
+── GAME_OVER  Ante 1  Round 2  $0 ──
+
+LOST at ante 1
+  [log] saved 16 entries → runs/0071ab4b370e.json
+  ~tokens: ollama (free) 29902/641  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

@@ -1,0 +1,17 @@
+{
+  "timestamp": "20260522_170428",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 1,
+  "results": [
+    {
+      "agent": "gpt4o",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 477.2,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428/runs/gpt4o_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428/gpt4o_01.log"
+    }
+  ]
+}

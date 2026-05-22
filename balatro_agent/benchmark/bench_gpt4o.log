@@ -1,0 +1,14 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428
+Roster: ['gpt4o']
+Runs/agent: 1  Timeout: 900s
+
+════ gpt4o (llm) ════
+
+──── gpt4o run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm openai --openai-model gpt-4o
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428/gpt4o_01.log
+  → copied 57d8454129aa.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428/runs/gpt4o_01.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_170428

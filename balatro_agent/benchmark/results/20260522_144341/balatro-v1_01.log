@@ -1,0 +1,125 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/c57f2d12f533.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 10.2s  → select_blind: Starting the first blind, play Small blind to build momentum.
+  14:50:39 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind, play Small blind to build momentum.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: Play High Card with KC, TS, 9C, 7C, 6C. This is the best available hand. No bett
+  14:50:46 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play High Card with KC, TS, 9C, 7C, 6C. This is the best available hand. No better options exist.
+  [ollama] waiting... (think=False)  [ollama] 35.6s  → play_hand: Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 =
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 = 20. Additional chips from KS (11), TC (
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (K of S)
+      [1] Base Card (T of C)
+      [2] Base Card (8 of H)
+      [3] Base Card (8 of D)
+      [4] Base Card (5 of H)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KS, TC, 8H, 8D, 5H)
+      High Card: play indices [0, 1, 2, 4, 5]  (KS, TC, 8H, 5H, 4D)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:51:25 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 = 20. Additional chip
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → play_hand: Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 =
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 = 20. Additional chips from KS (11), TC (
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (Q of H)
+      [2] Base Card (J of C)
+      [3] Base Card (7 of S)
+      [4] Base Card (7 of D)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AD, QH, JC, 7S, 7D)
+      High Card: play indices [0, 1, 2, 3, 5]  (AD, QH, JC, 7S, 4D)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:51:33 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair with 8H, 8D. This is the best available hand. Base chips 10 × mult 2 = 20. Additional chip
+  [ollama] waiting... (think=False)  [ollama] 103.3s  → play_hand: Play Pair with 2S and 2C. This is the best available hand. Base chips 10 × mult 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: Play Pair with 2S and 2C. This is the best available hand. Base chips 10 × mult 2 = 20. Additional chips from JH (11), T
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 1 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (J of H)
+      [1] Base Card (T of D)
+      [2] Base Card (9 of D)
+      [3] Base Card (5 of S)
+      [4] Base Card (4 of D)
+      [5] Base Card (3 of H)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (JH, TD, 9D, 2S, 2C)
+      High Card: play indices [0, 1, 2, 3, 4]  (JH, TD, 9D, 5S, 4D)
+    
+    ## Run Memory (FullHouse_Discard)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:53:19 A1R1 [GAME_OVER] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ Play Pair with 2S and 2C. This is the best available hand. Base chips 10 × mult 2 = 20. Additional c
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 5 entries → runs/c57f2d12f533.json
+  ~tokens: ollama (free) 10341/234  cost free
+Run 1/1 | Strategy: FullHouse_Discard | Result: LOST ante 1

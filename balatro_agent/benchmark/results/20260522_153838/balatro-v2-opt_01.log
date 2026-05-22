@@ -1,0 +1,68 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3-v2 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/265ae6c511c0.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.7s  → select_blind: Starting the first blind, play through the ante to build strategy.
+  15:56:17 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind, play through the ante to build strategy.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → discard_cards: Discard K of D and J of S to improve toward Flush or Straight.
+  15:56:20 A1R1 [SELECTING_HAND] discard_cards cards=[2, 3]
+    ↳ Discard K of D and J of S to improve toward Flush or Straight.
+  [ollama] waiting... (think=False)  [ollama] 87.0s  → play_hand: Play Pair of 3s (indices 5 and 6) with AC, 9C, 3H, 3D. This is the best availabl
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: Play Pair of 3s (indices 5 and 6) with AC, 9C, 3H, 3D. This is the best available hand and sets up for future Flush/Full
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (K of S)
+      [2] Base Card (9 of C)
+      [3] Base Card (6 of C)
+      [4] Base Card (5 of S)
+      [5] Base Card (3 of H)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (AC, KS, 9C, 3H, 3D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AC, KS, 9C, 6C, 5S)
+    
+    ## Run Memory (Optimal_Chaser)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  15:57:51 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Play Pair of 3s (indices 5 and 6) with AC, 9C, 3H, 3D. This is the best available hand and sets up f
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Play Pair of 6s (indices 3 and 4) with QC, 8D, 7S, 6H, 6C. This is the best avai
+  15:57:58 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair of 6s (indices 3 and 4) with QC, 8D, 7S, 6H, 6C. This is the best available hand and sets 
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → play_hand: Play Two Pair (K and Q) with KC, QH, QD, 4S, 4C. This is the best available hand
+  15:58:05 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Play Two Pair (K and Q) with KC, QH, QD, 4S, 4C. This is the best available hand and provides a soli
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → play_hand: Play Two Pair (TH, TC, TD, 5S, 5C) with remaining hands. This maximizes score po
+  15:58:12 A1R1 [GAME_OVER] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Play Two Pair (TH, TC, TD, 5S, 5C) with remaining hands. This maximizes score potential while mainta
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 6 entries → runs/265ae6c511c0.json
+  ~tokens: ollama (free) 15659/243  cost free
+Run 1/1 | Strategy: Optimal_Chaser | Result: LOST ante 1

@@ -1,0 +1,36 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/f4d79f1c6cc1.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 8.3s  → select_blind: Starting the run with the Small Blind to begin accumulating money and score. I d
+  11:35:11 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the run with the Small Blind to begin accumulating money and score. I don't have enough mon
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 21.1s  → discard_cards: I have a 4-card straight draw (T, J, Q, A) and a low pair of 2s. Since I have pl
+  11:35:33 A1R1 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have a 4-card straight draw (T, J, Q, A) and a low pair of 2s. Since I have plenty of hands and di
+  [ollama] waiting... (think=True)  [ollama] 29.0s  → play_hand: I have Two Pair (Queens and Tens) available. Since this is the first hand of the
+  11:36:06 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ I have Two Pair (Queens and Tens) available. Since this is the first hand of the first round and I h
+  [ollama] waiting... (think=True)  [ollama] 21.6s  → play_hand: I have Two Pair (6s and 4s) available. Since this is the first hand of the first
+  11:36:31 A1R1 [SELECTING_HAND] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ I have Two Pair (6s and 4s) available. Since this is the first hand of the first round, playing a st
+  [ollama] waiting... (think=True)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=True)  [ollama] 57.6s  → thought: (no reasoning provided)
+  11:46:53 A1R1 [GAME_OVER] thought
+    ↳ (no reasoning provided)
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 5 entries → runs/f4d79f1c6cc1.json
+  ~tokens: ollama (free) 11225/271  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

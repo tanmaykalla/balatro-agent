@@ -1,0 +1,244 @@
+{
+  "run_id": "dac54e9e7ba8",
+  "run_num": 6,
+  "strategy_name": "Random_Chaos",
+  "source": "strategy",
+  "system_prompt": "",
+  "action_log": [
+    {
+      "ante": 1,
+      "round": 0,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "Random_Chaos: select small blind (margin 0.0x)"
+      },
+      "reasoning": "Random_Chaos: select small blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 0\nMoney: $4 | Hands left: 4 | Discards left: 4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          6
+        ],
+        "reasoning": "Random_Chaos: discard ['H_3'] to build toward best hand"
+      },
+      "reasoning": "Random_Chaos: discard ['H_3'] to build toward best hand",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] S_A (A of S)\n  [1] S_9 (9 of S)\n  [2] D_9 (9 of D)\n  [3] H_8 (8 of H)\n  [4] H_6 (6 of H)\n  [5] S_4 (4 of S)\n  [6] H_3 (3 of H)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          3,
+          0,
+          4
+        ],
+        "reasoning": "Random_Chaos: play Three of a Kind with ['S_9', 'C_9', 'D_9', 'S_A', 'H_8'] (blind target 0, scored 0)"
+      },
+      "reasoning": "Random_Chaos: play Three of a Kind with ['S_9', 'C_9', 'D_9', 'S_A', 'H_8'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] S_A (A of S)\n  [1] S_9 (9 of S)\n  [2] C_9 (9 of C)\n  [3] D_9 (9 of D)\n  [4] H_8 (8 of H)\n  [5] H_6 (6 of H)\n  [6] S_4 (4 of S)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          3,
+          4,
+          6,
+          7,
+          0
+        ],
+        "reasoning": "Random_Chaos: play Two Pair with ['S_4', 'H_4', 'S_2', 'D_2', 'S_K'] (blind target 0, scored 171)"
+      },
+      "reasoning": "Random_Chaos: play Two Pair with ['S_4', 'H_4', 'S_2', 'D_2', 'S_K'] (blind target 0, scored 171)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 3 | Discards left: 3\n\n## Hand\n  [0] S_K (K of S)\n  [1] S_7 (7 of S)\n  [2] H_6 (6 of H)\n  [3] S_4 (4 of S)\n  [4] H_4 (4 of H)\n  [5] S_3 (3 of S)\n  [6] S_2 (2 of S)\n  [7] D_2 (2 of D)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          2,
+          3,
+          4,
+          5,
+          0
+        ],
+        "reasoning": "Random_Chaos: play Two Pair with ['S_6', 'H_6', 'S_5', 'D_5', 'D_Q'] (blind target 0, scored 235)"
+      },
+      "reasoning": "Random_Chaos: play Two Pair with ['S_6', 'H_6', 'S_5', 'D_5', 'D_Q'] (blind target 0, scored 235)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 1\nMoney: $4 | Hands left: 2 | Discards left: 3\n\n## Hand\n  [0] D_Q (Q of D)\n  [1] S_7 (7 of S)\n  [2] S_6 (6 of S)\n  [3] H_6 (6 of H)\n  [4] S_5 (5 of S)\n  [5] D_5 (5 of D)\n  [6] S_3 (3 of S)\n  [7] H_2 (2 of H)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "ROUND_EVAL",
+      "action": "cash_out",
+      "params": {
+        "reasoning": "Random_Chaos: cash out round"
+      },
+      "reasoning": "Random_Chaos: cash out round",
+      "prompt": "# Phase: ROUND_EVAL | Ante 1 Round 1\nMoney: $4 | Hands left: 1 | Discards left: 3",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "reasoning": "Random_Chaos: buy j_crafty from shop"
+      },
+      "reasoning": "Random_Chaos: buy j_crafty from shop",
+      "prompt": "# Phase: SHOP | Ante 1 Round 1\nMoney: $8 | Hands left: 4 | Discards left: 4\n\n## Shop\n  [0] Crafty Joker (JOKER) \u2014 $4\n  [1] Egg (JOKER) \u2014 $4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "buy_card",
+      "params": {
+        "reasoning": "Random_Chaos: buy j_egg from shop"
+      },
+      "reasoning": "Random_Chaos: buy j_egg from shop",
+      "prompt": "# Phase: SHOP | Ante 1 Round 1\nMoney: $4 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n\n## Shop\n  [0] Egg (JOKER) \u2014 $4",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "SHOP",
+      "action": "finish_shop",
+      "params": {
+        "reasoning": "Random_Chaos: finish shop and proceed"
+      },
+      "reasoning": "Random_Chaos: finish shop and proceed",
+      "prompt": "# Phase: SHOP | Ante 1 Round 1\nMoney: $0 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 1,
+      "phase": "BLIND_SELECT",
+      "action": "select_blind",
+      "params": {
+        "reasoning": "Random_Chaos: select big blind (margin 0.0x)"
+      },
+      "reasoning": "Random_Chaos: select big blind (margin 0.0x)",
+      "prompt": "# Phase: BLIND_SELECT | Ante 1 Round 1\nMoney: $0 | Hands left: 4 | Discards left: 4\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "discard_cards",
+      "params": {
+        "cards": [
+          0
+        ],
+        "reasoning": "Random_Chaos: discard ['D_A'] to build toward best hand"
+      },
+      "reasoning": "Random_Chaos: discard ['D_A'] to build toward best hand",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $0 | Hands left: 4 | Discards left: 4\n\n## Hand\n  [0] D_A (A of D)\n  [1] C_K (K of C)\n  [2] S_8 (8 of S)\n  [3] C_8 (8 of C)\n  [4] S_7 (7 of S)\n  [5] H_6 (6 of H)\n  [6] D_5 (5 of D)\n  [7] H_3 (3 of H)\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          0,
+          3,
+          4
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['S_8', 'C_8', 'C_K', 'S_7', 'H_6'] (blind target 0, scored 0)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['S_8', 'C_8', 'C_K', 'S_7', 'H_6'] (blind target 0, scored 0)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $0 | Hands left: 4 | Discards left: 3\n\n## Hand\n  [0] C_K (K of C)\n  [1] S_8 (8 of S)\n  [2] C_8 (8 of C)\n  [3] S_7 (7 of S)\n  [4] H_6 (6 of H)\n  [5] D_5 (5 of D)\n  [6] C_4 (4 of C)\n  [7] H_3 (3 of H)\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          5,
+          6,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['H_3', 'C_3', 'D_K', 'S_J', 'C_7'] (blind target 0, scored 52)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['H_3', 'C_3', 'D_K', 'S_J', 'C_7'] (blind target 0, scored 52)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $0 | Hands left: 3 | Discards left: 3\n\n## Hand\n  [0] D_K (K of D)\n  [1] S_J (J of S)\n  [2] C_7 (7 of C)\n  [3] D_5 (5 of D)\n  [4] C_4 (4 of C)\n  [5] H_3 (3 of H)\n  [6] C_3 (3 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          1,
+          2,
+          4,
+          5,
+          0
+        ],
+        "reasoning": "Random_Chaos: play Two Pair with ['H_9', 'C_9', 'C_5', 'D_5', 'H_J'] (blind target 0, scored 84)"
+      },
+      "reasoning": "Random_Chaos: play Two Pair with ['H_9', 'C_9', 'C_5', 'D_5', 'H_J'] (blind target 0, scored 84)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $0 | Hands left: 2 | Discards left: 3\n\n## Hand\n  [0] H_J (J of H)\n  [1] H_9 (9 of H)\n  [2] C_9 (9 of C)\n  [3] H_8 (8 of H)\n  [4] C_5 (5 of C)\n  [5] D_5 (5 of D)\n  [6] C_4 (4 of C)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    },
+    {
+      "ante": 1,
+      "round": 2,
+      "phase": "SELECTING_HAND",
+      "action": "play_hand",
+      "params": {
+        "cards": [
+          4,
+          5,
+          0,
+          1,
+          2
+        ],
+        "reasoning": "Random_Chaos: play Pair with ['S_4', 'C_4', 'S_9', 'H_8', 'S_6'] (blind target 0, scored 180)"
+      },
+      "reasoning": "Random_Chaos: play Pair with ['S_4', 'C_4', 'S_9', 'H_8', 'S_6'] (blind target 0, scored 180)",
+      "prompt": "# Phase: SELECTING_HAND | Ante 1 Round 2\nMoney: $0 | Hands left: 1 | Discards left: 3\n\n## Hand\n  [0] S_9 (9 of S)\n  [1] H_8 (8 of H)\n  [2] S_6 (6 of S)\n  [3] H_5 (5 of H)\n  [4] S_4 (4 of S)\n  [5] C_4 (4 of C)\n  [6] D_3 (3 of D)\n  [7] H_2 (2 of H)\n\n## Jokers\n  [0] Crafty Joker (sell $2)\n  [1] Egg (sell $2)",
+      "source": "strategy"
+    }
+  ]
+}

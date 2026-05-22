@@ -1,0 +1,30 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/223533973529.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 7.6s  → select_blind: Starting the first round of the run. I'll play the Small Blind to build up money
+  12:49:16 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first round of the run. I'll play the Small Blind to build up money and hands.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 14.2s  → play_hand: Playing the Straight (10-9-8-7-6) as it is the highest scoring hand available an
+  12:49:35 A1R1 [SELECTING_HAND] play_hand cards=[2, 3, 4, 5, 6]
+    ↳ Playing the Straight (10-9-8-7-6) as it is the highest scoring hand available and will likely clear 
+  [ollama] waiting... (think=True)  [ollama] 33.5s  → play_hand: Playing the Two Pair (KH, KD, QS, QH, 6D) to build up score and save discards fo
+  12:50:15 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing the Two Pair (KH, KD, QS, QH, 6D) to build up score and save discards for more difficult rou
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=True)
+[main] SIGTERM received — saving partial run...
+  [log] skipped saving run 223533973529 — only 3 entries (crash/abort)

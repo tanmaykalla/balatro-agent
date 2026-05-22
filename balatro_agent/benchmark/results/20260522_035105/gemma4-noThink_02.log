@@ -1,0 +1,128 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/212b2f09528b.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → select_blind: At the start of a run (Ante 1, Round 0), I need to play the Small Blind to build
+  04:52:29 A1R1 [BLIND_SELECT] select_blind
+    ↳ At the start of a run (Ante 1, Round 0), I need to play the Small Blind to build my economy and gain
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 2.3s  → play_hand: I have a pair of 10s. This is the highest scoring hand available (Pair) and will
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[2, 3]
+    reasoning: I have a pair of 10s. This is the highest scoring hand available (Pair) and will help me make progress toward the blind 
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (K of H)
+      [2] Base Card (T of S)
+      [3] Base Card (T of D)
+      [4] Base Card (9 of H)
+      [5] Base Card (8 of H)
+      [6] Base Card (7 of S)
+      [7] Base Card (5 of S)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AD, KH, TS, TD, 9H)
+      High Card: play indices [0, 1, 2, 4, 5]  (AD, KH, TS, 9H, 8H)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  04:52:34 A1R1 [SELECTING_HAND] play_hand cards=[2, 3]
+    ↳ I have a pair of 10s. This is the highest scoring hand available (Pair) and will help me make progre
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → discard_cards: I have a pair of 8s. I will discard the non-matching/low value cards (Ace, King,
+  04:52:38 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 6, 7]
+    ↳ I have a pair of 8s. I will discard the non-matching/low value cards (Ace, King, Queen, 7, 5) to try
+  [ollama] waiting... (think=False)  [ollama] 2.1s  → play_hand: I have a pair of 8s. This is my best available scoring hand and will help me bui
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[2, 3, 4]
+    reasoning: I have a pair of 8s. This is my best available scoring hand and will help me build towards the target score.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 3 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (Q of D)
+      [1] Base Card (J of D)
+      [2] Base Card (9 of H)
+      [3] Base Card (8 of H)
+      [4] Base Card (8 of C)
+      [5] Base Card (6 of C)
+      [6] Base Card (5 of H)
+      [7] Base Card (4 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (QD, JD, 9H, 8H, 8C)
+      High Card: play indices [0, 1, 2, 3, 5]  (QD, JD, 9H, 8H, 6C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  04:52:43 A1R1 [SELECTING_HAND] play_hand cards=[2, 3, 4]
+    ↳ I have a pair of 8s. This is my best available scoring hand and will help me build towards the targe
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → play_hand: I have a pair of Jacks. This is the highest scoring hand available (Pair) and it
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[2, 3]
+    reasoning: I have a pair of Jacks. This is the highest scoring hand available (Pair) and it is a relatively strong starting hand fo
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (K of S)
+      [1] Base Card (Q of D)
+      [2] Base Card (J of H)
+      [3] Base Card (J of D)
+      [4] Base Card (9 of C)
+      [5] Base Card (6 of C)
+      [6] Base Card (5 of H)
+      [7] Base Card (4 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KS, QD, JH, JD, 9C)
+      High Card: play indices [0, 1, 2, 4, 5]  (KS, QD, JH, 9C, 6C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  04:52:48 A1R1 [SELECTING_HAND] play_hand cards=[2, 3]
+    ↳ I have a pair of Jacks. This is the highest scoring hand available (Pair) and it is a relatively str
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → play_hand: I have Two Pair (6s and 4s). This is my strongest playable hand and will provide
+  04:52:55 A1R1 [GAME_OVER] play_hand cards=[0, 3, 4, 6, 7]
+    ↳ I have Two Pair (6s and 4s). This is my strongest playable hand and will provide more chips and mult
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 6 entries → runs/212b2f09528b.json
+  ~tokens: ollama (free) 11209/357  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

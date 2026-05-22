@@ -1,0 +1,170 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (qwen3-base @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/771c68223fe7.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 13.8s  → select_blind: Starting with the Small blind to build experience and accumulate chips early. Pl
+  03:51:24 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting with the Small blind to build experience and accumulate chips early. Playing the best possi
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 37.9s  → play_hand: Two Pair (10s and 2s) is the highest scoring hand available. This hand provides 
+  03:52:06 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 6, 7]
+    ↳ Two Pair (10s and 2s) is the highest scoring hand available. This hand provides 20 base chips × 2 mu
+  [ollama] waiting... (think=False)  [ollama] 25.5s  → play_hand: Two Pair (Aces and 7s) is the highest scoring hand available. This hand provides
+  03:52:36 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Two Pair (Aces and 7s) is the highest scoring hand available. This hand provides 20 base chips × 2 m
+  [ollama] waiting... (think=False)  [ollama] 46.8s  → play_hand: Two Pair (Tens and Sixes) is the highest scoring hand available. This hand provi
+  03:53:29 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair (Tens and Sixes) is the highest scoring hand available. This hand provides 20 base chips × 
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 61.7s  → buy_card: The Fibonacci Joker is a valuable joker that can provide significant multipliers
+  03:54:32 A1R1 [SHOP] buy_card idx=0
+    ↳ The Fibonacci Joker is a valuable joker that can provide significant multipliers, which are crucial 
+  [ollama] waiting... (think=False)  [ollama] 26.8s  → finish_shop: The current shop does not offer immediately useful items without spending money 
+  03:54:59 A1R1 [SHOP] finish_shop
+    ↳ The current shop does not offer immediately useful items without spending money we don't have. The F
+
+── BLIND_SELECT  Ante 1  Round 1  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 24.7s  → select_blind: Starting with the Small blind to build funds and gain experience. Skipping would
+  03:55:25 A1R2 [BLIND_SELECT] select_blind
+    ↳ Starting with the Small blind to build funds and gain experience. Skipping would give a tag reward b
+
+── SELECTING_HAND  Ante 1  Round 2  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 44.6s  → play_hand: Two Pair (T and 4) with Fibonacci joker adds +10 chips (20+10=30 chips) × 2 mult
+  03:56:14 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ Two Pair (T and 4) with Fibonacci joker adds +10 chips (20+10=30 chips) × 2 mult = 60 score. This is
+  [ollama] waiting... (think=False)  [ollama] 41.0s  → play_hand: Play Straight (TC, 9C, 8H, 7D, 6H) with Fibonacci joker. Base 30 chips +10 from 
+  03:57:00 A1R2 [ROUND_EVAL] play_hand cards=[2, 3, 4, 5, 6]
+    ↳ Play Straight (TC, 9C, 8H, 7D, 6H) with Fibonacci joker. Base 30 chips +10 from joker = 40 chips × 4
+
+── ROUND_EVAL  Ante 1  Round 2  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 25.6s  → buy_card: Square Joker (+Mult) is a high-impact joker for increasing multipliers, which is
+  03:57:29 A1R2 [SHOP] buy_card idx=1
+    ↳ Square Joker (+Mult) is a high-impact joker for increasing multipliers, which is more valuable than 
+  [ollama] waiting... (think=False)  [ollama] 33.1s  → sell_joker: Sell the Fibonacci Joker to generate $4, which can be combined with selling the 
+  03:58:02 A1R2 [SHOP] sell_joker idx=0
+    ↳ Sell the Fibonacci Joker to generate $4, which can be combined with selling the Square Joker later t
+  [ollama] waiting... (think=False)  [ollama] 23.1s  → sell_joker: Selling the Square Joker for $2 will provide the necessary funds to purchase the
+  03:58:26 A1R2 [SHOP] sell_joker idx=0
+    ↳ Selling the Square Joker for $2 will provide the necessary funds to purchase the Jumbo Arcana Pack (
+  [ollama] waiting... (think=False)  [ollama] 10.5s  → buy_pack: Purchase the Jumbo Arcana Pack ($6) to acquire high-value tarot cards for long-t
+  03:58:39 A1R2 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Purchase the Jumbo Arcana Pack ($6) to acquire high-value tarot cards for long-term scaling, as it i
+  [ollama] waiting... (think=False)  [ollama] 112.6s  → select_pack_card: Choosing The Magician to gain a +1 mult for future hands, enhancing scoring pote
+  04:00:32 A1R2 [SMODS_BOOSTER_OPENED] select_pack_card idx=2  ✗ BalatrobotError -32002: Method 'pack' requires one of these 
+    ↳ Choosing The Magician to gain a +1 mult for future hands, enhancing scoring potential.
+  [ollama] waiting... (think=False)  [ollama] 35.6s  → finish_shop: Proceed to the next blind selection without purchasing items, as current funds a
+  04:01:08 A1R2 [SHOP] finish_shop
+    ↳ Proceed to the next blind selection without purchasing items, as current funds are insufficient for 
+
+── BLIND_SELECT  Ante 1  Round 2  $0 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 27.4s  → select_blind: The current phase is BLIND_SELECT for Ante 1 Round 2. The previous round's Big B
+  04:01:37 A1R3 [BLIND_SELECT] select_blind
+    ↳ The current phase is BLIND_SELECT for Ante 1 Round 2. The previous round's Big Blind target was 936,
+
+── SELECTING_HAND  Ante 1  Round 3  $0 ──
+  [ollama] waiting... (think=False)  [ollama] 143.0s  → play_hand: The Pair hand (4s) is the highest scoring option available. It provides a base s
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 5, 6]
+    reasoning: The Pair hand (4s) is the highest scoring option available. It provides a base score of 10 chips * 2 mult = 20, plus add
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $0 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (K of S)
+      [2] Base Card (J of H)
+      [3] Base Card (T of C)
+      [4] Base Card (7 of H)
+      [5] Base Card (4 of S)
+      [6] Base Card (4 of C)
+      [7] Base Card (3 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 5, 6]  (AD, KS, JH, 4S, 4C)
+      High Card: play indices [0, 1, 2, 3, 4]  (AD, KS, JH, TC, 7H)
+    
+    ## Consumables
+      [0] Saturn
+      [1] Neptune
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$8, A1R2=$4
+    Recent hands:
+      - A1R1: mixed scored 304 (hands_used=3, discards_used=0)
+      - A1R2: mixed scored 936 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 304/None
+      - A1 : 936/None
+      - A1 : 0/None
+    Recent joker moves: buy j_fibonacci ($8), buy j_square ($4), sell j_fibonacci ($4), sell j_square ($2)
+    ── end prompt ──
+
+  04:04:04 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ The Pair hand (4s) is the highest scoring option available. It provides a base score of 10 chips * 2
+  [ollama] waiting... (think=False)  [ollama] 50.6s  → play_hand: The Pair of Aces (AS, AC) is the highest scoring option available. It provides a
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: The Pair of Aces (AS, AC) is the highest scoring option available. It provides a base score of 10 chips * 2 mult = 20, p
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 3
+    Money: $0 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (A of C)
+      [2] Base Card (T of C)
+      [3] Base Card (9 of H)
+      [4] Base Card (8 of S)
+      [5] Base Card (7 of H)
+      [6] Base Card (5 of C)
+      [7] Base Card (3 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AS, AC, TC, 9H, 8S)
+      High Card: play indices [0, 2, 3, 4, 5]  (AS, TC, 9H, 8S, 7H)
+    
+    ## Consumables
+      [0] Saturn
+      [1] Neptune
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 3
+    Recent wallet: A1R1=$8, A1R2=$4
+    Recent hands:
+      - A1R1: mixed scored 304 (hands_used=3, discards_used=0)
+      - A1R2: mixed scored 936 (hands_used=2, discards_used=0)
+    Recent blinds:
+      - A1 : 304/None
+      - A1 : 936/None
+      - A1 : 0/None
+    Recent joker moves: buy j_fibonacci ($8), buy j_square ($4), sell j_fibonacci ($4), sell j_square ($2)
+    ── end prompt ──
+
+  04:04:57 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ The Pair of Aces (AS, AC) is the highest scoring option available. It provides a base score of 10 ch
+  [ollama] waiting... (think=False)

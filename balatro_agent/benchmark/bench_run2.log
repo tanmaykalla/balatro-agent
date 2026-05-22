@@ -1,0 +1,81 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224
+Roster: ['gemma4-noThink', 'gemma4-think', 'balatro-v1', 'balatro-v2']
+Runs/agent: 3  Timeout: 900s
+
+════ gemma4-noThink (llm) ════
+
+──── gemma4-noThink run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-noThink_01.log
+  → copied a4ed3508f2e5.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-noThink_01.json
+
+──── gemma4-noThink run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-noThink_02.log
+  → copied 0079e3aefe5e.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-noThink_02.json
+
+──── gemma4-noThink run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-noThink_03.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied b48fe5e79ad2.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-noThink_03.json
+
+════ gemma4-think (llm) ════
+
+──── gemma4-think run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-think_01.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied 3923e7600dc4.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-think_01.json
+
+──── gemma4-think run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-think_02.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied 3923e7600dc4.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-think_02.json
+
+──── gemma4-think run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy FREE_AGENT --no-report --llm ollama --ollama-model gemma4:26b --ollama-think
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/gemma4-think_03.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied 9487ccff151d.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/gemma4-think_03.json
+
+════ balatro-v1 (llm) ════
+
+──── balatro-v1 run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v1_01.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied 333466e6653b.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v1_01.json
+
+──── balatro-v1 run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v1_02.log
+  → copied dd21e65bfe96.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v1_02.json
+
+──── balatro-v1 run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v1_03.log
+  → copied 81875b7a5b98.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v1_03.json
+
+════ balatro-v2 (llm) ════
+
+──── balatro-v2 run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v2_01.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied 1e009a4f0661.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v2_01.json
+
+──── balatro-v2 run 2/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v2_02.log
+  → copied 822079a89132.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v2_02.json
+
+──── balatro-v2 run 3/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy DISCARD_CHASER --no-report --llm ollama --ollama-model balatro-qwen3-v2
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/balatro-v2_03.log
+  → copied cbcddb05f958.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/runs/balatro-v2_03.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_121224

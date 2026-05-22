@@ -1,0 +1,571 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/b48fe5e79ad2.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.0s  → select_blind: I need to start the run by playing the first Small Blind to build up money and h
+  12:19:10 A1R1 [BLIND_SELECT] select_blind
+    ↳ I need to start the run by playing the first Small Blind to build up money and hands. Skipping is no
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: A Straight is the highest scoring playable hand available in this hand (120 base
+  12:19:18 A1R1 [SELECTING_HAND] play_hand cards=[2, 3, 4, 5, 6]
+    ↳ A Straight is the highest scoring playable hand available in this hand (120 base chips/mult). Since 
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → discard_cards: I have two pairs (KK and QQ). I will discard the low-value off-suit cards (6, 5,
+  12:19:21 A1R1 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have two pairs (KK and QQ). I will discard the low-value off-suit cards (6, 5, 5, 3) to try and dr
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → play_hand: I have Two Pair (Kings and Queens) with an Ace kicker. This is the highest scori
+  12:19:31 A1R1 [ROUND_EVAL] play_hand cards=[1, 2, 3, 4, 0]
+    ↳ I have Two Pair (Kings and Queens) with an Ace kicker. This is the highest scoring playable hand ava
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → buy_card: Jolly Joker provides +Mult, which is essential for early game scoring. At $3, it
+  12:19:35 A1R1 [SHOP] buy_card idx=1
+    ↳ Jolly Joker provides +Mult, which is essential for early game scoring. At $3, it's affordable and fi
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → buy_pack: The Buffoon Pack is the highest priority in the early game because finding more 
+  12:19:39 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ The Buffoon Pack is the highest priority in the early game because finding more Jokers is the most r
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → select_pack_card: Blue Joker provides a much stronger xMult potential compared to Lusty Joker, esp
+  12:19:42 A1R1 [SHOP] select_pack_card idx=0
+    ↳ Blue Joker provides a much stronger xMult potential compared to Lusty Joker, especially since I'm ea
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → reroll_shop: The current shop offers nothing I can afford. Shoot the Moon is $5 (I only have 
+  12:19:50 A1R1 [SHOP] reroll_shop  ✗ BalatrobotError -32003: Not enough dollars to reroll. Availa
+    ↳ The current shop offers nothing I can afford. Shoot the Moon is $5 (I only have $2), Director's Cut 
+  [ollama] waiting... (think=False)  [ollama] 2.4s  [ollama] waiting... (think=False)  [ollama] 1.3s  [ollama] waiting... (think=False)  [ollama] 1.3s  12:19:55 A1R1 [SHOP] finish_shop
+    ↳ fallback: LLM failed to produce a tool call
+
+── BLIND_SELECT  Ante 1  Round 1  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → select_blind: I have no choice but to play the first blind of the run. I have a small amount o
+  12:19:59 A1R2 [BLIND_SELECT] select_blind
+    ↳ I have no choice but to play the first blind of the run. I have a small amount of money ($2), so I n
+
+── SELECTING_HAND  Ante 1  Round 2  $2 ──
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have 3 Clubs (QC, TC, 4C) and no pairs. I will discard the off-suit cards (JH,
+  12:20:03 A1R2 [SELECTING_HAND] discard_cards cards=[1, 3, 4, 6, 7]
+    ↳ I have 3 Clubs (QC, TC, 4C) and no pairs. I will discard the off-suit cards (JH, 8D, 5S, 3H, 2D) to 
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → discard_cards: I have 4 Clubs (QC, TC, 9C, 4C). I will discard the off-suit cards (JS, 7D, 5D, 
+  12:20:07 A1R2 [SELECTING_HAND] discard_cards cards=[1, 4, 5, 7]
+    ↳ I have 4 Clubs (QC, TC, 9C, 4C). I will discard the off-suit cards (JS, 7D, 5D, 3S) to try and draw 
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → play_hand: I have a Flush (QC, TC, 9C, 8C, 6C). A Flush is much higher scoring than a Pair 
+  12:20:16 A1R2 [ROUND_EVAL] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ I have a Flush (QC, TC, 9C, 8C, 6C). A Flush is much higher scoring than a Pair or High Card, and I 
+
+── ROUND_EVAL  Ante 1  Round 2  $2 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → finish_shop: I only have $7. Cartomancer is too expensive ($6) and I need to keep at least $5
+  12:20:22 A1R2 [SHOP] finish_shop
+    ↳ I only have $7. Cartomancer is too expensive ($6) and I need to keep at least $5 to earn interest or
+
+── BLIND_SELECT  Ante 1  Round 2  $7 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.5s  → select_blind: I need to beat the Big Blind for Ante 1, Round 2. Skipping is not an option as I
+  12:20:27 A1R3 [BLIND_SELECT] select_blind
+    ↳ I need to beat the Big Blind for Ante 1, Round 2. Skipping is not an option as I need to progress an
+
+── SELECTING_HAND  Ante 1  Round 3  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → discard_cards: I have two pairs (Queens and Jacks). I will discard the low cards (6H, 5S, 4H, 4
+  12:20:31 A1R3 [SELECTING_HAND] discard_cards cards=[4, 5, 6, 7]
+    ↳ I have two pairs (Queens and Jacks). I will discard the low cards (6H, 5S, 4H, 4C) to try and find a
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: I will play Two Pair (Queens and Jacks). This is my strongest available hand and
+  12:20:41 A2R3 [ROUND_EVAL] play_hand cards=[1, 2, 3, 4]
+    ↳ I will play Two Pair (Queens and Jacks). This is my strongest available hand and should help me reac
+
+── ROUND_EVAL  Ante 2  Round 3  $7 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $14 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → use_consumable: Death is a very powerful Tarot card that turns a card into a Spectral card (ofte
+[balatrobot] BAD_REQUEST on use({'consumable': 0}): Consumable index out of range: 0
+  12:20:48 A2R3 [SHOP] use_consumable idx=0
+    ↳ Death is a very powerful Tarot card that turns a card into a Spectral card (often leading to high va
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → buy_card: Riff-raff is a Joker that provides extra scoring for hands containing specific c
+  12:20:52 A2R3 [SHOP] buy_card idx=1
+    ↳ Riff-raff is a Joker that provides extra scoring for hands containing specific cards (usually low ca
+  [ollama] waiting... (think=False)  [ollama] 3.1s  → buy_pack: I have $8. I want to increase my hand levels to scale through Ante 2 and beyond.
+  12:20:56 A2R3 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $8. I want to increase my hand levels to scale through Ante 2 and beyond. A Celestial Pack is
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → select_pack_card: I am looking for Jupiter to level up my hands (specifically 3-of-a-kind or pairs
+  12:21:02 A2R3 [SHOP] select_pack_card idx=0
+    ↳ I am looking for Jupiter to level up my hands (specifically 3-of-a-kind or pairs) to increase my sco
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → finish_shop: I have $4 left and there are no high-value xMult or significant +Mult jokers in 
+  12:21:07 A2R3 [SHOP] finish_shop
+    ↳ I have $4 left and there are no high-value xMult or significant +Mult jokers in the shop. Rerolling 
+
+── BLIND_SELECT  Ante 2  Round 3  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.4s  → select_blind: I have $4 and no choice but to play the current blind. I need to focus on buildi
+  12:21:11 A2R4 [BLIND_SELECT] select_blind
+    ↳ I have $4 and no choice but to play the current blind. I need to focus on building my economy and im
+
+── SELECTING_HAND  Ante 2  Round 4  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → discard_cards: I have a pair of Aces and 3 Spades (A, Q, T, 7). I will discard the non-spade, n
+  12:21:16 A2R4 [SELECTING_HAND] discard_cards cards=[3, 5, 7]
+    ↳ I have a pair of Aces and 3 Spades (A, Q, T, 7). I will discard the non-spade, non-pair cards (Jack 
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have a Flush (A, Q, T, 7, 3 of Spades). This is my strongest available hand an
+  12:21:26 A2R4 [ROUND_EVAL] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have a Flush (A, Q, T, 7, 3 of Spades). This is my strongest available hand and will provide signi
+
+── ROUND_EVAL  Ante 2  Round 4  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 4  $13 ──
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → use_consumable: The World is an extremely powerful Tarot card that can create a Royal Flush or s
+[balatrobot] BAD_REQUEST on use({'consumable': 1}): Consumable index out of range: 1
+  12:21:33 A2R4 [SHOP] use_consumable idx=1
+    ↳ The World is an extremely powerful Tarot card that can create a Royal Flush or significantly improve
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → use_consumable: The World is one of the most powerful Tarot cards in the game, as it can complet
+[balatrobot] BAD_REQUEST on use({'consumable': 1}): Consumable index out of range: 1
+  12:21:36 A2R4 [SHOP] use_consumable idx=1
+    ↳ The World is one of the most powerful Tarot cards in the game, as it can complete a hand or transfor
+  [ollama] waiting... (think=False)  [ollama] 2.6s  → buy_card: Smiley Face provides +Mult, which is essential for scaling my scoring potential 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:21:38 A2R4 [SHOP] buy_card idx=0
+    ↳ Smiley Face provides +Mult, which is essential for scaling my scoring potential in the early game. I
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → buy_card: Smiley Face provides +Mult, which is essential for scaling my scoring potential 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:21:41 A2R4 [SHOP] buy_card idx=0
+    ↳ Smiley Face provides +Mult, which is essential for scaling my scoring potential in the early game. I
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → finish_shop: The shop doesn't have any high-priority xMult jokers or impactful vouchers that 
+  12:21:44 A2R4 [SHOP] finish_shop
+    ↳ The shop doesn't have any high-priority xMult jokers or impactful vouchers that I can afford without
+
+── BLIND_SELECT  Ante 2  Round 4  $13 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → select_blind: I have a strong hand setup with several jokers and a healthy bankroll of $13. I'
+  12:21:49 A2R5 [BLIND_SELECT] select_blind
+    ↳ I have a strong hand setup with several jokers and a healthy bankroll of $13. I've been scoring well
+
+── SELECTING_HAND  Ante 2  Round 5  $13 ──
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → discard_cards: I have a pair of 9s (indices 3 and 4) and some low clubs (indices 5 and 6). I wi
+  12:21:55 A2R5 [SELECTING_HAND] discard_cards cards=[0, 1, 2]
+    ↳ I have a pair of 9s (indices 3 and 4) and some low clubs (indices 5 and 6). I will discard the high 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → play_hand: I have two pair (9s and 3s). Playing Two Pair is the highest scoring hand availa
+  12:22:03 A2R5 [ROUND_EVAL] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have two pair (9s and 3s). Playing Two Pair is the highest scoring hand available and will help me
+
+── ROUND_EVAL  Ante 2  Round 5  $13 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 5  $19 ──
+  [ollama] waiting... (think=False)  [ollama] 6.4s  [ollama] waiting... (think=False)  [ollama] 1.7s  → finish_shop: The current shop offerings are not worth the reroll cost, and I want to preserve
+  12:22:14 A2R5 [SHOP] finish_shop
+    ↳ The current shop offerings are not worth the reroll cost, and I want to preserve my $19 to keep inte
+
+── BLIND_SELECT  Ante 2  Round 5  $19 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_blind: I have a solid economy ($19) and a strong lineup of jokers to handle the upcomin
+  12:22:19 A2R6 [BLIND_SELECT] select_blind
+    ↳ I have a solid economy ($19) and a strong lineup of jokers to handle the upcoming Big Blind. Since I
+
+── SELECTING_HAND  Ante 2  Round 6  $19 ──
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → discard_cards: I have a pair of Kings (indices 0 and 1). I will discard the non-matching, non-c
+  12:22:24 A2R6 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ I have a pair of Kings (indices 0 and 1). I will discard the non-matching, non-connecting cards to t
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: I have a pair of Kings and a pair of 5s. Playing Two Pair is the strongest playa
+  12:22:34 A3R6 [ROUND_EVAL] play_hand cards=[0, 1, 2, 5, 6]
+    ↳ I have a pair of Kings and a pair of 5s. Playing Two Pair is the strongest playable hand available. 
+
+── ROUND_EVAL  Ante 3  Round 6  $19 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 6  $28 ──
+  [ollama] waiting... (think=False)  [ollama] 3.8s  → use_consumable: I'll check the Jumbo Celestial Pack first to see if I can get a high-value plane
+[balatrobot] BAD_REQUEST on use({'consumable': 1}): Consumable index out of range: 1
+  12:22:41 A3R6 [SHOP] use_consumable idx=1
+    ↳ I'll check the Jumbo Celestial Pack first to see if I can get a high-value planet upgrade for my mai
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → use_consumable: I'll check the Jumbo Celestial Pack first to see if I can get a high-value plane
+[balatrobot] BAD_REQUEST on use({'consumable': 1}): Consumable index out of range: 1
+  12:22:44 A3R6 [SHOP] use_consumable idx=1
+    ↳ I'll check the Jumbo Celestial Pack first to see if I can get a high-value planet upgrade for my mai
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → use_consumable: I have a healthy $28. I'll check the Jumbo Celestial Pack to see if there are an
+[balatrobot] BAD_REQUEST on use({'consumable': 1}): Consumable index out of range: 1
+  12:22:47 A3R6 [SHOP] use_consumable idx=1
+    ↳ I have a healthy $28. I'll check the Jumbo Celestial Pack to see if there are any planet upgrades av
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: I'll buy Mercury to level up my Two Pair hand. Since I've been playing many hand
+  12:22:50 A3R6 [SHOP] buy_card idx=0
+    ↳ I'll buy Mercury to level up my Two Pair hand. Since I've been playing many hands involving pairs an
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: Mystic Summit is a Joker that provides +Mult based on the number of cards in you
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:22:54 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit is a Joker that provides +Mult based on the number of cards in your hand. Since I have
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I'm pla
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:22:57 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I'm playing 5-card hands (l
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I'm pla
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:22:59 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I'm playing 5-card hands, t
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I play 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:02 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I play 5-card hands, this i
+  [ollama] waiting... (think=False)  [ollama] 2.8s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I play 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:05 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I play 5-card hands, this p
+  [ollama] waiting... (think=False)  [ollama] 2.7s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I play 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:08 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I play 5-card hands, this p
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → buy_pack: I have $25. I'll check the Jumbo Celestial Pack for planet upgrades to scale my 
+  12:23:13 A3R6 [SMODS_BOOSTER_OPENED] buy_pack idx=1
+    ↳ I have $25. I'll check the Jumbo Celestial Pack for planet upgrades to scale my main hands, which is
+  [ollama] waiting... (think=False)  [ollama] 4.1s  → select_pack_card: I am looking for a Planet card to improve my scoring potential. Pluto levels up 
+  12:23:20 A3R6 [SHOP] select_pack_card idx=0
+    ↳ I am looking for a Planet card to improve my scoring potential. Pluto levels up Three of a Kind, whi
+  [ollama] waiting... (think=False)  [ollama] 5.8s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I play 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:25 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I play 5-card hands, this p
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I play 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:28 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I play 5-card hands, this p
+  [ollama] waiting... (think=False)  [ollama] 1.8s  → buy_item: (no reasoning provided)
+  12:23:30 A3R6 [SHOP] buy_item
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.1s  → buy_card: Mystic Summit provides +Mult based on the number of cards in hand. Since I am pl
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:23:39 A3R6 [SHOP] buy_card idx=0
+    ↳ Mystic Summit provides +Mult based on the number of cards in hand. Since I am playing with 5-card ha
+  [ollama] waiting... (think=False)  [ollama] 8.9s  [ollama] waiting... (think=False)  [ollama] 9.0s  → finish_shop: I already have Mystic Summit, and no other items in the shop are currently worth
+  12:23:57 A3R6 [SHOP] finish_shop
+    ↳ I already have Mystic Summit, and no other items in the shop are currently worth the investment give
+
+── BLIND_SELECT  Ante 3  Round 6  $19 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 6.4s  → select_blind: I have $19 and a decent set of jokers. Since I cannot skip the Boss blind and I 
+  12:24:06 A3R7 [BLIND_SELECT] select_blind
+    ↳ I have $19 and a decent set of jokers. Since I cannot skip the Boss blind and I have no specific tag
+
+── SELECTING_HAND  Ante 3  Round 7  $19 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → discard_cards: I have a pair of 4s (indices 4 and 5). I will discard the non-pair cards to try 
+  12:24:11 A3R7 [SELECTING_HAND] discard_cards cards=[0, 1, 2, 3, 4]
+    ↳ I have a pair of 4s (indices 4 and 5). I will discard the non-pair cards to try and improve the hand
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → discard_cards: The current hand is just a High Card (Q, 9, 8, 7, 6). I have 3 discards left and
+  12:24:15 A3R7 [SELECTING_HAND] discard_cards cards=[0, 1]
+    ↳ The current hand is just a High Card (Q, 9, 8, 7, 6). I have 3 discards left and 4 hands left. I'll 
+  [ollama] waiting... (think=False)  [ollama] 5.4s  → play_hand: I have a pair of 8s. While the hand is low value, I have 4 hands left to hit the
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[1, 2, 3, 4, 7]
+    reasoning: I have a pair of 8s. While the hand is low value, I have 4 hands left to hit the target, and playing the pair is safer t
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 3 Round 7
+    Money: $19 | Hands left: 4 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (K of D)
+      [1] Base Card (8 of S)
+      [2] Base Card (8 of C)
+      [3] Base Card (7 of C)
+      [4] Base Card (6 of C)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of S)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KD, 8S, 8C, 7C, 6C)
+      High Card: play indices [0, 1, 3, 4, 5]  (KD, 8S, 7C, 6C, 4D)
+    
+    ## Jokers
+      [0] Jolly Joker (sell $1)
+      [1] Blue Joker (sell $2)
+      [2] Riff-raff (sell $3)
+      [3] Walkie Talkie (sell $2)
+      [4] Scary Face (sell $2)
+    
+    ## Consumables
+      [0] Mercury
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 3, round 7
+    Recent wallet: A2R3=$14, A2R4=$13, A2R5=$19, A3R6=$28
+    Recent hands:
+      - A1R3: mixed scored 1200 (hands_used=1, discards_used=1)
+      - A2R4: mixed scored 2130 (hands_used=1, discards_used=1)
+      - A2R5: mixed scored 1260 (hands_used=1, discards_used=1)
+      - A2R6: mixed scored 1880 (hands_used=1, discards_used=1)
+    Recent blinds:
+      - A2 : 1260/None
+      - A2 : 1880/None
+      - A3 : 0/None
+    Recent joker moves: buy j_mystic_summit ($5), buy j_mystic_summit ($5), buy j_mystic_summit ($5), buy j_mystic_summit ($5), buy j_mystic_summit ($5)
+    ── end prompt ──
+
+  12:24:25 A3R7 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 7]
+    ↳ I have a pair of 8s. While the hand is low value, I have 4 hands left to hit the target, and playing
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → discard_cards: I have a pair of Aces (indices 0 and 1). I'll discard the King and Queen to try 
+  12:24:29 A3R7 [SELECTING_HAND] discard_cards cards=[2, 3]
+    ↳ I have a pair of Aces (indices 0 and 1). I'll discard the King and Queen to try and find another Ace
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → play_hand: I have a Flush available (AS, TS, 7S, 3S, 2S). A Flush provides much higher base
+  12:24:39 A3R7 [ROUND_EVAL] play_hand cards=[0, 2, 3, 5, 6]
+    ↳ I have a Flush available (AS, TS, 7S, 3S, 2S). A Flush provides much higher base chips and mult comp
+
+── ROUND_EVAL  Ante 3  Round 7  $19 ──
+  → cash_out (auto)
+
+── SHOP  Ante 3  Round 7  $30 ──
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → use_consumable: Mercury provides a +1 Mult enhancement to a card. While I don't have specific ca
+  12:24:49 A3R7 [SHOP] use_consumable idx=0
+    ↳ Mercury provides a +1 Mult enhancement to a card. While I don't have specific cards in hand to targe
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_pack: I have $30, which is a healthy amount. I'm looking for planet cards to level up 
+  12:24:53 A3R7 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ I have $30, which is a healthy amount. I'm looking for planet cards to level up my scoring hands, an
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → select_pack_card: The current round is Ante 3, and I am looking at a booster pack. Mars is a Plane
+  12:24:59 A3R7 [SHOP] select_pack_card idx=0
+    ↳ The current round is Ante 3, and I am looking at a booster pack. Mars is a Planet card that levels u
+  [ollama] waiting... (think=False)  [ollama] 4.3s  → buy_card: Burglar is a strong Joker that gives x1.5 Mult if you play with only one hand. S
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:03 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a strong Joker that gives x1.5 Mult if you play with only one hand. Since I have been cle
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Burglar provides x1.5 Mult if you play a hand without discarding. Given my recen
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:06 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if you play a hand without discarding. Given my recent rounds where I've 
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Burglar is a very powerful xMult joker (x1.5 Mult if you play a hand without dis
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:09 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a very powerful xMult joker (x1.5 Mult if you play a hand without discards). Since I have
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → buy_card: Burglar provides x1.5 Mult if you play a hand without discarding. I have been pl
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:12 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if you play a hand without discarding. I have been playing very efficient
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:16 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discards). Given
+  [ollama] waiting... (think=False)  [ollama] 3.2s  → buy_card: Burglar is a top-tier xMult joker. Even though I've used discards in the last ro
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:19 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a top-tier xMult joker. Even though I've used discards in the last round, its ability to 
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:22 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discarding). Giv
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:26 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discarding). Giv
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → buy_card: Burglar is a high-value xMult joker (x1.5 Mult if you play a hand without discar
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:29 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a high-value xMult joker (x1.5 Mult if you play a hand without discards). Even though I h
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → buy_card: Burglar is a powerful x1.5 Mult joker if I play a hand without discards. Althoug
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:33 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if I play a hand without discards. Although I used 3 discards 
+  [ollama] waiting... (think=False)  [ollama] 10.1s  → buy_card: Burglar is an incredible x1.5 Mult joker if played without discarding. Since I'v
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:25:43 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredible x1.5 Mult joker if played without discarding. Since I've been struggling to
+  [ollama] waiting... (think=False)  [ollama] 8.3s  → thought: (no reasoning provided)
+  12:25:51 A3R7 [SHOP] thought
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 10.1s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:01 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discarding). Eve
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:11 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discarding). Whi
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is an incredible xMult joker (x1.5 Mult if you play a hand without disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:21 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredible xMult joker (x1.5 Mult if you play a hand without discarding). Despite my r
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → buy_card: Burglar is a massive xMult joker (x1.5 Mult if played without discarding). Even 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:31 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a massive xMult joker (x1.5 Mult if played without discarding). Even though I've been usi
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is an incredible xMult joker (x1.5 Mult if you play a hand without disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:41 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredible xMult joker (x1.5 Mult if you play a hand without discarding). Even though 
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Alth
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:26:51 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Although I've been using
+  [ollama] waiting... (think=False)  [ollama] 9.3s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Alth
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:00 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Although I have been usi
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Even
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:10 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Even though I have used 
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if played without disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:20 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if played without discarding). Even though 
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if played without disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:29 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if played without discarding). Even though 
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → buy_card: Burglar provides x1.5 Mult if I don't discard. While I've used discards in recen
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:39 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if I don't discard. While I've used discards in recent rounds, the potent
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → buy_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:43 A3R7 [SHOP] buy_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand with
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:27:53 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 Mult if you play a hand without discarding). Whi
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → buy_card: Burglar is a high-value xMult joker (x1.5 Mult if played without discarding). Wh
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:28:02 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a high-value xMult joker (x1.5 Mult if played without discarding). While I've used discar
+  [ollama] waiting... (think=False)  [ollama] 5.2s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Even
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:28:07 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if played without discarding). Even though I have used 
+  [ollama] waiting... (think=False)  [ollama] 4.2s  → solvers:call_tool: (no reasoning provided)
+  12:28:12 A3R7 [SHOP] solvers:call_tool
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 if no cards were discarded).
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:28:22 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 if no cards were discarded). Even though I have 
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if no cards were discarded during t
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:28:31 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if no cards were discarded during the hand). Even thoug
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 if no cards were discarded).
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:28:41 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 if no cards were discarded). Even though I have 
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=False)  [ollama] 15.7s  → buy_card: Burglar is an incredibly strong XMult joker. Even though I've been struggling to
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:29:20 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly strong XMult joker. Even though I've been struggling to avoid using discard
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is a highly valuable xMult joker (x1.5 if no cards are discarded). While
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:29:30 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a highly valuable xMult joker (x1.5 if no cards are discarded). While I've been using dis
+  [ollama] waiting... (think=False)  [ollama] 9.5s  → buy_card: Burglar is a powerful x1.5 Mult joker if I play a hand without discarding. Even 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:29:40 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if I play a hand without discarding. Even though I have used d
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded. This is a massive multipli
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:29:49 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded. This is a massive multiplier for my scoring po
+  [ollama] waiting... (think=False)  [ollama] 9.4s  → buy_card: Burglar is a powerful x1.5 Mult joker if I play a hand without discarding. Even 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:29:59 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if I play a hand without discarding. Even though I have been u
+  [ollama] waiting... (think=False)  [ollama] 4.4s  → default_api:buy_joker: (no reasoning provided)
+  12:30:03 A3R7 [SHOP] default_api:buy_joker
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is a very strong xMult joker (x1.5 Mult if no cards were discarded). Whi
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:30:13 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a very strong xMult joker (x1.5 Mult if no cards were discarded). While I have been using
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar is a powerful x1.5 Mult joker if no cards are discarded during the hand.
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:30:23 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if no cards are discarded during the hand. Even though I have 
+  [ollama] waiting... (think=False)[ollama] api error (fail-fast): 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/chat
+  [ollama] waiting... (think=False)  [ollama] 15.1s  → buy_card: (no reasoning provided)
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:30:42 A3R7 [SHOP] buy_card idx=0
+    ↳ (no reasoning provided)
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5 if no cards are discarded). 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:30:52 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5 if no cards are discarded). While I have been us
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is a very powerful Joker that provides x1.5 Mult if no cards are discard
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:02 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a very powerful Joker that provides x1.5 Mult if no cards are discarded during the hand. 
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded. This is a crucial multipli
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:12 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded. This is a crucial multiplier for scaling into 
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is a very strong xMult joker (x1.5 if no cards are discarded). Even thou
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:22 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a very strong xMult joker (x1.5 if no cards are discarded). Even though I've been using d
+  [ollama] waiting... (think=False)  [ollama] 9.6s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded. While I have been using di
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:32 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded. While I have been using discards, having an x1
+  [ollama] waiting... (think=False)  [ollama] 9.7s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded during the hand. While I've
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:41 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded during the hand. While I've used discards recen
+  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar is a very strong xMult joker (x1.5 if no cards are discarded). Even thou
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:31:51 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a very strong xMult joker (x1.5 if no cards are discarded). Even though I have been using
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is a powerful xMult joker (x1.5 Mult if no cards are discarded). Even th
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:32:01 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 Mult if no cards are discarded). Even though I have been usi
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is an incredibly powerful x1.5 Mult joker if I play a hand without disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:32:11 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful x1.5 Mult joker if I play a hand without discarding. Although I ha
+  [ollama] waiting... (think=False)  [ollama] 9.9s  → buy_card: Burglar is a powerful x1.5 Mult joker if no cards are discarded. Even though my 
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:32:21 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if no cards are discarded. Even though my recent rounds show h
+  [ollama] waiting... (think=False)  [ollama] 8.6s  [ollama] waiting... (think=False)  [ollama] 9.8s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded. Even though I've used disc
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:32:40 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded. Even though I've used discards recently, secur
+  [ollama] waiting... (think=False)  [ollama] 10.1s  → buy_card: Burglar is a powerful x1.5 Mult joker if no cards are discarded. While I have be
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:32:50 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful x1.5 Mult joker if no cards are discarded. While I have been using discards to
+  [ollama] waiting... (think=False)  [ollama] 10.0s  → buy_card: Burglar is a powerful xMult joker (x1.5 if no discards). While I have used disca
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:00 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 if no discards). While I have used discards recently, having
+  [ollama] waiting... (think=False)  [ollama] 10.1s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded during the hand. While my r
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:10 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded during the hand. While my recent gameplay invol
+  [ollama] waiting... (think=False)  [ollama] 5.7s  → buy_card: Burglar is a powerful xMult joker (x1.5 if no cards are discarded). Although I h
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:16 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is a powerful xMult joker (x1.5 if no cards are discarded). Although I have been using disca
+  [ollama] waiting... (think=False)  [ollama] 6.4s  → buy_card: Burglar (j_burglar) is a high-value Joker that provides x1.5 Mult if no cards we
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:22 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar (j_burglar) is a high-value Joker that provides x1.5 Mult if no cards were discarded. Even t
+  [ollama] waiting... (think=False)  [ollama] 10.2s  → buy_card: Burglar provides x1.5 Mult if no cards are discarded. Even though I have been us
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:32 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar provides x1.5 Mult if no cards are discarded. Even though I have been using discards to hunt
+  [ollama] waiting... (think=False)  [ollama] 10.7s  → buy_card: Burglar is an incredibly powerful xMult joker (x1.5) if I play a hand without di
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:43 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar is an incredibly powerful xMult joker (x1.5) if I play a hand without discarding. While I ha
+  [ollama] waiting... (think=False)  [ollama] 10.4s  → buy_card: Burglar (x1.5 Mult if no discards) is a high-impact xMult joker. Although my rec
+[balatrobot] BAD_REQUEST on buy({'card': 0}): Cannot purchase joker card, joker slots are full. Current: 5, Limit: 5
+  12:33:53 A3R7 [SHOP] buy_card idx=0
+    ↳ Burglar (x1.5 Mult if no discards) is a high-impact xMult joker. Although my recent gameplay shows h
+  [ollama] waiting... (think=False)
+[main] SIGTERM received — saving partial run...
+  [log] saved 121 entries → runs/b48fe5e79ad2.json

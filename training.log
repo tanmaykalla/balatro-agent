@@ -1,0 +1,949 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Calling `python -m mlx_lm.lora...` directly is deprecated. Use `mlx_lm.lora...` or `python -m mlx_lm lora ...` instead.
+Loading configuration file finetune_config.yaml
+Loading pretrained model
+Loading datasets
+Training
+Trainable parameters: 0.118% (9.699M/8190.735M)
+Starting training..., iters: 1000
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<01:56,  6.11s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:52,  6.26s/it]Calculating loss...:  15%|█▌        | 3/20 [00:13<01:04,  3.80s/it]Calculating loss...:  20%|██        | 4/20 [00:14<00:46,  2.91s/it]Calculating loss...:  25%|██▌       | 5/20 [00:21<01:02,  4.15s/it]Calculating loss...:  30%|███       | 6/20 [00:27<01:08,  4.89s/it]Calculating loss...:  35%|███▌      | 7/20 [00:28<00:46,  3.58s/it]Calculating loss...:  40%|████      | 8/20 [00:34<00:53,  4.46s/it]Calculating loss...:  45%|████▌     | 9/20 [00:35<00:36,  3.30s/it]Calculating loss...:  50%|█████     | 10/20 [00:37<00:28,  2.82s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:43<00:35,  3.90s/it]Calculating loss...:  60%|██████    | 12/20 [00:49<00:37,  4.64s/it]Calculating loss...:  65%|██████▌   | 13/20 [00:56<00:36,  5.15s/it]Calculating loss...:  70%|███████   | 14/20 [01:02<00:33,  5.51s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:08<00:28,  5.76s/it]Calculating loss...:  80%|████████  | 16/20 [01:15<00:23,  5.93s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:21<00:18,  6.07s/it]Calculating loss...:  90%|█████████ | 18/20 [01:28<00:12,  6.17s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:34<00:06,  6.25s/it]Calculating loss...: 100%|██████████| 20/20 [01:40<00:00,  6.29s/it]Calculating loss...: 100%|██████████| 20/20 [01:40<00:00,  5.05s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2528 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2089 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3241 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2081 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2234 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 1: Val loss 2.329, Val took 100.933s
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2446 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2459 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2424 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2331 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2331 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2225 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3409 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2379 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2405 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2313 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2508 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2470 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2493 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2157 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3177 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 25: Train loss 2.501, Learning Rate 1.000e-05, It/sec 0.100, Tokens/sec 156.891, Trained Tokens 39302, Peak mem 9.251 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3245 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2211 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3245 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2227 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2109 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3265 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3428 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2303 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2449 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2369 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2382 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2223 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2222 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2163 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 50: Train loss 2.117, Learning Rate 1.000e-05, It/sec 0.104, Tokens/sec 157.451, Trained Tokens 77270, Peak mem 9.251 GB
+Iter 50: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000050_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2407 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2316 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2477 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2149 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3129 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2075 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2516 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3280 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2559 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2198 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3221 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 75: Train loss 1.837, Learning Rate 1.000e-05, It/sec 0.114, Tokens/sec 157.791, Trained Tokens 112009, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2194 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3163 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3197 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3437 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2214 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2165 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2303 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2368 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2295 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2334 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3307 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2295 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2269 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2348 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2444 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2303 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:00<00:16,  1.15it/s]Calculating loss...:  10%|█         | 2/20 [00:07<01:13,  4.09s/it]Calculating loss...:  15%|█▌        | 3/20 [00:13<01:26,  5.11s/it]Calculating loss...:  20%|██        | 4/20 [00:19<01:29,  5.59s/it]Calculating loss...:  25%|██▌       | 5/20 [00:26<01:27,  5.86s/it]Calculating loss...:  30%|███       | 6/20 [00:32<01:24,  6.02s/it]Calculating loss...:  35%|███▌      | 7/20 [00:38<01:19,  6.12s/it]Calculating loss...:  40%|████      | 8/20 [00:45<01:14,  6.19s/it]Calculating loss...:  45%|████▌     | 9/20 [00:51<01:08,  6.23s/it]Calculating loss...:  50%|█████     | 10/20 [00:52<00:47,  4.73s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:59<00:46,  5.22s/it]Calculating loss...:  60%|██████    | 12/20 [01:05<00:44,  5.56s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:11<00:40,  5.79s/it]Calculating loss...:  70%|███████   | 14/20 [01:18<00:35,  5.96s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:24<00:30,  6.07s/it]Calculating loss...:  80%|████████  | 16/20 [01:25<00:17,  4.47s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:31<00:15,  5.03s/it]Calculating loss...:  90%|█████████ | 18/20 [01:37<00:10,  5.42s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:39<00:04,  4.20s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  4.75s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  5.27s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2100 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3431 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2554 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2453 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 100: Val loss 1.358, Val took 105.364s
+Iter 100: Train loss 1.564, Learning Rate 1.000e-05, It/sec 0.086, Tokens/sec 156.963, Trained Tokens 157903, Peak mem 9.290 GB
+Iter 100: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000100_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3049 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2088 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2560 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2277 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2462 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2308 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3139 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2235 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2477 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2187 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3264 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3501 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2070 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3393 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2242 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 125: Train loss 1.194, Learning Rate 1.000e-05, It/sec 0.101, Tokens/sec 157.226, Trained Tokens 196747, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2269 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2255 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2554 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2173 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2453 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2462 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2224 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2432 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2280 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2268 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3112 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2233 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2346 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 150: Train loss 0.823, Learning Rate 1.000e-05, It/sec 0.117, Tokens/sec 157.382, Trained Tokens 230499, Peak mem 9.290 GB
+Iter 150: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000150_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2389 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2472 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2195 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2347 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2312 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2524 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2329 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2460 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2120 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2207 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2283 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3430 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2423 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2467 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2326 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 175: Train loss 0.389, Learning Rate 1.000e-05, It/sec 0.096, Tokens/sec 157.036, Trained Tokens 271291, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2282 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2228 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2370 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2292 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2439 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3289 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3263 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2415 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2293 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3215 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2332 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:00,  6.33s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:50,  6.15s/it]Calculating loss...:  15%|█▌        | 3/20 [00:18<01:45,  6.23s/it]Calculating loss...:  20%|██        | 4/20 [00:25<01:40,  6.27s/it]Calculating loss...:  25%|██▌       | 5/20 [00:31<01:34,  6.30s/it]Calculating loss...:  30%|███       | 6/20 [00:37<01:28,  6.31s/it]Calculating loss...:  35%|███▌      | 7/20 [00:44<01:22,  6.32s/it]Calculating loss...:  40%|████      | 8/20 [00:50<01:15,  6.32s/it]Calculating loss...:  45%|████▌     | 9/20 [00:56<01:09,  6.32s/it]Calculating loss...:  50%|█████     | 10/20 [00:57<00:46,  4.61s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:58<00:32,  3.61s/it]Calculating loss...:  60%|██████    | 12/20 [01:00<00:23,  2.95s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:06<00:27,  3.98s/it]Calculating loss...:  70%|███████   | 14/20 [01:08<00:19,  3.30s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:14<00:21,  4.22s/it]Calculating loss...:  80%|████████  | 16/20 [01:20<00:19,  4.85s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:27<00:15,  5.30s/it]Calculating loss...:  90%|█████████ | 18/20 [01:33<00:11,  5.61s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:39<00:05,  5.83s/it]Calculating loss...: 100%|██████████| 20/20 [01:46<00:00,  5.98s/it]Calculating loss...: 100%|██████████| 20/20 [01:46<00:00,  5.32s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3431 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3274 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3413 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2246 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3160 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 200: Val loss 0.127, Val took 106.331s
+Iter 200: Train loss 0.293, Learning Rate 1.000e-05, It/sec 0.109, Tokens/sec 157.676, Trained Tokens 307437, Peak mem 9.290 GB
+Iter 200: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000200_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2998 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2097 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3423 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3190 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2300 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2174 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2563 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2073 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2406 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2477 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2156 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2276 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2358 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2266 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2415 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2479 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3478 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2126 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2278 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 225: Train loss 0.116, Learning Rate 1.000e-05, It/sec 0.080, Tokens/sec 156.881, Trained Tokens 356767, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2195 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2159 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2229 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2341 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3237 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2525 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2483 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3358 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2309 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3227 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2322 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3453 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2170 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2418 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2076 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3175 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 250: Train loss 0.192, Learning Rate 1.000e-05, It/sec 0.095, Tokens/sec 157.011, Trained Tokens 397924, Peak mem 9.290 GB
+Iter 250: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000250_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2510 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2064 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3438 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2094 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2218 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2189 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2413 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2454 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3398 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2264 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2174 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 275: Train loss 0.250, Learning Rate 1.000e-05, It/sec 0.116, Tokens/sec 157.271, Trained Tokens 431965, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2094 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3038 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2479 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2499 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2296 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2204 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2292 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2286 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2383 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2418 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3263 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2190 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2256 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2251 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3409 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3464 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2154 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2410 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3025 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:00,  6.36s/it]Calculating loss...:  10%|█         | 2/20 [00:07<01:01,  3.42s/it]Calculating loss...:  15%|█▌        | 3/20 [00:14<01:21,  4.79s/it]Calculating loss...:  20%|██        | 4/20 [00:20<01:27,  5.45s/it]Calculating loss...:  25%|██▌       | 5/20 [00:27<01:26,  5.80s/it]Calculating loss...:  30%|███       | 6/20 [00:33<01:24,  6.02s/it]Calculating loss...:  35%|███▌      | 7/20 [00:35<00:59,  4.57s/it]Calculating loss...:  40%|████      | 8/20 [00:41<01:01,  5.15s/it]Calculating loss...:  45%|████▌     | 9/20 [00:47<01:01,  5.55s/it]Calculating loss...:  50%|█████     | 10/20 [00:54<00:58,  5.82s/it]Calculating loss...:  55%|█████▌    | 11/20 [01:00<00:54,  6.01s/it]Calculating loss...:  60%|██████    | 12/20 [01:07<00:49,  6.14s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:13<00:43,  6.23s/it]Calculating loss...:  70%|███████   | 14/20 [01:20<00:37,  6.29s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:26<00:31,  6.33s/it]Calculating loss...:  80%|████████  | 16/20 [01:27<00:18,  4.60s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:33<00:15,  5.15s/it]Calculating loss...:  90%|█████████ | 18/20 [01:39<00:11,  5.54s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:46<00:05,  5.81s/it]Calculating loss...: 100%|██████████| 20/20 [01:52<00:00,  5.99s/it]Calculating loss...: 100%|██████████| 20/20 [01:52<00:00,  5.64s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2234 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3450 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2105 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2518 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3160 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2528 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2081 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2246 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3431 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2498 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 300: Val loss 0.058, Val took 112.805s
+Iter 300: Train loss 0.155, Learning Rate 1.000e-05, It/sec 0.095, Tokens/sec 156.490, Trained Tokens 472998, Peak mem 9.290 GB
+Iter 300: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000300_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2241 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2562 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2183 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2300 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2622 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2315 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2340 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2312 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2514 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2286 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2243 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2196 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 325: Train loss 0.223, Learning Rate 1.000e-05, It/sec 0.109, Tokens/sec 156.491, Trained Tokens 508735, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3434 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2212 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2193 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3184 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2308 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2222 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2571 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2453 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3491 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3179 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2443 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2194 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2208 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 350: Train loss 0.175, Learning Rate 1.000e-05, It/sec 0.103, Tokens/sec 156.710, Trained Tokens 546800, Peak mem 9.290 GB
+Iter 350: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000350_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2080 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2619 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2213 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3257 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2474 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2284 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2265 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2236 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3159 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2148 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3216 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2063 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3251 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3183 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2386 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2182 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 375: Train loss 0.119, Learning Rate 1.000e-05, It/sec 0.091, Tokens/sec 156.374, Trained Tokens 589916, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2461 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2519 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2380 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2258 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3224 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3210 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2314 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3259 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3298 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2606 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2211 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2566 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2472 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2926 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2459 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2529 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2169 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2445 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:01,  6.37s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:55,  6.40s/it]Calculating loss...:  15%|█▌        | 3/20 [00:19<01:49,  6.42s/it]Calculating loss...:  20%|██        | 4/20 [00:25<01:42,  6.42s/it]Calculating loss...:  25%|██▌       | 5/20 [00:32<01:36,  6.44s/it]Calculating loss...:  30%|███       | 6/20 [00:33<01:04,  4.58s/it]Calculating loss...:  35%|███▌      | 7/20 [00:33<00:43,  3.34s/it]Calculating loss...:  40%|████      | 8/20 [00:40<00:51,  4.32s/it]Calculating loss...:  45%|████▌     | 9/20 [00:46<00:54,  4.98s/it]Calculating loss...:  50%|█████     | 10/20 [00:53<00:54,  5.43s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:54<00:36,  4.04s/it]Calculating loss...:  60%|██████    | 12/20 [01:00<00:38,  4.77s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:06<00:36,  5.27s/it]Calculating loss...:  70%|███████   | 14/20 [01:13<00:33,  5.63s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:14<00:20,  4.20s/it]Calculating loss...:  80%|████████  | 16/20 [01:20<00:19,  4.86s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:27<00:16,  5.34s/it]Calculating loss...:  90%|█████████ | 18/20 [01:33<00:11,  5.67s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:34<00:04,  4.32s/it]Calculating loss...: 100%|██████████| 20/20 [01:36<00:00,  3.46s/it]Calculating loss...: 100%|██████████| 20/20 [01:36<00:00,  4.81s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2092 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2498 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3244 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3160 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3241 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2210 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2234 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2100 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 400: Val loss 0.071, Val took 96.201s
+Iter 400: Train loss 0.135, Learning Rate 1.000e-05, It/sec 0.095, Tokens/sec 155.978, Trained Tokens 630856, Peak mem 9.290 GB
+Iter 400: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000400_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2161 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2148 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2475 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2091 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2352 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3290 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3422 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2485 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2295 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2424 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2582 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2287 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3229 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3417 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2523 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2395 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 425: Train loss 0.160, Learning Rate 1.000e-05, It/sec 0.105, Tokens/sec 156.189, Trained Tokens 668057, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2327 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2497 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2309 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2176 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3452 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2085 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2238 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2253 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2155 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3493 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2285 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 450: Train loss 0.164, Learning Rate 1.000e-05, It/sec 0.103, Tokens/sec 156.225, Trained Tokens 706097, Peak mem 9.290 GB
+Iter 450: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000450_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2389 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2308 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2197 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2282 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2104 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2415 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2231 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2531 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2307 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2197 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2478 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2254 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3192 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2226 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 475: Train loss 0.096, Learning Rate 1.000e-05, It/sec 0.087, Tokens/sec 155.837, Trained Tokens 750759, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2321 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2155 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2143 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2527 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2484 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2188 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3270 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2252 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2326 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3066 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2613 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2654 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:01,  6.37s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:55,  6.41s/it]Calculating loss...:  15%|█▌        | 3/20 [00:19<01:49,  6.42s/it]Calculating loss...:  20%|██        | 4/20 [00:25<01:42,  6.43s/it]Calculating loss...:  25%|██▌       | 5/20 [00:32<01:36,  6.43s/it]Calculating loss...:  30%|███       | 6/20 [00:38<01:30,  6.43s/it]Calculating loss...:  35%|███▌      | 7/20 [00:39<00:59,  4.59s/it]Calculating loss...:  40%|████      | 8/20 [00:45<01:02,  5.18s/it]Calculating loss...:  45%|████▌     | 9/20 [00:52<01:01,  5.57s/it]Calculating loss...:  50%|█████     | 10/20 [00:52<00:40,  4.03s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:59<00:42,  4.77s/it]Calculating loss...:  60%|██████    | 12/20 [01:00<00:28,  3.59s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:06<00:31,  4.45s/it]Calculating loss...:  70%|███████   | 14/20 [01:12<00:30,  5.05s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:19<00:27,  5.46s/it]Calculating loss...:  80%|████████  | 16/20 [01:25<00:23,  5.76s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:32<00:17,  5.96s/it]Calculating loss...:  90%|█████████ | 18/20 [01:38<00:12,  6.10s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:45<00:06,  6.20s/it]Calculating loss...: 100%|██████████| 20/20 [01:51<00:00,  6.27s/it]Calculating loss...: 100%|██████████| 20/20 [01:51<00:00,  5.58s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2554 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3431 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3254 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2092 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2528 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3241 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3450 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3274 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 500: Val loss 0.024, Val took 111.592s
+Iter 500: Train loss 0.179, Learning Rate 1.000e-05, It/sec 0.121, Tokens/sec 156.348, Trained Tokens 782945, Peak mem 9.290 GB
+Iter 500: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000500_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3509 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2387 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2314 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2329 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3221 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3073 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2344 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2099 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2127 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2226 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2564 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2090 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2486 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 525: Train loss 0.145, Learning Rate 1.000e-05, It/sec 0.103, Tokens/sec 155.857, Trained Tokens 820597, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2315 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2171 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2572 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2290 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2537 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2140 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2525 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2365 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2446 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2510 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3049 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 550: Train loss 0.214, Learning Rate 1.000e-05, It/sec 0.129, Tokens/sec 156.444, Trained Tokens 850896, Peak mem 9.290 GB
+Iter 550: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000550_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2222 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3493 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2467 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2303 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3221 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3177 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2277 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2582 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2228 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3192 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2155 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2329 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2389 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2446 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2188 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2253 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3229 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 575: Train loss 0.093, Learning Rate 1.000e-05, It/sec 0.092, Tokens/sec 155.615, Trained Tokens 893183, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2432 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2389 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2300 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2269 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2195 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2170 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3259 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3264 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2174 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2287 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2195 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2212 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2075 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2285 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:01,  6.37s/it]Calculating loss...:  10%|█         | 2/20 [00:06<00:53,  2.97s/it]Calculating loss...:  15%|█▌        | 3/20 [00:08<00:38,  2.28s/it]Calculating loss...:  20%|██        | 4/20 [00:14<01:02,  3.92s/it]Calculating loss...:  25%|██▌       | 5/20 [00:21<01:12,  4.83s/it]Calculating loss...:  30%|███       | 6/20 [00:22<00:51,  3.66s/it]Calculating loss...:  35%|███▌      | 7/20 [00:29<00:59,  4.56s/it]Calculating loss...:  40%|████      | 8/20 [00:35<01:01,  5.16s/it]Calculating loss...:  45%|████▌     | 9/20 [00:37<00:45,  4.10s/it]Calculating loss...:  50%|█████     | 10/20 [00:43<00:48,  4.82s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:50<00:47,  5.32s/it]Calculating loss...:  60%|██████    | 12/20 [00:56<00:45,  5.66s/it]Calculating loss...:  65%|██████▌   | 13/20 [00:57<00:30,  4.30s/it]Calculating loss...:  70%|███████   | 14/20 [01:04<00:29,  4.94s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:05<00:18,  3.72s/it]Calculating loss...:  80%|████████  | 16/20 [01:11<00:18,  4.53s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:17<00:15,  5.11s/it]Calculating loss...:  90%|█████████ | 18/20 [01:18<00:07,  3.84s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:25<00:04,  4.61s/it]Calculating loss...: 100%|██████████| 20/20 [01:31<00:00,  5.16s/it]Calculating loss...: 100%|██████████| 20/20 [01:31<00:00,  4.59s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2108 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3292 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 600: Val loss 0.057, Val took 91.715s
+Iter 600: Train loss 0.133, Learning Rate 1.000e-05, It/sec 0.103, Tokens/sec 155.338, Trained Tokens 930891, Peak mem 9.290 GB
+Iter 600: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000600_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3501 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2529 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2313 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2559 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2290 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3358 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2445 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2998 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2454 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2207 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2524 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3265 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3289 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2224 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 625: Train loss 0.094, Learning Rate 1.000e-05, It/sec 0.095, Tokens/sec 157.021, Trained Tokens 972231, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3307 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2276 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2407 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2326 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2255 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2140 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2572 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2654 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2477 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3290 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2554 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2619 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 650: Train loss 0.103, Learning Rate 1.000e-05, It/sec 0.101, Tokens/sec 157.117, Trained Tokens 1011111, Peak mem 9.290 GB
+Iter 650: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000650_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2282 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2090 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2223 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2127 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3251 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2231 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2211 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2315 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3221 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2312 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2256 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2226 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3393 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3190 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 675: Train loss 0.104, Learning Rate 1.000e-05, It/sec 0.105, Tokens/sec 157.419, Trained Tokens 1048461, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2094 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2278 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2292 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3210 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2527 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2486 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2109 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2286 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3245 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2516 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:00,  6.33s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:53,  6.33s/it]Calculating loss...:  15%|█▌        | 3/20 [00:13<01:05,  3.84s/it]Calculating loss...:  20%|██        | 4/20 [00:19<01:17,  4.82s/it]Calculating loss...:  25%|██▌       | 5/20 [00:26<01:20,  5.37s/it]Calculating loss...:  30%|███       | 6/20 [00:26<00:53,  3.80s/it]Calculating loss...:  35%|███▌      | 7/20 [00:33<01:00,  4.63s/it]Calculating loss...:  40%|████      | 8/20 [00:39<01:02,  5.17s/it]Calculating loss...:  45%|████▌     | 9/20 [00:45<01:00,  5.53s/it]Calculating loss...:  50%|█████     | 10/20 [00:52<00:57,  5.78s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:58<00:53,  5.95s/it]Calculating loss...:  60%|██████    | 12/20 [01:04<00:48,  6.07s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:11<00:43,  6.15s/it]Calculating loss...:  70%|███████   | 14/20 [01:12<00:28,  4.75s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:19<00:26,  5.23s/it]Calculating loss...:  80%|████████  | 16/20 [01:20<00:16,  4.06s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:26<00:14,  4.74s/it]Calculating loss...:  90%|█████████ | 18/20 [01:33<00:10,  5.22s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:39<00:05,  5.55s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  5.79s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  5.29s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3244 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3413 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2105 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2089 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2518 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2081 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2108 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3450 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3274 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 700: Val loss 0.033, Val took 105.827s
+Iter 700: Train loss 0.152, Learning Rate 1.000e-05, It/sec 0.144, Tokens/sec 158.403, Trained Tokens 1075951, Peak mem 9.290 GB
+Iter 700: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000700_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2196 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3215 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2189 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2444 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2314 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2459 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2369 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2063 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2525 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2331 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2064 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2347 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 725: Train loss 0.128, Learning Rate 1.000e-05, It/sec 0.110, Tokens/sec 157.580, Trained Tokens 1111731, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2154 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2254 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2239 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3263 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2446 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3245 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2344 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2531 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2382 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2156 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2606 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3066 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2326 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2094 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 750: Train loss 0.113, Learning Rate 1.000e-05, It/sec 0.110, Tokens/sec 157.428, Trained Tokens 1147518, Peak mem 9.290 GB
+Iter 750: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000750_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2241 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2477 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2286 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3298 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3478 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2423 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2449 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2213 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2104 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3491 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3183 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3224 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 775: Train loss 0.101, Learning Rate 1.000e-05, It/sec 0.106, Tokens/sec 157.249, Trained Tokens 1184579, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2198 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3423 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2269 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2462 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2308 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2204 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2190 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2418 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3227 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2331 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:00<00:14,  1.30it/s]Calculating loss...:  10%|█         | 2/20 [00:07<01:12,  4.04s/it]Calculating loss...:  15%|█▌        | 3/20 [00:13<01:26,  5.09s/it]Calculating loss...:  20%|██        | 4/20 [00:19<01:29,  5.58s/it]Calculating loss...:  25%|██▌       | 5/20 [00:20<00:58,  3.88s/it]Calculating loss...:  30%|███       | 6/20 [00:21<00:42,  3.02s/it]Calculating loss...:  35%|███▌      | 7/20 [00:28<00:53,  4.10s/it]Calculating loss...:  40%|████      | 8/20 [00:34<00:57,  4.81s/it]Calculating loss...:  45%|████▌     | 9/20 [00:40<00:58,  5.29s/it]Calculating loss...:  50%|█████     | 10/20 [00:47<00:56,  5.61s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:53<00:52,  5.83s/it]Calculating loss...:  60%|██████    | 12/20 [00:54<00:34,  4.32s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:00<00:34,  4.93s/it]Calculating loss...:  70%|███████   | 14/20 [01:07<00:32,  5.35s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:13<00:28,  5.65s/it]Calculating loss...:  80%|████████  | 16/20 [01:19<00:23,  5.85s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:26<00:17,  6.00s/it]Calculating loss...:  90%|█████████ | 18/20 [01:32<00:12,  6.10s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:38<00:06,  6.17s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  6.22s/it]Calculating loss...: 100%|██████████| 20/20 [01:45<00:00,  5.26s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2081 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2246 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3160 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2319 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2092 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2498 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3244 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3199 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3450 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2206 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2234 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 800: Val loss 0.027, Val took 105.144s
+Iter 800: Train loss 0.126, Learning Rate 1.000e-05, It/sec 0.115, Tokens/sec 157.899, Trained Tokens 1218812, Peak mem 9.290 GB
+Iter 800: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000800_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2148 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2182 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2415 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2236 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2332 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2483 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2410 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2209 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3184 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2560 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2478 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2284 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2308 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2280 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2266 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2161 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2566 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2292 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 825: Train loss 0.075, Learning Rate 1.000e-05, It/sec 0.092, Tokens/sec 157.220, Trained Tokens 1261620, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2283 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2365 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2472 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3280 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2613 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2272 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2226 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2265 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2120 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2264 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2155 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2076 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2169 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2453 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3261 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 850: Train loss 0.120, Learning Rate 1.000e-05, It/sec 0.109, Tokens/sec 157.465, Trained Tokens 1297794, Peak mem 9.290 GB
+Iter 850: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000850_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2383 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2321 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2238 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2300 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2088 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3398 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2227 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2562 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3409 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2183 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3452 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3434 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2316 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2303 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2479 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3025 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2091 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 875: Train loss 0.050, Learning Rate 1.000e-05, It/sec 0.085, Tokens/sec 157.204, Trained Tokens 1344188, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2523 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2159 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2460 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2214 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2126 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2157 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3288 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2282 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2172 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2258 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2295 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2472 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2405 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3509 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:00,  6.33s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:53,  6.33s/it]Calculating loss...:  15%|█▌        | 3/20 [00:18<01:47,  6.33s/it]Calculating loss...:  20%|██        | 4/20 [00:19<01:06,  4.17s/it]Calculating loss...:  25%|██▌       | 5/20 [00:20<00:45,  3.02s/it]Calculating loss...:  30%|███       | 6/20 [00:27<00:57,  4.14s/it]Calculating loss...:  35%|███▌      | 7/20 [00:33<01:03,  4.86s/it]Calculating loss...:  40%|████      | 8/20 [00:39<01:03,  5.33s/it]Calculating loss...:  45%|████▌     | 9/20 [00:40<00:42,  3.90s/it]Calculating loss...:  50%|█████     | 10/20 [00:46<00:46,  4.65s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:47<00:31,  3.46s/it]Calculating loss...:  60%|██████    | 12/20 [00:48<00:21,  2.67s/it]Calculating loss...:  65%|██████▌   | 13/20 [00:54<00:26,  3.78s/it]Calculating loss...:  70%|███████   | 14/20 [01:01<00:27,  4.55s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:07<00:25,  5.09s/it]Calculating loss...:  80%|████████  | 16/20 [01:08<00:15,  3.90s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:15<00:13,  4.63s/it]Calculating loss...:  90%|█████████ | 18/20 [01:21<00:10,  5.14s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:27<00:05,  5.50s/it]Calculating loss...: 100%|██████████| 20/20 [01:29<00:00,  4.25s/it]Calculating loss...: 100%|██████████| 20/20 [01:29<00:00,  4.45s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3450 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2427 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2152 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2089 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2490 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2528 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2092 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3244 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2518 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3431 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2217 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 900: Val loss 0.040, Val took 89.038s
+Iter 900: Train loss 0.112, Learning Rate 1.000e-05, It/sec 0.104, Tokens/sec 157.350, Trained Tokens 1381914, Peak mem 9.290 GB
+Iter 900: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000900_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3438 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2571 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2197 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2314 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3191 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3159 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2304 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3179 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2387 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2307 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2474 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2273 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3417 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2622 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2309 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 925: Train loss 0.110, Learning Rate 1.000e-05, It/sec 0.105, Tokens/sec 157.498, Trained Tokens 1419536, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2296 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2252 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2194 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2537 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2493 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2070 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2301 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2563 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2926 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3270 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2455 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2525 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3073 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2268 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2470 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2413 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 950: Train loss 0.134, Learning Rate 1.000e-05, It/sec 0.109, Tokens/sec 157.607, Trained Tokens 1455583, Peak mem 9.290 GB
+Iter 950: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0000950_adapters.safetensors.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2519 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2165 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3422 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2173 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2424 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2497 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2143 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2315 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2208 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2462 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2085 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3112 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2485 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2479 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2309 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2348 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2334 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3139 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3038 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 975: Train loss 0.073, Learning Rate 1.000e-05, It/sec 0.092, Tokens/sec 157.251, Trained Tokens 1498193, Peak mem 9.290 GB
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2346 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3257 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2439 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2499 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2251 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2250 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3464 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2355 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2262 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2320 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2187 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2353 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3279 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3175 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2461 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2163 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2235 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2322 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3129 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3247 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Calculating loss...:   0%|          | 0/20 [00:00<?, ?it/s]Calculating loss...:   5%|▌         | 1/20 [00:06<02:00,  6.33s/it]Calculating loss...:  10%|█         | 2/20 [00:12<01:53,  6.33s/it]Calculating loss...:  15%|█▌        | 3/20 [00:14<01:11,  4.23s/it]Calculating loss...:  20%|██        | 4/20 [00:20<01:21,  5.07s/it]Calculating loss...:  25%|██▌       | 5/20 [00:22<00:56,  3.79s/it]Calculating loss...:  30%|███       | 6/20 [00:28<01:05,  4.66s/it]Calculating loss...:  35%|███▌      | 7/20 [00:34<01:07,  5.20s/it]Calculating loss...:  40%|████      | 8/20 [00:35<00:45,  3.82s/it]Calculating loss...:  45%|████▌     | 9/20 [00:37<00:33,  3.05s/it]Calculating loss...:  50%|█████     | 10/20 [00:43<00:40,  4.06s/it]Calculating loss...:  55%|█████▌    | 11/20 [00:49<00:42,  4.76s/it]Calculating loss...:  60%|██████    | 12/20 [00:56<00:41,  5.24s/it]Calculating loss...:  65%|██████▌   | 13/20 [01:02<00:38,  5.57s/it]Calculating loss...:  70%|███████   | 14/20 [01:08<00:34,  5.80s/it]Calculating loss...:  75%|███████▌  | 15/20 [01:15<00:29,  5.96s/it]Calculating loss...:  80%|████████  | 16/20 [01:21<00:24,  6.07s/it]Calculating loss...:  85%|████████▌ | 17/20 [01:27<00:18,  6.15s/it]Calculating loss...:  90%|█████████ | 18/20 [01:34<00:12,  6.20s/it]Calculating loss...:  95%|█████████▌| 19/20 [01:40<00:06,  6.24s/it]Calculating loss...: 100%|██████████| 20/20 [01:46<00:00,  6.27s/it]Calculating loss...: 100%|██████████| 20/20 [01:46<00:00,  5.34s/it]
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3274 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2498 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2312 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2518 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2246 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2554 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2414 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2116 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2108 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3051 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2100 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2060 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2267 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2528 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 3413 will be truncated to 2048. Consider pre-splitting your data to save memory.
+[WARNING] Some sequences are longer than 2048 tokens. The longest sentence 2081 will be truncated to 2048. Consider pre-splitting your data to save memory.
+Iter 1000: Val loss 0.035, Val took 106.795s
+Iter 1000: Train loss 0.070, Learning Rate 1.000e-05, It/sec 0.092, Tokens/sec 157.251, Trained Tokens 1540761, Peak mem 9.290 GB
+Iter 1000: Saved adapter weights to finetune_adapters/adapters.safetensors and finetune_adapters/0001000_adapters.safetensors.
+Saved final weights to finetune_adapters/adapters.safetensors.

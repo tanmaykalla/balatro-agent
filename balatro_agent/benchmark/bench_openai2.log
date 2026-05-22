@@ -1,0 +1,29 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131
+Roster: ['gpt41', 'gpt41-mini', 'gpt5-mini']
+Runs/agent: 1  Timeout: 900s
+
+════ gpt41 (llm) ════
+
+──── gpt41 run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm openai --openai-model gpt-4.1
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/gpt41_01.log
+  ⏱  TIMEOUT after 900s — sending SIGTERM (10s to save)...
+  → copied b58df01fade5.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/runs/gpt41_01.json
+
+════ gpt41-mini (llm) ════
+
+──── gpt41-mini run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm openai --openai-model gpt-4.1-mini
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/gpt41-mini_01.log
+  → copied 58472c9cb9f8.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/runs/gpt41-mini_01.json
+
+════ gpt5-mini (llm) ════
+
+──── gpt5-mini run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm openai --openai-model gpt-5-mini
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/gpt5-mini_01.log
+  → copied 58472c9cb9f8.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/runs/gpt5-mini_01.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_173131

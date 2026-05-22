@@ -1,0 +1,308 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (balatro-qwen3-v2 @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/1e009a4f0661.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 1.8s  → select_blind: Starting the first blind with the goal of building up to Ante 8.
+  13:58:29 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the first blind with the goal of building up to Ante 8.
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 164.9s  [ollama] waiting... (think=False)  [ollama] 25.4s  → discard_cards: Target Flush: discard off-suit QD and 8S to complete 3 Hearts (QH, 9H, 4H) and i
+  14:01:40 A1R1 [SELECTING_HAND] discard_cards cards=[1, 3]
+    ↳ Target Flush: discard off-suit QD and 8S to complete 3 Hearts (QH, 9H, 4H) and improve to Three of a
+  [ollama] waiting... (think=False)  [ollama] 3.5s  → discard_cards: Target Flush: discard off-suit 9S and 6C to complete 3 Hearts (QH, 9H, 4H) and i
+  14:01:44 A1R1 [SELECTING_HAND] discard_cards cards=[1, 3]
+    ↳ Target Flush: discard off-suit 9S and 6C to complete 3 Hearts (QH, 9H, 4H) and improve to Three of a
+  [ollama] waiting... (think=False)  [ollama] 28.2s  → play_hand: Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is b
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is best available hand; will use discards ne
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 4 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (Q of S)
+      [1] Base Card (Q of H)
+      [2] Base Card (9 of H)
+      [3] Base Card (7 of D)
+      [4] Base Card (6 of D)
+      [5] Base Card (4 of H)
+      [6] Base Card (3 of C)
+      [7] Base Card (2 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (QS, QH, 9H, 7D, 6D)
+      High Card: play indices [0, 2, 3, 4, 5]  (QS, 9H, 7D, 6D, 4H)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:02:15 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is best available hand; 
+  [ollama] waiting... (think=False)  [ollama] 27.5s  → play_hand: Play Straight (7C, 6H, 5C, 4S, 3C) — 5 consecutive ranks (3-7). Base score 30 × 
+  14:02:47 A1R1 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ Play Straight (7C, 6H, 5C, 4S, 3C) — 5 consecutive ranks (3-7). Base score 30 × 4 = 120 chips. This 
+  [ollama] waiting... (think=False)  [ollama] 3.6s  → play_hand: Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is b
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=2  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is best available hand; will use discards ne
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 2
+    
+    ## Hand
+      [0] Base Card (K of D)
+      [1] Base Card (8 of C)
+      [2] Base Card (7 of H)
+      [3] Base Card (5 of H)
+      [4] Base Card (5 of D)
+      [5] Base Card (4 of H)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (KD, 8C, 7H, 5H, 5D)
+      High Card: play indices [0, 1, 2, 3, 5]  (KD, 8C, 7H, 5H, 4H)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  14:02:57 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play Pair (Queens) with 3 Hearts toward Flush. Base score 20 × 2 = 40. Pair is best available hand; 
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 21.9s  → buy_card: Buy Lusty Joker (JOKER) for $5 to boost scoring power. Prioritize jokers over ot
+  14:03:20 A1R1 [SHOP] buy_card idx=1
+    ↳ Buy Lusty Joker (JOKER) for $5 to boost scoring power. Prioritize jokers over other items with remai
+  [ollama] waiting... (think=False)  [ollama] 16.0s  → finish_shop: No affordable upgrades available. Finish shop to save $3 for future purchases.
+  14:03:36 A1R1 [SHOP] finish_shop
+    ↳ No affordable upgrades available. Finish shop to save $3 for future purchases.
+
+── BLIND_SELECT  Ante 1  Round 1  $3 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 10.6s  → select_blind: Proceeding with Small Blind. Target: Flush. Use discards to chase flush completi
+  14:03:48 A1R2 [BLIND_SELECT] select_blind
+    ↳ Proceeding with Small Blind. Target: Flush. Use discards to chase flush completion (4-to-a-Flush or 
+
+── SELECTING_HAND  Ante 1  Round 2  $3 ──
+  [ollama] waiting... (think=False)  [ollama] 3.3s  → play_hand: Pair with two Kings. High-scoring early game.
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair with two Kings. High-scoring early game.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 2
+    Money: $3 | Hands left: 4 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of C)
+      [1] Base Card (K of S)
+      [2] Base Card (K of H)
+      [3] Base Card (9 of H)
+      [4] Base Card (8 of S)
+      [5] Base Card (7 of S)
+      [6] Base Card (6 of H)
+      [7] Base Card (3 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (AC, KS, KH, 9H, 8S)
+      High Card: play indices [0, 1, 3, 4, 5]  (AC, KS, 9H, 8S, 7S)
+    
+    ## Jokers
+      [0] Lusty Joker (sell $2)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 1, round 2
+    Recent wallet: A1R1=$8
+    Recent hands:
+      - A1R1: mixed scored 320 (hands_used=3, discards_used=2)
+    Recent blinds:
+      - A1 : 320/None
+      - A1 : 0/None
+    Recent joker moves: buy j_lusty_joker ($5)
+    ── end prompt ──
+
+  14:03:55 A1R2 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair with two Kings. High-scoring early game.
+  [ollama] waiting... (think=False)  [ollama] 3.0s  → discard_cards: Discarding low cards to improve chances of making a flush or straight. Keeping h
+  14:03:59 A1R2 [SELECTING_HAND] discard_cards cards=[4, 5]
+    ↳ Discarding low cards to improve chances of making a flush or straight. Keeping high cards like Q, J,
+  [ollama] waiting... (think=False)  [ollama] 41.2s  → play_hand: Two Pair with Queens and Tens. Base score 40, improved by Lusty Joker (+10 chips
+  14:04:45 A1R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair with Queens and Tens. Base score 40, improved by Lusty Joker (+10 chips) to 50 chips × 2 mu
+
+── ROUND_EVAL  Ante 1  Round 2  $3 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 3.9s  → finish_shop: Wallet has $7, reroll costs $5 but shop has usable cards. Finish shop to prepare
+  14:04:52 A1R2 [SHOP] finish_shop
+    ↳ Wallet has $7, reroll costs $5 but shop has usable cards. Finish shop to prepare for next round.
+
+── BLIND_SELECT  Ante 1  Round 2  $7 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 2.2s  → select_blind: Selecting Small Blind because the game requires progressing through antes and th
+  14:04:56 A1R3 [BLIND_SELECT] select_blind
+    ↳ Selecting Small Blind because the game requires progressing through antes and the scoring needs to b
+
+── SELECTING_HAND  Ante 1  Round 3  $7 ──
+  [ollama] waiting... (think=False)  [ollama] 107.6s  → discard_cards: Target flush: discard spades (K of S and 9 of S) to focus on clubs/hearts suits.
+  14:06:44 A1R3 [SELECTING_HAND] discard_cards cards=[0, 3]
+    ↳ Target flush: discard spades (K of S and 9 of S) to focus on clubs/hearts suits.
+  [ollama] waiting... (think=False)  [ollama] 3.7s  → play_hand: Play High Card with AS, KC, JH, 7C, 6S. No better hand available, but need to sa
+  14:06:51 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Play High Card with AS, KC, JH, 7C, 6S. No better hand available, but need to save discards for pote
+  [ollama] waiting... (think=False)  [ollama] 75.1s  → play_hand: Play Two Pair (QS, QH, JS, 6H, 6D). This maximizes short-term scoring while pres
+  14:08:10 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Play Two Pair (QS, QH, JS, 6H, 6D). This maximizes short-term scoring while preserving discards for 
+  [ollama] waiting... (think=False)  [ollama] 4.6s  → play_hand: Play Three of a Kind (QC, TS, 4H, 4C, 4D). This hand has strong scoring potentia
+  14:08:20 A2R3 [ROUND_EVAL] play_hand cards=[0, 1, 4, 5, 6]
+    ↳ Play Three of a Kind (QC, TS, 4H, 4C, 4D). This hand has strong scoring potential with base chips 30
+
+── ROUND_EVAL  Ante 2  Round 3  $7 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 3  $13 ──
+  [ollama] waiting... (think=False)  [ollama] 4.3s  [ollama] waiting... (think=False)  [ollama] 21.4s  → buy_card: Buy Mail-In Rebate joker (JOKER) for $4 to strengthen joker selection. Priority:
+  14:08:49 A2R3 [SHOP] buy_card idx=1
+    ↳ Buy Mail-In Rebate joker (JOKER) for $4 to strengthen joker selection. Priority: jokers first.
+  [ollama] waiting... (think=False)  [ollama] 13.1s  → buy_card: Buy Diet Cola (JOKER) for $6 to expand joker selection. Priority: jokers first. 
+  14:09:02 A2R3 [SHOP] buy_card idx=0
+    ↳ Buy Diet Cola (JOKER) for $6 to expand joker selection. Priority: jokers first. Fits within $9 budge
+  [ollama] waiting... (think=False)  [ollama] 12.5s  → finish_shop: No affordable upgrades available. Finish shop to proceed.
+  14:09:15 A2R3 [SHOP] finish_shop
+    ↳ No affordable upgrades available. Finish shop to proceed.
+
+── BLIND_SELECT  Ante 2  Round 3  $3 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=True → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 3.4s  → select_blind: {'reasoning': 'Reason for choosing this blind: Ante 2, Round 3. Hands left: 4. D
+  14:09:20 A2R4 [BLIND_SELECT] select_blind
+    ↳ {'reasoning': 'Reason for choosing this blind: Ante 2, Round 3. Hands left: 4. Discards left: 4. Bas
+
+── SELECTING_HAND  Ante 2  Round 4  $3 ──
+  [ollama] waiting... (think=False)  [ollama] 4.5s  → play_hand: Pair of Sixes and Fours with K/Q/T base cards. Two Pair base scores 40 × 2 mult 
+  14:09:28 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair of Sixes and Fours with K/Q/T base cards. Two Pair base scores 40 × 2 mult = 80. Add +Mult joke
+  [ollama] waiting... (think=False)  [ollama] 4.0s  → play_hand: Pair of Sixes and Fours with K/Q/T base cards. Two Pair base scores 40 × 2 mult 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair of Sixes and Fours with K/Q/T base cards. Two Pair base scores 40 × 2 mult = 80. Add +Mult jokers for extra power.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 4
+    Money: $3 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of D)
+      [1] Base Card (Q of C)
+      [2] Base Card (9 of S)
+      [3] Base Card (7 of H)
+      [4] Base Card (4 of S)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of D)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 4, 5]  (AD, QC, 9S, 4S, 4D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AD, QC, 9S, 7H, 4S)
+    
+    ## Jokers
+      [0] Lusty Joker (sell $2)
+      [1] Mail-In Rebate (sell $2)
+      [2] Diet Cola (sell $3)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 2, round 4
+    Recent wallet: A1R1=$8, A1R2=$7, A2R3=$13
+    Recent hands:
+      - A1R1: mixed scored 320 (hands_used=3, discards_used=2)
+      - A1R2: mixed scored 450 (hands_used=2, discards_used=1)
+      - A1R3: mixed scored 684 (hands_used=3, discards_used=1)
+    Recent blinds:
+      - A1 : 450/None
+      - A1 : 684/None
+      - A2 : 0/None
+    Recent joker moves: buy j_lusty_joker ($5), buy j_mail ($4), buy j_diet_cola ($6)
+    ── end prompt ──
+
+  14:09:35 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair of Sixes and Fours with K/Q/T base cards. Two Pair base scores 40 × 2 mult = 80. Add +Mult joke
+  [ollama] waiting... (think=False)  [ollama] 55.8s  → discard_cards: 4-to-a-Flush: discard the 8D (index 2) and 3D (index 6) to complete the flush. F
+  14:10:32 A2R4 [SELECTING_HAND] discard_cards cards=[2, 6]
+    ↳ 4-to-a-Flush: discard the 8D (index 2) and 3D (index 6) to complete the flush. Flush base 35 chips ×
+  [ollama] waiting... (think=False)  [ollama] 109.0s  → play_hand: Two Pair (8s and 8s) with JH, 8S, 8H, 7C, 5H. Base score 40 × 2 mult = 80. Add +
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=3  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Two Pair (8s and 8s) with JH, 8S, 8H, 7C, 5H. Base score 40 × 2 mult = 80. Add +Mult jokers for extra power.
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 2 Round 4
+    Money: $3 | Hands left: 2 | Discards left: 3
+    
+    ## Hand
+      [0] Base Card (J of H)
+      [1] Base Card (8 of S)
+      [2] Base Card (8 of H)
+      [3] Base Card (7 of C)
+      [4] Base Card (5 of H)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of C)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (JH, 8S, 8H, 7C, 5H)
+      High Card: play indices [0, 1, 3, 4, 5]  (JH, 8S, 7C, 5H, 4D)
+    
+    ## Jokers
+      [0] Lusty Joker (sell $2)
+      [1] Mail-In Rebate (sell $2)
+      [2] Diet Cola (sell $3)
+    
+    ## Run Memory (Discard_Chaser)
+    Current: ante 2, round 4
+    Recent wallet: A1R1=$8, A1R2=$7, A2R3=$13
+    Recent hands:
+      - A1R1: mixed scored 320 (hands_used=3, discards_used=2)
+      - A1R2: mixed scored 450 (hands_used=2, discards_used=1)
+      - A1R3: mixed scored 684 (hands_used=3, discards_used=1)
+    Recent blinds:
+      - A1 : 450/None
+      - A1 : 684/None
+      - A2 : 0/None
+    Recent joker moves: buy j_lusty_joker ($5), buy j_mail ($4), buy j_diet_cola ($6)
+    ── end prompt ──
+
+  14:12:24 A2R4 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair (8s and 8s) with JH, 8S, 8H, 7C, 5H. Base score 40 × 2 mult = 80. Add +Mult jokers for extr
+  [ollama] waiting... (think=False)
+[main] SIGTERM received — saving partial run...
+  [log] saved 26 entries → runs/1e009a4f0661.json

@@ -1,0 +1,14 @@
+Benchmark output: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_160746
+Roster: ['claude-haiku']
+Runs/agent: 1  Timeout: 900s
+
+════ claude-haiku (llm) ════
+
+──── claude-haiku run 1/3 ────
+  cmd: python3 -u main.py --runs 1 --strategy OPTIMAL_CHASER --no-report --llm claude --claude-model haiku
+  log: /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_160746/claude-haiku_01.log
+  → copied 33d794070dad.json → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_160746/runs/claude-haiku_01.json
+
+Saved meta → /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_160746/meta.json
+
+Next step: python3 -m benchmark.report /Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_160746

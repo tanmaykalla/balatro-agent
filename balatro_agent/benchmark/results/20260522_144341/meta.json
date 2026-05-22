@@ -1,0 +1,146 @@
+{
+  "timestamp": "20260522_144341",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 3,
+  "results": [
+    {
+      "agent": "gemma4-noThink",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 124.5,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemma4-noThink_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemma4-noThink_01.log"
+    },
+    {
+      "agent": "gemma4-noThink",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 87.4,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemma4-noThink_02.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemma4-noThink_02.log"
+    },
+    {
+      "agent": "gemma4-noThink",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 186.5,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemma4-noThink_03.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemma4-noThink_03.log"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 179.4,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v1_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v1_01.log"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 378.2,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v1_02.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v1_02.log"
+    },
+    {
+      "agent": "balatro-v1",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 154.6,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v1_03.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v1_03.log"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 370.9,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v2_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v2_01.log"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 114.3,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v2_02.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v2_02.log"
+    },
+    {
+      "agent": "balatro-v2",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 329.1,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/balatro-v2_03.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/balatro-v2_03.log"
+    },
+    {
+      "agent": "gemini",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 175.1,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemini_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemini_01.log"
+    },
+    {
+      "agent": "gemini",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 136.2,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemini_02.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemini_02.log"
+    },
+    {
+      "agent": "gemini",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 256.8,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/gemini_03.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/gemini_03.log"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/scripted-flush_01.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run01_3c79962a5c67.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/scripted-flush_02.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run02_aef88b8298c4.json"
+    },
+    {
+      "agent": "scripted-flush",
+      "run": 3,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 0.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_144341/runs/scripted-flush_03.json",
+      "log": null,
+      "source_file": "/Users/t101/Documents/balatro agent/week1-prototype/finetune_logs/Flush_Joker_Specialist_run03_ed39a375399b.json"
+    }
+  ]
+}

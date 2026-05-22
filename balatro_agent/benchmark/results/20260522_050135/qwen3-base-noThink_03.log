@@ -1,0 +1,112 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (qwen3-base @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/b54e853e5ac8.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 12.1s  → skip_blind: Skipping the Small blind to secure a tag reward for free items, which can enhanc
+  05:28:42 A1R0 [BLIND_SELECT] skip_blind
+    ↳ Skipping the Small blind to secure a tag reward for free items, which can enhance gameplay without s
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 18.2s  → select_blind: {'description': 'Must select the Small blind as skipping is not permitted. Start
+  05:29:01 A1R1 [BLIND_SELECT] select_blind
+    ↳ {'description': 'Must select the Small blind as skipping is not permitted. Starting with the first b
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 110.6s  → play_hand: Two Pair (Jacks and 5s) is the highest scoring hand available. Base chips 20 + f
+  05:30:56 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Two Pair (Jacks and 5s) is the highest scoring hand available. Base chips 20 + face values (10+10+10
+  [ollama] waiting... (think=False)  [ollama] 57.4s  → play_hand: Two Pair (5s and 3s) is the highest scoring hand available. Base chips 20 + face
+  05:31:58 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Two Pair (5s and 3s) is the highest scoring hand available. Base chips 20 + face values (10+5+5+3+3=
+  [ollama] waiting... (think=False)  [ollama] 171.1s  [ollama] waiting... (think=False)  [ollama] 24.9s  → play_hand: The Pair (two 2s) is the highest scoring hand available with a base score of 20.
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 6, 7]
+    reasoning: The Pair (two 2s) is the highest scoring hand available with a base score of 20. This maximizes the current round's cont
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of D)
+      [2] Base Card (Q of C)
+      [3] Base Card (T of C)
+      [4] Base Card (9 of H)
+      [5] Base Card (7 of C)
+      [6] Base Card (2 of S)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 6, 7]  (AS, KD, QC, 2S, 2D)
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KD, QC, TC, 9H)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : SKIPPED
+      - A1 : 0/None
+    ── end prompt ──
+
+  05:35:17 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 6, 7]
+    ↳ The Pair (two 2s) is the highest scoring hand available with a base score of 20. This maximizes the 
+  [ollama] waiting... (think=False)  [ollama] 54.4s  → play_hand: The Flush (AC, KC, TC, 7C, 4C) is the highest scoring hand available. Base chips
+  05:36:19 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 3, 5, 6]
+    ↳ The Flush (AC, KC, TC, 7C, 4C) is the highest scoring hand available. Base chips 35 + face values (1
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $8 ──
+  [ollama] waiting... (think=False)  [ollama] 40.0s  → buy_pack: Prioritize Buffoon Pack for additional joker options, which are critical for boo
+  05:37:01 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Prioritize Buffoon Pack for additional joker options, which are critical for boosting multipliers an
+  [ollama] waiting... (think=False)  [ollama] 23.9s  → skip_pack: Skipping the pack to conserve money and avoid uncertain card effects early in th
+  05:37:25 A1R1 [SHOP] skip_pack
+    ↳ Skipping the pack to conserve money and avoid uncertain card effects early in the run.
+  [ollama] waiting... (think=False)  [ollama] 24.3s  → buy_card: Prioritize buying the Mercury (PLANET) for $3 to level up a hand type, providing
+  05:37:49 A1R1 [SHOP] buy_card idx=0
+    ↳ Prioritize buying the Mercury (PLANET) for $3 to level up a hand type, providing a permanent +15 chi
+  [ollama] waiting... (think=False)  [ollama] 23.9s  → finish_shop: Cannot afford any shop items with only $1. Need to play hands to earn money for 
+  05:38:13 A1R1 [SHOP] finish_shop
+    ↳ Cannot afford any shop items with only $1. Need to play hands to earn money for future purchases.
+
+── BLIND_SELECT  Ante 1  Round 1  $1 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  [ollama] waiting... (think=False)  [ollama] 14.9s  → select_blind: Selecting the Small blind first to start accumulating chips. With 4 hands and 4 
+  05:38:30 A1R2 [BLIND_SELECT] select_blind
+    ↳ Selecting the Small blind first to start accumulating chips. With 4 hands and 4 discards, I can maxi
+
+── SELECTING_HAND  Ante 1  Round 2  $1 ──
+  [ollama] waiting... (think=False)  [ollama] 122.4s  → play_hand: The Straight (6S, 5S, 4S, 3H, 2C) is the highest-scoring hand available. Using t
+  05:40:38 A1R2 [SELECTING_HAND] play_hand cards=[2, 3, 5, 6, 7]
+    ↳ The Straight (6S, 5S, 4S, 3H, 2C) is the highest-scoring hand available. Using the Mercury joker (+1
+  [ollama] waiting... (think=False)  [ollama] 19.8s  → play_hand: The Straight (TH, 9C, 8C, 7S, 6D) is the highest-scoring hand available. Using t
+  05:41:03 A1R2 [SELECTING_HAND] play_hand cards=[1, 2, 3, 4, 6]
+    ↳ The Straight (TH, 9C, 8C, 7S, 6D) is the highest-scoring hand available. Using the Mercury joker (+1
+  [ollama] waiting... (think=False)  [ollama] 27.2s  → play_hand: The Full House (QS, QC, QD, 4H, 4D) is the highest-scoring hand available. Using
+  05:41:36 A2R2 [ROUND_EVAL] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ The Full House (QS, QC, QD, 4H, 4D) is the highest-scoring hand available. Using the Mercury joker (
+
+── ROUND_EVAL  Ante 2  Round 2  $1 ──
+  → cash_out (auto)
+
+── SHOP  Ante 2  Round 2  $5 ──
+  [ollama] waiting... (think=False)  [ollama] 27.0s  → buy_card: Scholar Joker adds flat mult, which is more impactful than +chips early game. Pr
+  05:42:06 A2R2 [SHOP] buy_card idx=1
+    ↳ Scholar Joker adds flat mult, which is more impactful than +chips early game. Prioritizing mult boos
+  [ollama] waiting... (think=False)  [ollama] 30.8s  → sell_joker: Selling the Scholar Joker for $2 to free up funds and potentially afford a Stand
+  05:42:37 A2R2 [SHOP] sell_joker idx=0
+    ↳ Selling the Scholar Joker for $2 to free up funds and potentially afford a Standard Pack or other us
+  [ollama] waiting... (think=False)  [ollama] 13.2s  → use_consumable: Using Mercury to double my $3 to $6, allowing me to afford the Standard Pack and
+  05:42:52 A2R2 [SHOP] use_consumable idx=0
+    ↳ Using Mercury to double my $3 to $6, allowing me to afford the Standard Pack and gain new playing ca
+  [ollama] waiting... (think=False)

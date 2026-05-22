@@ -1,0 +1,85 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: gemini (gemini-2.5-flash)
+[agent] logging to runs/a3cff28a9a43.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  15:16:00 A1R1 [BLIND_SELECT] select_blind
+    ↳ It's the first blind of the run, so I need to play it to earn money and start building my economy an
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  15:16:09 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 5]
+    ↳ Playing the best available hand, Two Pair (7s and 6s with Ace kicker), as it's a decent hand for Ant
+  15:16:21 A1R1 [ROUND_EVAL] play_hand cards=[0, 3, 5, 6, 7]
+    ↳ Playing the best available hand, a Straight (A, 5, 4, 3, 2), as it offers a good score for Ante 1 an
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  15:16:27 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buying a Buffoon Pack to get more joker options, which is a high priority for building a Flush-focus
+  15:16:30 A1R1 [SHOP] select_pack_card idx=1
+    ↳ Credit Card provides immediate financial flexibility for early game purchases, accelerating my econo
+  15:16:36 A1R1 [SHOP] buy_card idx=0
+    ↳ Buying the 8 Ball joker. Although not a priority joker, it's ante 1 and getting an additional joker 
+  15:16:39 A1R1 [SHOP] finish_shop
+    ↳ Cannot afford anything in the shop. Proceeding to the next blind selection.
+
+── BLIND_SELECT  Ante 1  Round 1  $0 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  15:16:42 A1R2 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so selecting the blind to continue the run.
+
+── SELECTING_HAND  Ante 1  Round 2  $0 ──
+  15:16:55 A1R2 [SELECTING_HAND] discard_cards cards=[1, 2, 3, 5]
+    ↳ Discarding non-heart cards to attempt to draw a Flush, as Flush is the target hand for this persona 
+  15:17:02 A1R2 [SELECTING_HAND] discard_cards cards=[0, 2, 4, 7]
+    ↳ Discarding non-heart cards to attempt to draw a Flush, as Flush is the target hand for this persona 
+  15:17:09 A1R2 [SELECTING_HAND] play_hand cards=[0, 2, 4, 5, 6]
+    ↳ Playing a Flush, which is the preferred hand type for this persona. Discards are exhausted, so I mus
+  15:17:16 A1R2 [SELECTING_HAND] play_hand cards=[0, 3, 4, 6, 7]
+    ↳ Playing the highest scoring available hand (Two Pair) as no Flush is possible and discards are exhau
+[gemini] api error (fail-fast): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand 
+
+── ROUND_EVAL  Ante 1  Round 2  $0 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 2  $5 ──
+  15:17:34 A1R2 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buying an Arcana Pack for a chance at high-value tarot cards like The Hermit or The Temperance, whic
+  15:17:38 A1R2 [SHOP] select_pack_card idx=1
+    ↳ The Hermit is a priority tarot card for doubling money, aligning with the Flush_Joker_Specialist str
+  15:17:43 A1R2 [SHOP] finish_shop
+    ↳ No affordable items to buy, cannot reroll with current money, and selling existing jokers won't allo
+
+── BLIND_SELECT  Ante 1  Round 2  $2 ──
+  [blind] type='' boss_by_status=True boss_by_name=False boss_by_round=False → is_boss=True
+  15:17:47 A1R3 [BLIND_SELECT] select_blind
+    ↳ Skipping is not permitted, so selecting the current blind to proceed.
+
+── SELECTING_HAND  Ante 1  Round 3  $2 ──
+  15:17:55 A1R3 [SELECTING_HAND] discard_cards cards=[0, 1, 3, 7]
+    ↳ Discarding non-diamond cards to try for a Flush, as I have 4 diamonds (8D, 7D, 6D, 5D) and 4 discard
+  15:18:04 A1R3 [SELECTING_HAND] play_hand cards=[0, 2, 3, 4, 6]
+    ↳ Playing a Flush (AD, 8D, 7D, 6D, 5D) as it is my specialty hand and scores 288, which is the highest
+  15:18:14 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing a Full House (8s and 5s) as it is the highest scoring hand available (40 chips x 4 mult = 16
+  15:18:27 A1R3 [SELECTING_HAND] discard_cards cards=[1, 2, 5, 6, 7]
+    ↳ As a Flush_Joker_Specialist, I am discarding non-Heart cards (JD, TD, 4C, 3D, 2C) to try and complet
+  15:18:34 A1R3 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Playing Two Pair (Aces and Queens) as it is the highest scoring hand available and discarding is not
+  15:18:41 A1R3 [GAME_OVER] play_hand cards=[0, 4, 5, 6, 7]
+    ↳ This is the last hand remaining. I must play the highest scoring hand available, which is Two Pair (
+
+── GAME_OVER  Ante 1  Round 3  $2 ──
+
+LOST at ante 1
+  [log] saved 22 entries → runs/a3cff28a9a43.json
+  ~tokens: gemini 46086/1113  cost ~$0.0051
+Run 1/1 | Strategy: Flush_Joker_Specialist | Result: LOST ante 1

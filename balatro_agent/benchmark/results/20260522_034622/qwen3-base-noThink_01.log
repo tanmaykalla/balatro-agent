@@ -1,0 +1,124 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (qwen3-base @ http://127.0.0.1:11434, think=False)
+[agent] logging to runs/580013f1fc02.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=False)  [ollama] 29.9s  → select_blind: Starting with the Small blind allows me to begin earning chips and progress thro
+  03:46:57 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting with the Small blind allows me to begin earning chips and progress through the antes withou
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=False)  [ollama] 22.8s  → play_hand: Two Pair (6s and 3s) is the highest scoring hand available. It provides 20 chips
+  03:47:24 A1R1 [SELECTING_HAND] play_hand cards=[0, 2, 3, 6, 7]
+    ↳ Two Pair (6s and 3s) is the highest scoring hand available. It provides 20 chips × 2 mult = 40 score
+  [ollama] waiting... (think=False)  [ollama] 58.0s  → play_hand: Pair of 8s (indices 2 and 3) is the highest scoring hand available. It provides 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: Pair of 8s (indices 2 and 3) is the highest scoring hand available. It provides 20 chips × 2 mult = 40 score. This is be
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 3 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (Q of D)
+      [1] Base Card (T of H)
+      [2] Base Card (8 of C)
+      [3] Base Card (8 of D)
+      [4] Base Card (7 of C)
+      [5] Base Card (5 of C)
+      [6] Base Card (4 of S)
+      [7] Base Card (3 of H)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 3, 4]  (QD, TH, 8C, 8D, 7C)
+      High Card: play indices [0, 1, 2, 4, 5]  (QD, TH, 8C, 7C, 5C)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  03:48:25 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ Pair of 8s (indices 2 and 3) is the highest scoring hand available. It provides 20 chips × 2 mult = 
+  [ollama] waiting... (think=False)  [ollama] 39.0s  → play_hand: Pair of 4s (indices 4 and 5) is the highest scoring hand available. It provides 
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=1  (Pair)
+    model chose: play_hand  cards=[0, 1, 2, 4, 5]
+    reasoning: Pair of 4s (indices 4 and 5) is the highest scoring hand available. It provides 10 chips × 2 mult = 20 score. This is be
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 2 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (J of C)
+      [1] Base Card (T of S)
+      [2] Base Card (9 of D)
+      [3] Base Card (5 of C)
+      [4] Base Card (4 of S)
+      [5] Base Card (4 of D)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      Pair: play indices [0, 1, 2, 4, 5]  (JC, TS, 9D, 4S, 4D)
+      High Card: play indices [0, 1, 2, 3, 4]  (JC, TS, 9D, 5C, 4S)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  03:49:08 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ Pair of 4s (indices 4 and 5) is the highest scoring hand available. It provides 10 chips × 2 mult = 
+  [ollama] waiting... (think=False)  [ollama] 28.4s  → play_hand: High Card is the only viable hand available. No pairs, straights, or flushes exi
+
+  ⚠ MISSED DISCARD OPPORTUNITY
+    discards_left=4  best_hand_rank=0  (High Card)
+    model chose: play_hand  cards=[0, 1, 2, 3, 4]
+    reasoning: High Card is the only viable hand available. No pairs, straights, or flushes exist in the current 5-card selection. Play
+    ── prompt sent ──
+    # Phase: SELECTING_HAND | Ante 1 Round 1
+    Money: $4 | Hands left: 1 | Discards left: 4
+    
+    ## Hand
+      [0] Base Card (A of S)
+      [1] Base Card (K of C)
+      [2] Base Card (Q of H)
+      [3] Base Card (9 of S)
+      [4] Base Card (7 of D)
+      [5] Base Card (5 of C)
+      [6] Base Card (3 of H)
+      [7] Base Card (2 of D)
+    
+    ## PLAYABLE HANDS (use these exact indices — do not guess)
+      ⚠ DISCARD LIMIT: maximum 5 card indices per discard call
+      High Card: play indices [0, 1, 2, 3, 4]  (AS, KC, QH, 9S, 7D)
+    
+    ## Run Memory (Free_Agent)
+    Current: ante 1, round 1
+    Recent blinds:
+      - A1 : 0/None
+    ── end prompt ──
+
+  03:49:39 A1R1 [GAME_OVER] play_hand cards=[0, 1, 2, 3, 4]
+    ↳ High Card is the only viable hand available. No pairs, straights, or flushes exist in the current 5-
+
+── GAME_OVER  Ante 1  Round 1  $4 ──
+
+LOST at ante 1
+  [log] saved 5 entries → runs/580013f1fc02.json
+  ~tokens: ollama (free) 9308/295  cost free
+Run 1/1 | Strategy: Free_Agent | Result: LOST ante 1

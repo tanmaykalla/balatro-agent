@@ -1,0 +1,54 @@
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/auth/__init__.py:54: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+/Users/t101/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+/Users/t101/Library/Python/3.9/lib/python/site-packages/google/oauth2/__init__.py:40: FutureWarning: You are using a Python version 3.9 past its end of life. Google will update google-auth with critical bug fixes on a best-effort basis, but not with any other fixes or features. Please upgrade your Python version, and then update google-auth.
+  warnings.warn(eol_message.format("3.9"), FutureWarning)
+LLM: ollama (gemma4:26b @ http://127.0.0.1:11434, think=True)
+[agent] logging to runs/6b80e49a5279.log
+
+── BLIND_SELECT  Ante 1  Round 0  $4 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 10.1s  → select_blind: Starting the run by playing the Small Blind. Skipping the first blind provides n
+  06:31:21 A1R1 [BLIND_SELECT] select_blind
+    ↳ Starting the run by playing the Small Blind. Skipping the first blind provides no advantage without 
+
+── SELECTING_HAND  Ante 1  Round 1  $4 ──
+  [ollama] waiting... (think=True)  [ollama] 25.3s  → discard_cards: I have two pairs (JJ and 55) and a third pair (22) in the hand. I'll discard the
+  06:31:47 A1R1 [SELECTING_HAND] discard_cards cards=[2, 3, 4, 5, 6]
+    ↳ I have two pairs (JJ and 55) and a third pair (22) in the hand. I'll discard the low cards and the T
+  [ollama] waiting... (think=True)  [ollama] 25.2s  → play_hand: The Two Pair (Jacks and 5s) is the strongest hand currently available and provid
+  06:32:17 A1R1 [SELECTING_HAND] play_hand cards=[0, 1, 2, 4, 5]
+    ↳ The Two Pair (Jacks and 5s) is the strongest hand currently available and provides a good base score
+  [ollama] waiting... (think=True)  [ollama] 25.6s  → discard_cards: I have 4 clubs (QC, TC, 7C, 3C). I'll discard the non-club cards to try and comp
+  06:32:43 A1R1 [SELECTING_HAND] discard_cards cards=[0, 1, 4, 7]
+    ↳ I have 4 clubs (QC, TC, 7C, 3C). I'll discard the non-club cards to try and complete a Flush.
+  [ollama] waiting... (think=True)  [ollama] 16.1s  → play_hand: I have a Flush available (AC, QC, TC, 7C, 4C). A Flush is a much stronger hand t
+  06:33:07 A1R1 [ROUND_EVAL] play_hand cards=[0, 1, 3, 4, 5]
+    ↳ I have a Flush available (AC, QC, TC, 7C, 4C). A Flush is a much stronger hand than a Pair or High C
+
+── ROUND_EVAL  Ante 1  Round 1  $4 ──
+  → cash_out (auto)
+
+── SHOP  Ante 1  Round 1  $9 ──
+  [ollama] waiting... (think=True)  [ollama] 19.9s  → buy_pack: Buffoon Packs are the highest priority in the early game as they provide a chanc
+  06:33:28 A1R1 [SMODS_BOOSTER_OPENED] buy_pack idx=0
+    ↳ Buffoon Packs are the highest priority in the early game as they provide a chance to find Jokers, wh
+  [ollama] waiting... (think=True)  [ollama] 19.6s  → select_pack_card: In the early game, economy is vital for compounding interest and scaling. 'Mail-
+  06:33:48 A1R1 [SHOP] select_pack_card idx=0
+    ↳ In the early game, economy is vital for compounding interest and scaling. 'Mail-In Rebate' sounds li
+  [ollama] waiting... (think=True)  [ollama] 28.0s  → buy_card: I have $5 and can afford Mercury (Planet) for $3. Leveling up hands (specificall
+  06:34:16 A1R1 [SHOP] buy_card idx=0
+    ↳ I have $5 and can afford Mercury (Planet) for $3. Leveling up hands (specifically Two Pair) is a gre
+  [ollama] waiting... (think=True)  [ollama] 7.2s  → finish_shop: I currently have only $2, which is not enough to buy anything in the shop or aff
+  06:34:24 A1R1 [SHOP] finish_shop
+    ↳ I currently have only $2, which is not enough to buy anything in the shop or afford a reroll (cost $
+
+── BLIND_SELECT  Ante 1  Round 1  $2 ──
+  [blind] type='' boss_by_status=False boss_by_name=False boss_by_round=False → is_boss=False
+  [ollama] waiting... (think=True)  [ollama] 8.2s  → select_blind: Starting the first round of the game to build up score and money. Skipping is no
+  06:34:34 A1R2 [BLIND_SELECT] select_blind
+    ↳ Starting the first round of the game to build up score and money. Skipping is not necessary for the 
+
+── SELECTING_HAND  Ante 1  Round 2  $2 ──
+  [ollama] waiting... (think=True)

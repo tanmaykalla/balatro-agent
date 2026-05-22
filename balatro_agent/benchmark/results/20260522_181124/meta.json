@@ -1,0 +1,26 @@
+{
+  "timestamp": "20260522_181124",
+  "strategy": "FREE_AGENT",
+  "timeout_sec": 900,
+  "runs_per_agent": 2,
+  "results": [
+    {
+      "agent": "gpt5-mini",
+      "run": 1,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 103.0,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_181124/runs/gpt5-mini_01.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_181124/gpt5-mini_01.log"
+    },
+    {
+      "agent": "gpt5-mini",
+      "run": 2,
+      "status": "ok",
+      "timeout": false,
+      "elapsed_sec": 55.5,
+      "run_json": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_181124/runs/gpt5-mini_02.json",
+      "log": "/Users/t101/Documents/balatro agent/balatro_agent/benchmark/results/20260522_181124/gpt5-mini_02.log"
+    }
+  ]
+}
