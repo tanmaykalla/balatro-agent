@@ -6,3 +6,5 @@ models/
 fused_model/
 finetune_adapters/
 *.safetensors
+videos/
+step_1_captures/**/.DS_Store

@@ -151,6 +151,26 @@ Each run produces `runs/<id>.json` with:
 
 ---
 
+## VLM Board-Perception Study (match-3)
+
+Zero-shot test of whether off-the-shelf VLMs can read a dense game grid — the perception
+prerequisite for any pixels-only game-playing agent.
+
+- **Harness:** [step_1_board_perception_test.py](step_1_board_perception_test.py) — self-plays a
+  match-3 demo over a local RPC bridge, captures the board, and scores each model's per-cell
+  transcription against engine ground truth (obscured/animating frames are validity-filtered out).
+- **Data:** [step_1_captures/](step_1_captures/) — 43 paired (screenshot, ground-truth grid JSON)
+  boards, i.e. exactly the supervised pairs a perception fine-tune would train on.
+- **Results:** [step_1_results.json](step_1_results.json). Per-cell accuracy on a 15×8 board:
+  GPT-4o ~35% whole-board (~59% with row-strip slicing), Gemini 2.5 Flash ~35%, Flash-Lite ~40%,
+  gemma 27B (local) ~51%, UI-TARS-1.5-7B ~0% (degenerate output — its GUI-grounding
+  specialization does not transfer to dense grid transcription). A simple classical pixel
+  classifier reads the same boards at 82%.
+- **Conclusion:** dense grid perception, not strategy, is the current VLM bottleneck for
+  grid-based games — fine-tuning on captured (screenshot, grid) pairs is the motivated next step.
+
+---
+
 ## Related docs
 
 - [PROJECT.md](PROJECT.md) — full architecture reference
